@@ -1,0 +1,816 @@
+<http://purl.org/ontology/musico/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/ontology/musico/> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/ontology/musico/0.1> .
+<http://purl.org/ontology/musico/> <http://purl.org/dc/elements/1.1/contributor> "Andrea Molinari" .
+<http://purl.org/ontology/musico/> <http://purl.org/dc/elements/1.1/contributor> "Paolo Bouquet" .
+<http://purl.org/ontology/musico/> <http://purl.org/dc/elements/1.1/creator> "Luca Turchet" .
+<http://purl.org/ontology/musico/> <http://purl.org/dc/elements/1.1/rights> <https://www.gnu.org/licenses/gpl.html> .
+<http://purl.org/ontology/musico/> <http://purl.org/dc/terms/abstract> <http://purl.org/ontology/musico> .
+<http://purl.org/ontology/musico/> <http://purl.org/dc/terms/created> "2020-08-03T10:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://purl.org/ontology/musico/> <http://purl.org/dc/terms/title> "Musician's Context Ontology" .
+<http://purl.org/ontology/musico/> <http://web.resource.org/cc/license> <https://www.gnu.org/licenses/gpl.html> .
+<http://purl.org/ontology/musico/> <http://www.w3.org/2002/07/owl#versionInfo> <http://purl.org/ontology/musico> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/contributor
+<http://purl.org/dc/elements/1.1/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/abstract
+<http://purl.org/dc/terms/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://web.resource.org/cc/license
+<http://web.resource.org/cc/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/NET/c4dm/event.owl#agent
+<http://purl.org/NET/c4dm/event.owl#agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/ontology/musico#displays_emotion
+<http://purl.org/ontology/musico#displays_emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#displays_emotion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#Software_Agent> .
+<http://purl.org/ontology/musico#displays_emotion> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/MFOEM_000001> .
+<http://purl.obolibrary.org/obo/MFOEM_000001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/musico#displays_mood
+<http://purl.org/ontology/musico#displays_mood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#displays_mood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#virtual_musician> .
+<http://purl.org/ontology/musico#displays_mood> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/MFOEM_000193> .
+<http://purl.obolibrary.org/obo/MFOEM_000193> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/musico#expresses_emotion
+<http://purl.org/ontology/musico#expresses_emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#expresses_emotion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/MF_0000016> .
+<http://purl.obolibrary.org/obo/MF_0000016> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#expresses_emotion> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/MFOEM_000001> .
+# 
+# http://purl.org/ontology/musico#expresses_mood
+<http://purl.org/ontology/musico#expresses_mood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#expresses_mood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/MF_0000016> .
+<http://purl.org/ontology/musico#expresses_mood> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/MFOEM_000193> .
+# 
+# http://purl.org/ontology/musico#feels_emotion
+<http://purl.org/ontology/musico#feels_emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#feels_emotion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/MF_0000016> .
+<http://purl.org/ontology/musico#feels_emotion> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/MFOEM_000001> .
+# 
+# http://purl.org/ontology/musico#feels_mood
+<http://purl.org/ontology/musico#feels_mood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#feels_mood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.obolibrary.org/obo/MF_0000016> .
+<http://purl.org/ontology/musico#feels_mood> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/MFOEM_000193> .
+# 
+# http://purl.org/ontology/musico#is_learner_in
+<http://purl.org/ontology/musico#is_learner_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#is_learner_in> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/NET/c4dm/event.owl#agent> .
+<http://purl.org/ontology/musico#is_learner_in> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#music_learner> .
+<http://purl.org/ontology/musico#is_learner_in> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/musico#lesson> .
+# 
+# http://purl.org/ontology/musico#is_master_of
+<http://purl.org/ontology/musico#is_master_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#is_master_of> <http://www.w3.org/2002/07/owl#inverseOf> <http://purl.org/ontology/musico#is_pupil_of> .
+<http://purl.org/ontology/musico#is_master_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#music_teacher> .
+<http://purl.org/ontology/musico#is_master_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/musico#music_learner> .
+# 
+# http://purl.org/ontology/musico#is_pupil_of
+<http://purl.org/ontology/musico#is_pupil_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/ontology/musico#is_teacher_in
+<http://purl.org/ontology/musico#is_teacher_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#is_teacher_in> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/NET/c4dm/event.owl#agent> .
+<http://purl.org/ontology/musico#is_teacher_in> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#music_teacher> .
+<http://purl.org/ontology/musico#is_teacher_in> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/musico#lesson> .
+# 
+# http://purl.org/ontology/musico#live_engineered
+<http://purl.org/ontology/musico#live_engineered> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#live_engineered> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/NET/c4dm/event.owl#agent> .
+<http://purl.org/ontology/musico#live_engineered> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/bio/0.1/event> .
+<http://purl.org/vocab/bio/0.1/event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/ontology/musico#place_musician
+<http://purl.org/ontology/musico#place_musician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#place_musician> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#musician> .
+<http://purl.org/ontology/musico#place_musician> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#place_musician> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates a musician to a spaial object."@en .
+# 
+# http://purl.org/ontology/musico#plays
+<http://purl.org/ontology/musico#plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#plays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#human_musician> .
+<http://purl.org/ontology/musico#plays> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/mo/Instrument> .
+<http://purl.org/ontology/mo/Instrument> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/musico#plays_genre
+<http://purl.org/ontology/musico#plays_genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#plays_genre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#musician> .
+<http://purl.org/ontology/musico#plays_genre> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/mo/Genre> .
+<http://purl.org/ontology/mo/Genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/musico#recognizes_emotion
+<http://purl.org/ontology/musico#recognizes_emotion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#recognizes_emotion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#Software_Agent> .
+<http://purl.org/ontology/musico#recognizes_emotion> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/MFOEM_000001> .
+# 
+# http://purl.org/ontology/musico#recognizes_mood
+<http://purl.org/ontology/musico#recognizes_mood> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#recognizes_mood> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#Software_Agent> .
+<http://purl.org/ontology/musico#recognizes_mood> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.obolibrary.org/obo/MFOEM_000193> .
+# 
+# http://purl.org/ontology/musico#sub_genre
+<http://purl.org/ontology/musico#sub_genre> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#sub_genre> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/mo/Genre> .
+<http://purl.org/ontology/musico#sub_genre> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/mo/Genre> .
+# 
+# http://purl.org/ontology/musico#uses
+<http://purl.org/ontology/musico#uses> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#uses> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#human_musician> .
+<http://purl.org/ontology/musico#uses> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/musico#MusicalService> .
+# 
+# http://purl.org/ontology/musico#venue
+<http://purl.org/ontology/musico#venue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#venue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/NET/c4dm/event.owl#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#venue> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/musico#Music_venue> .
+<http://purl.org/ontology/musico#venue> <http://www.w3.org/2000/01/rdf-schema#comment> "Predicate indicating that an event occurs at a Music_venue"@en .
+# 
+# http://purl.org/ontology/musico#virtually_plays
+<http://purl.org/ontology/musico#virtually_plays> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/ontology/musico#virtually_plays> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#virtual_musician> .
+<http://purl.org/ontology/musico#virtually_plays> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/ontology/mo/Instrument> .
+# 
+# http://purl.org/vocab/bio/0.1/event
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/musico#expertise_level
+<http://purl.org/ontology/musico#expertise_level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/musico#expertise_level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/ontology/musico#expertise_level> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#musician> .
+<http://purl.org/ontology/musico#expertise_level> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Beginner" .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Expert" .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Intermediate" .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/ontology/musico#expertise_level> <http://www.w3.org/2000/01/rdf-schema#comment> "The expertise level of a musician (three contrained values: beginner, expert and intermediate)"@en .
+# 
+# http://purl.org/ontology/musico#multi-instrumentalism_level
+<http://purl.org/ontology/musico#multi-instrumentalism_level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/musico#multi-instrumentalism_level> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#musician> .
+<http://purl.org/ontology/musico#multi-instrumentalism_level> <http://www.w3.org/2000/01/rdf-schema#range> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid5 <http://www.w3.org/2002/07/owl#oneOf> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "multi-instrumentalist" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "single-instrumentalist" .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/ontology/musico#multi-instrumentalism_level> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to describe agents able to play either one musical instrument  (single-instrumentalist) or more than one musical instrument (multi-instrumentalist)"@en .
+# 
+# http://purl.org/ontology/musico#professional_level
+<http://purl.org/ontology/musico#professional_level> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/musico#professional_level> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/ontology/musico#musician> .
+<http://purl.org/ontology/musico#professional_level> <http://www.w3.org/2000/01/rdf-schema#range> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid8 <http://www.w3.org/2002/07/owl#oneOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Amateur" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Professional" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/ontology/musico#professional_level> <http://www.w3.org/2000/01/rdf-schema#comment> "The level of professionality of a musician (either amateur or professional)"@en .
+# 
+# http://purl.org/ontology/musico#situated_displaced
+<http://purl.org/ontology/musico#situated_displaced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/musico#situated_displaced> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/ontology/musico#situated_displaced> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/musico#situated_displaced> <http://www.w3.org/2000/01/rdf-schema#range> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid11 <http://www.w3.org/2002/07/owl#oneOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Displaced" .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Situated" .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/ontology/musico#situated_displaced> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies whether virtual and/or human musicians take part to the activity at the same or at a different location."@en .
+# 
+# http://purl.org/ontology/musico#synchronous_asynchronous
+<http://purl.org/ontology/musico#synchronous_asynchronous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/musico#synchronous_asynchronous> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/ontology/musico#synchronous_asynchronous> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/musico#synchronous_asynchronous> <http://www.w3.org/2000/01/rdf-schema#range> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+_:genid14 <http://www.w3.org/2002/07/owl#oneOf> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Asynchronous" .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Synchronous" .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://purl.org/ontology/musico#synchronous_asynchronous> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies whether virtual and/or human musicians take part to the activity at the same time or in an asynchronous way."@en .
+# 
+# http://purl.org/ontology/studio/is_multiagent_event
+<http://purl.org/ontology/studio/is_multiagent_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/studio/is_multiagent_event> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://purl.org/ontology/studio/is_multiagent_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/ontology/studio/is_multiagent_event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/studio/is_multiagent_event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.org/ontology/studio/is_multiagent_event> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to describe events that involve more than one agent."@en .
+# 
+# http://purl.org/ontology/studio/is_solo_event
+<http://purl.org/ontology/studio/is_solo_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/ontology/studio/is_solo_event> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://purl.org/ontology/studio/is_solo_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://purl.org/ontology/studio/is_solo_event> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/studio/is_solo_event> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://purl.org/ontology/studio/is_solo_event> <http://www.w3.org/2000/01/rdf-schema#comment> "This property is used to describe events that involve only one agent."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.obolibrary.org/obo/MFOEM_000001
+# 
+# http://purl.obolibrary.org/obo/MFOEM_000193
+# 
+# http://purl.obolibrary.org/obo/MF_0000016
+<http://purl.obolibrary.org/obo/MF_0000016> <http://www.w3.org/2002/07/owl#equivalentClass> <http://xmlns.com/foaf/0.1/Person> .
+<http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/NET/c4dm/event.owl#Event
+# 
+# http://purl.org/ontology/mo/Arranger
+<http://purl.org/ontology/mo/Arranger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/mo/Composer
+<http://purl.org/ontology/mo/Composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/mo/Conductor
+<http://purl.org/ontology/mo/Conductor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/mo/Genre
+# 
+# http://purl.org/ontology/mo/Instrument
+# 
+# http://purl.org/ontology/mo/Performance
+<http://purl.org/ontology/mo/Performance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/mo/Performer
+<http://purl.org/ontology/mo/Performer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/mo/SoundEngineer
+<http://purl.org/ontology/mo/SoundEngineer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/mo/SoundEngineer> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/ontology/musico#studio_producer> .
+<http://purl.org/ontology/mo/SoundEngineer> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/ontology/studio/SoundEngineer> .
+# 
+# http://purl.org/ontology/musico#Arena
+<http://purl.org/ontology/musico#Arena> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Arena> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/musico#Cancert_hall
+<http://purl.org/ontology/musico#Cancert_hall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Cancert_hall> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/musico#Conservatory_of_music
+<http://purl.org/ontology/musico#Conservatory_of_music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Conservatory_of_music> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_school> .
+# 
+# http://purl.org/ontology/musico#Home
+<http://purl.org/ontology/musico#Home> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Home> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/musico#Human_Studio_Producer_Professional
+<http://purl.org/ontology/musico#Human_Studio_Producer_Professional> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Human_Studio_Producer_Professional> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_studio_producer> .
+# 
+# http://purl.org/ontology/musico#Human_studio_producer_bedroom
+<http://purl.org/ontology/musico#Human_studio_producer_bedroom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Human_studio_producer_bedroom> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_studio_producer> .
+# 
+# http://purl.org/ontology/musico#Jazz_club
+<http://purl.org/ontology/musico#Jazz_club> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Jazz_club> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/musico#Music_school
+<http://purl.org/ontology/musico#Music_school> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Music_school> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/musico#Music_venue
+<http://purl.org/ontology/musico#Music_venue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Music_venue> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Venue> .
+<http://purl.org/ontology/musico#Music_venue> <http://www.w3.org/2000/01/rdf-schema#comment> "The venue in which a musical activity (i.e., an Event) occurs."@en .
+# 
+# http://purl.org/ontology/musico#MusicalService
+<http://purl.org/ontology/musico#MusicalService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#MusicalService> <http://www.w3.org/2000/01/rdf-schema#comment> "A service used by a musician (e.g., social networks, music editing software, digital audio workstations, music streaming services, or collaborative music making online platforms)"@en .
+# 
+# http://purl.org/ontology/musico#Open_space
+<http://purl.org/ontology/musico#Open_space> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Open_space> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/musico#Opera_house
+<http://purl.org/ontology/musico#Opera_house> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Opera_house> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/musico#Park
+<http://purl.org/ontology/musico#Park> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Park> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Open_space> .
+# 
+# http://purl.org/ontology/musico#Rehearsal_room
+<http://purl.org/ontology/musico#Rehearsal_room> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Rehearsal_room> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/musico#Software_Agent
+<http://purl.org/ontology/musico#Software_Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Software_Agent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://xmlns.com/foaf/0.1/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/musico#Stadium
+<http://purl.org/ontology/musico#Stadium> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Stadium> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Open_space> .
+# 
+# http://purl.org/ontology/musico#Venue
+<http://purl.org/ontology/musico#Venue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#Venue> <http://www.w3.org/2000/01/rdf-schema#comment> "The venue in which an activity (i.e., an Event) occurs."@en .
+# 
+# http://purl.org/ontology/musico#composers_group
+<http://purl.org/ontology/musico#composers_group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#composers_group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Group> .
+<http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#composers_group> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of composers (e.g., involved in a collaborative music composition activity)"@en .
+# 
+# http://purl.org/ontology/musico#human_arranger
+<http://purl.org/ontology/musico#human_arranger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_arranger> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid17 .
+_:genid17 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/Arranger> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#human_musician> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_arranger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_musician> .
+# 
+# http://purl.org/ontology/musico#human_composer
+<http://purl.org/ontology/musico#human_composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_composer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/Composer> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#human_musician> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_composer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_musician> .
+# 
+# http://purl.org/ontology/musico#human_conductor
+<http://purl.org/ontology/musico#human_conductor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_conductor> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/Conductor> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#human_musician> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_conductor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_musician> .
+# 
+# http://purl.org/ontology/musico#human_live_sound_engineer
+<http://purl.org/ontology/musico#human_live_sound_engineer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_live_sound_engineer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#human_musician> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#live_sound_engineer> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_live_sound_engineer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_musician> .
+# 
+# http://purl.org/ontology/musico#human_music_learner
+<http://purl.org/ontology/musico#human_music_learner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_music_learner> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#human_musician> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#music_learner> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_music_learner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_musician> .
+# 
+# http://purl.org/ontology/musico#human_music_teacher
+<http://purl.org/ontology/musico#human_music_teacher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_music_teacher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid32 .
+_:genid32 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#human_musician> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#music_teacher> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_music_teacher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_musician> .
+# 
+# http://purl.org/ontology/musico#human_musician
+<http://purl.org/ontology/musico#human_musician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_musician> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid35 .
+_:genid35 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#musician> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://xmlns.com/foaf/0.1/Person> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_musician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#musician> .
+<http://purl.org/ontology/musico#human_musician> <http://www.w3.org/2000/01/rdf-schema#comment> "An actual human being involved in a musical activity (e.g., composition, performance)"@en .
+# 
+# http://purl.org/ontology/musico#human_performer
+<http://purl.org/ontology/musico#human_performer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_performer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid38 .
+_:genid38 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/Performer> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#human_musician> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_performer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_musician> .
+# 
+# http://purl.org/ontology/musico#human_studio_producer
+<http://purl.org/ontology/musico#human_studio_producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_studio_producer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid41 .
+_:genid41 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#human_musician> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#studio_producer> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#human_studio_producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#human_musician> .
+# 
+# http://purl.org/ontology/musico#jam_session
+<http://purl.org/ontology/musico#jam_session> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#jam_session> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/musico#jam_session> <http://www.w3.org/2000/01/rdf-schema#comment> "A jam session event.\n        Takes as agent a musicians group."@en .
+# 
+# http://purl.org/ontology/musico#learners_group
+<http://purl.org/ontology/musico#learners_group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#learners_group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Group> .
+<http://purl.org/ontology/musico#learners_group> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of music learners (e.g., involved in a music lesson)."@en .
+# 
+# http://purl.org/ontology/musico#lesson
+<http://purl.org/ontology/musico#lesson> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#lesson> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/musico#lesson> <http://www.w3.org/2000/01/rdf-schema#comment> "A music lesson event.\n        Takes as agents the music teacher and music learner, as well as  teachers group and learners groups."@en .
+# 
+# http://purl.org/ontology/musico#live_sound_engineer
+<http://purl.org/ontology/musico#live_sound_engineer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#live_sound_engineer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/musico#live_engineered> .
+_:genid44 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/ontology/mo/Performance> .
+<http://purl.org/ontology/musico#live_sound_engineer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/ontology/musico#live_sound_engineer> <http://www.w3.org/2000/01/rdf-schema#comment> "A sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances)."@en .
+<http://purl.org/ontology/musico#live_sound_engineer> <http://www.w3.org/2000/01/rdf-schema#label> "live_sound_enigneer"@en .
+# 
+# http://purl.org/ontology/musico#music_learner
+<http://purl.org/ontology/musico#music_learner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#music_learner> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid45 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/musico#is_learner_in> .
+_:genid45 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/ontology/musico#lesson> .
+<http://purl.org/ontology/musico#music_learner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://purl.org/ontology/musico#music_teacher
+<http://purl.org/ontology/musico#music_teacher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#music_teacher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/musico#is_teacher_in> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://purl.org/ontology/musico#lesson> .
+<http://purl.org/ontology/musico#music_teacher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://purl.org/ontology/musico#musician
+<http://purl.org/ontology/musico#musician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#musician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+<http://purl.org/ontology/musico#musician> <http://www.w3.org/2000/01/rdf-schema#comment> "An actual human being involved in a musical activity (e.g., composition, performance) or a software agent capable of performing a musical activity"@en .
+# 
+# http://purl.org/ontology/musico#musicians_group
+<http://purl.org/ontology/musico#musicians_group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#musicians_group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Group> .
+<http://purl.org/ontology/musico#musicians_group> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of musicians who play together. An example is a group of musicians involved in a jam session."@en .
+# 
+# http://purl.org/ontology/musico#playing_for_fun
+<http://purl.org/ontology/musico#playing_for_fun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#playing_for_fun> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/musico#playing_for_fun> <http://www.w3.org/2000/01/rdf-schema#comment> "An event where a musician plays for fun an instrument, alone or in group.\n        Takes as agent the performer."@en .
+# 
+# http://purl.org/ontology/musico#rehearsal
+<http://purl.org/ontology/musico#rehearsal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#rehearsal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/musico#rehearsal> <http://www.w3.org/2000/01/rdf-schema#comment> "A rehearsal event.\n        Takes as agent the performer as well as a musicians group."@en .
+# 
+# http://purl.org/ontology/musico#studio_producer
+<http://purl.org/ontology/musico#studio_producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#studio_producer> <http://www.w3.org/2002/07/owl#equivalentClass> <http://purl.org/ontology/studio/SoundEngineer> .
+<http://purl.org/ontology/musico#studio_producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Agent> .
+# 
+# http://purl.org/ontology/musico#teachers_group
+<http://purl.org/ontology/musico#teachers_group> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#teachers_group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/foaf/0.1/Group> .
+<http://purl.org/ontology/musico#teachers_group> <http://www.w3.org/2000/01/rdf-schema#comment> "A group of teachers (e.g., involved in a music lesson)."@en .
+# 
+# http://purl.org/ontology/musico#virtual_arranger
+<http://purl.org/ontology/musico#virtual_arranger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_arranger> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid47 .
+_:genid47 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/Arranger> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#virtual_musician> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_arranger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#virtual_musician> .
+# 
+# http://purl.org/ontology/musico#virtual_composer
+<http://purl.org/ontology/musico#virtual_composer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_composer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid50 .
+_:genid50 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/Composer> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#virtual_musician> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_composer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#virtual_musician> .
+# 
+# http://purl.org/ontology/musico#virtual_conductor
+<http://purl.org/ontology/musico#virtual_conductor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_conductor> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid53 .
+_:genid53 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/Conductor> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#virtual_musician> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_conductor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#virtual_musician> .
+# 
+# http://purl.org/ontology/musico#virtual_live_sound_engineeer
+<http://purl.org/ontology/musico#virtual_live_sound_engineeer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_live_sound_engineeer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid56 .
+_:genid56 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#live_sound_engineer> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#virtual_musician> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_live_sound_engineeer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#virtual_musician> .
+# 
+# http://purl.org/ontology/musico#virtual_music_learner
+<http://purl.org/ontology/musico#virtual_music_learner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_music_learner> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#music_learner> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#virtual_musician> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_music_learner> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#virtual_musician> .
+# 
+# http://purl.org/ontology/musico#virtual_music_teacher
+<http://purl.org/ontology/musico#virtual_music_teacher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_music_teacher> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid62 .
+_:genid62 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#music_teacher> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#virtual_musician> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_music_teacher> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#virtual_musician> .
+# 
+# http://purl.org/ontology/musico#virtual_musician
+<http://purl.org/ontology/musico#virtual_musician> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_musician> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid65 .
+_:genid65 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid67 .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#Software_Agent> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#musician> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_musician> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#musician> .
+<http://purl.org/ontology/musico#virtual_musician> <http://www.w3.org/2000/01/rdf-schema#comment> "A software agent capable of performing a musical activity (e.g., composition via computational creativity techniques)"@en .
+# 
+# http://purl.org/ontology/musico#virtual_performer
+<http://purl.org/ontology/musico#virtual_performer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_performer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid68 .
+_:genid68 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/mo/Performer> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#virtual_musician> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_performer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#virtual_musician> .
+# 
+# http://purl.org/ontology/musico#virtual_studio_producer
+<http://purl.org/ontology/musico#virtual_studio_producer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_studio_producer> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#studio_producer> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/ontology/musico#virtual_musician> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/musico#virtual_studio_producer> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#virtual_musician> .
+# 
+# http://purl.org/ontology/studio/RecordingStudio
+<http://purl.org/ontology/studio/RecordingStudio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/studio/RecordingStudio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/musico#Music_venue> .
+# 
+# http://purl.org/ontology/studio/SoundEngineer
+<http://purl.org/ontology/studio/SoundEngineer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/ontology/studio/multiagent_event
+<http://purl.org/ontology/studio/multiagent_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/studio/multiagent_event> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid74 .
+_:genid74 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://sw.opencyc.org/2009/04/07/concept/en/Event> .
+<http://sw.opencyc.org/2009/04/07/concept/en/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/studio/is_multiagent_event> .
+_:genid76 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/studio/multiagent_event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+<http://purl.org/ontology/studio/multiagent_event> <http://www.w3.org/2002/07/owl#disjointWith> <http://purl.org/ontology/studio/solo_event> .
+# 
+# http://purl.org/ontology/studio/solo_event
+<http://purl.org/ontology/studio/solo_event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/studio/solo_event> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid78 .
+_:genid78 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/vocab/bio/0.1/Event> .
+<http://purl.org/vocab/bio/0.1/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://purl.org/ontology/studio/is_solo_event> .
+_:genid80 <http://www.w3.org/2002/07/owl#hasValue> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/studio/solo_event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/NET/c4dm/event.owl#Event> .
+# 
+# http://purl.org/vocab/bio/0.1/Event
+# 
+# http://sw.opencyc.org/2009/04/07/concept/en/Event
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+# 
+# http://xmlns.com/foaf/0.1/Agent
+# 
+# http://xmlns.com/foaf/0.1/Group
+# 
+# http://xmlns.com/foaf/0.1/Person
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/musico#AbletonLive
+<http://purl.org/ontology/musico#AbletonLive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#AbletonLive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/musico#MusicalService> .
+# 
+# http://purl.org/ontology/musico#Audacity
+<http://purl.org/ontology/musico#Audacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Audacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/musico#MusicalService> .
+# 
+# http://purl.org/ontology/musico#Classical
+<http://purl.org/ontology/musico#Classical> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# http://purl.org/ontology/musico#Classical_music
+<http://purl.org/ontology/musico#Classical_music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Classical_music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Genre> .
+# 
+# http://purl.org/ontology/musico#Electronic_music
+<http://purl.org/ontology/musico#Electronic_music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Electronic_music> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Genre> .
+# 
+# http://purl.org/ontology/musico#Facebook
+<http://purl.org/ontology/musico#Facebook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Facebook> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/musico#MusicalService> .
+# 
+# http://purl.org/ontology/musico#Folk
+<http://purl.org/ontology/musico#Folk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Folk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Genre> .
+# 
+# http://purl.org/ontology/musico#Jazz
+<http://purl.org/ontology/musico#Jazz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Jazz> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Genre> .
+# 
+# http://purl.org/ontology/musico#Logic
+<http://purl.org/ontology/musico#Logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Logic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/musico#MusicalService> .
+# 
+# http://purl.org/ontology/musico#Metal
+<http://purl.org/ontology/musico#Metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Metal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Genre> .
+# 
+# http://purl.org/ontology/musico#Pop
+<http://purl.org/ontology/musico#Pop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Pop> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Genre> .
+# 
+# http://purl.org/ontology/musico#Rock
+<http://purl.org/ontology/musico#Rock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#Rock> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Genre> .
+# 
+# http://purl.org/ontology/musico#SoundCloud
+<http://purl.org/ontology/musico#SoundCloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#SoundCloud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/musico#MusicalService> .
+# 
+# http://purl.org/ontology/musico#SoundTrap
+<http://purl.org/ontology/musico#SoundTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#SoundTrap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/musico#MusicalService> .
+# 
+# http://purl.org/ontology/musico#YouTube
+<http://purl.org/ontology/musico#YouTube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://purl.org/ontology/musico#YouTube> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/musico#MusicalService> .
+# 
+# Generated by the OWL API (version 5.1.14) https://github.com/owlcs/owlapi/
