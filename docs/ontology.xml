@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ontology/musico/"
-     xml:base="http://purl.org/ontology/musico/"
+<rdf:RDF xmlns="http://purl.org/ontology/musico#"
+     xml:base="http://purl.org/ontology/musico"
      xmlns:cc="http://web.resource.org/cc/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -9,7 +9,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:terms="http://purl.org/dc/terms/">
-    <owl:Ontology rdf:about="http://purl.org/ontology/musico/">
+    <owl:Ontology rdf:about="http://purl.org/ontology/musico">
         <owl:versionIRI rdf:resource="http://purl.org/ontology/musico/0.1"/>
         <dc:contributor>Andrea Molinari</dc:contributor>
         <dc:contributor>Paolo Bouquet</dc:contributor>
