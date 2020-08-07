@@ -6,7 +6,7 @@
     "title" : {
       "undefined" : "Musician's Context Ontology"
     },
-    "iri" : "http://purl.org/ontology/musico/",
+    "iri" : "http://purl.org/ontology/musico",
     "version" : "http://purl.org/ontology/musico",
     "author" : [ "Luca Turchet" ],
     "other" : {
