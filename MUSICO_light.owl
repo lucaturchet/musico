@@ -7,6 +7,7 @@
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
      xmlns:bio="http://purl.org/vocab/bio/0.1/"
      xmlns:ns1="https://creativecommons.org/ns#"
+     xmlns:ns2="http://creativecommons.org/ns#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -30,7 +31,7 @@
      xmlns:ontology="https://www.geonames.org/ontology#"
      xmlns:relators="http://id.loc.gov/vocabulary/relators/"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
-    <owl:Ontology rdf:about="http://purl.org/ontology/musico">
+    <owl:Ontology rdf:about="http://purl.org/ontology/studio/">
         <owl:versionIRI rdf:resource="http://purl.org/ontology/musico/0.1"/>
         <dc:contributor>Andrea Molinari</dc:contributor>
         <dc:contributor>Paolo Bouquet</dc:contributor>
@@ -224,6 +225,7 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico#venue">
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/musico#Music_venue"/>
+        <rdfs:comment xml:lang="en">Predicate indicating that an event occurs at a Music_venue</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -276,6 +278,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment xml:lang="en">The expertise level of a musician (three contrained values: beginner, expert and intermediate)</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -301,6 +304,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment xml:lang="en">This property is used to describe agents able to play either one musical instrument  (single-instrumentalist) or more than one musical instrument (multi-instrumentalist)</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -326,6 +330,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment xml:lang="en">The level of professionality of a musician (either amateur or professional)</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -379,7 +384,31 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">Specifyìies whether virtual and/or human musicians take part to the activity at the same time or in an asynchronous way.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Specifies whether virtual and/or human musicians take part to the activity at the same time or in an asynchronous way.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/studio/is_multiagent_event -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/studio/is_multiagent_event">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">This property is used to describe events that involve more than one agent.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/studio/is_solo_event -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/studio/is_solo_event">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">This property is used to describe events that involve only one agent.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -480,7 +509,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Music_venue">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#Venue"/>
-        <rdfs:comment xml:lang="en">The venue in which a musical activity occurs.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The venue in which a musical activity (i.e., an Event) occurs.</rdfs:comment>
     </owl:Class>
     
 
@@ -544,7 +573,7 @@
     <!-- http://purl.org/ontology/musico#Venue -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Venue">
-        <rdfs:comment xml:lang="en">The venue in which an activity occurs.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The venue in which an activity (i.e., an Event) occurs.</rdfs:comment>
     </owl:Class>
     
 
@@ -988,6 +1017,45 @@
     <!-- http://purl.org/ontology/studio/SoundEngineer -->
 
     <owl:Class rdf:about="http://purl.org/ontology/studio/SoundEngineer"/>
+    
+
+
+    <!-- http://purl.org/ontology/studio/multiagent_event -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/studio/multiagent_event">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://sw.opencyc.org/2009/04/07/concept/en/Event"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/studio/is_multiagent_event"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <owl:disjointWith rdf:resource="http://purl.org/ontology/studio/solo_event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/studio/solo_event -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/studio/solo_event">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/vocab/bio/0.1/Event"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.org/ontology/studio/is_solo_event"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+    </owl:Class>
     
 
 
