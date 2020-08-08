@@ -366,39 +366,6 @@
     "@id" : "http://purl.org/ontology/studio/SoundEngineer"
   } ]
 }, {
-  "@id" : "http://purl.org/ontology/musico",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
-  "http://purl.org/dc/elements/1.1/contributor" : [ {
-    "@value" : "Andrea Molinari"
-  }, {
-    "@value" : "Paolo Bouquet"
-  } ],
-  "http://purl.org/dc/elements/1.1/creator" : [ {
-    "@value" : "Luca Turchet"
-  } ],
-  "http://purl.org/dc/elements/1.1/rights" : [ {
-    "@id" : "https://www.gnu.org/licenses/gpl.html"
-  } ],
-  "http://purl.org/dc/terms/abstract" : [ {
-    "@id" : "http://purl.org/ontology/musico"
-  } ],
-  "http://purl.org/dc/terms/created" : [ {
-    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2020-08-03T10:00:00"
-  } ],
-  "http://purl.org/dc/terms/title" : [ {
-    "@value" : "Musician's Context Ontology"
-  } ],
-  "http://web.resource.org/cc/license" : [ {
-    "@id" : "https://www.gnu.org/licenses/gpl.html"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
-    "@id" : "http://purl.org/ontology/musico/0.1"
-  } ],
-  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
-    "@id" : "http://purl.org/ontology/musico"
-  } ]
-}, {
   "@id" : "http://purl.org/ontology/musico#AbletonLive",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/ontology/musico#MusicalService" ]
 }, {
@@ -1124,6 +1091,39 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://purl.org/ontology/mo/Instrument"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/musico/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Andrea Molinari"
+  }, {
+    "@value" : "Paolo Bouquet"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Luca Turchet"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@id" : "https://www.gnu.org/licenses/gpl.html"
+  } ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@id" : "http://purl.org/ontology/musico"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "@value" : "2020-08-03T10:00:00"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "Musician's Context Ontology"
+  } ],
+  "http://web.resource.org/cc/license" : [ {
+    "@id" : "https://www.gnu.org/licenses/gpl.html"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://purl.org/ontology/musico/0.1"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@id" : "http://purl.org/ontology/musico"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico/live_engineer",

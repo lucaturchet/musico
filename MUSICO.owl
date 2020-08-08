@@ -140,7 +140,10 @@
 
     <!-- http://purl.org/ontology/musico#is_pupil_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico#is_pupil_of"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico#is_pupil_of">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/musico#music_learner"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/musico#music_teacher"/>
+    </owl:ObjectProperty>
     
 
 
@@ -157,8 +160,11 @@
     <!-- http://purl.org/ontology/musico#live_engineered -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico#live_engineered">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#isAgentIn"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/bio/0.1/event"/>
+        <owl:inverseOf rdf:resource="http://purl.org/ontology/musico/live_engineer"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/mo/Performance"/>
     </owl:ObjectProperty>
     
 
@@ -231,7 +237,7 @@
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico#venue">
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:range rdf:resource="http://purl.org/ontology/musico#Music_venue"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/musico#Venue"/>
         <rdfs:comment xml:lang="en">Predicate indicating that an event occurs at a Music_venue</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -242,6 +248,16 @@
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico#virtually_plays">
         <rdfs:domain rdf:resource="http://purl.org/ontology/musico#virtual_musician"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/Instrument"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ontology/musico/live_engineer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico/live_engineer">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/NET/c4dm/event.owl#agent"/>
+        <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Performance"/>
+        <rdfs:range rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
     </owl:ObjectProperty>
     
 
@@ -448,14 +464,6 @@
     
 
 
-    <!-- http://purl.org/ontology/musico#Arena -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/musico#Arena">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#Music_venue"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/ontology/musico#Cancert_hall -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Cancert_hall">
@@ -492,6 +500,14 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Human_studio_producer_bedroom">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#human_studio_producer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/musico#Indoor_arena -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico#Indoor_arena">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#Music_venue"/>
     </owl:Class>
     
 
