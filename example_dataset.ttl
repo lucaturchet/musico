@@ -1,0 +1,233 @@
+@prefix ex: <http://www.example.audio/ex> . 
+@prefix musico: <http://purl.org/ontology/musico#> . 
+@prefix smi: <http://purl.org/ontology/iomust/smi#> . 
+@prefix iot: <http://purl.org/ontology/iomust/internet_of_things/> . 
+@prefix iomust: <http://purl.org/ontology/iomust/internet_of_things/iomust> . 
+@prefix mfoem: <http://purl.obolibrary.org/obo/MFOEM.owl> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix studio: <http://purl.org/ontology/studio/> . 
+@prefix mo: <http://purl.org/ontology/mo/> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> . 
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix schema: <https://schema.org/docs/schemaorg.owl> .
+
+#########################################################################################################################################################
+# General axioms
+#########################################################################################################################################################
+
+musico:human_musician                                       rdfs:subClassOf                                 musico:musician .
+musico:virtual_musician                                     rdfs:subClassOf                                 musico:musician .
+
+
+
+
+
+#########################################################################################################################################################
+# Individuals           
+#########################################################################################################################################################
+
+
+ex:CristinaLadynekt                                         rdf:type                                        musico:HumanPerformer ,
+                                                                                                            musico:HumanTeacher ;
+                                                            foaf:firstName                                  "Cristina" ;
+                                                            foaf:lastName                                   "Ladinekt" ;
+                                                            foaf:gender                                     "female" ;   
+                                                            musico:has_disability                           false ;
+                                                            musico:professional_level	                    "Professional" ;
+                                                            musico:plays_genre	                            ex:Pop ,
+                                                                                                            ex:Jazz ;
+                                                            musico:plays_instrument                         ex:steinweissSmartPiano ,
+                                                                                                            ex:sensusSmartGuitar ,
+                                                                                                            ex:stradiusSmartViolin ,
+                                                                                                            ex:pifferSmartSax ;
+                                                            foaf:based_near                                 ex:Stockholm ;
+                                                            musico:in_participation                         ex:CristinaLadynektPerformance1TourKZ2021Session1 .
+                                                    
+ex:LinoLLobets                                              rdf:type                                        musico:HumanPerformer ,
+                                                                                                            musico:HumanComposer ;
+                                                            foaf:firstName                                  "Lino" ;
+                                                            foaf:lastName                                   "Llobet" ;
+                                                            foaf:gender                                     "male" ;   
+                                                            musico:has_disability                           true ;
+                                                            musico:disability_type                          "visually-impaired" ;
+                                                            musico:professional_level	                    "Professional" ;
+                                                            musico:plays_genre	                            ex:Pop ,
+                                                                                                            ex:Jazz , 
+                                                                                                            ex:Folk ;
+                                                            musico:played_instrumet                         ex:steinweissSmartPiano ;
+                                                            foaf:based_near                                 ex:Singapore ;
+                                                            musico:in_participation                         ex:LinoLLobetsPerformance1TourKZ2021Session1 .
+                                                               
+ex:CristinaLadynektPerformance1TourKZ2021Session1           rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:CristinaLadynekt ;
+                                                            musico:involved_event                           ex:Performance1TourKZ2021Session1 ;
+                                                            musico:played_instrument                        ex:sensusSmartGuitar ;
+                                                            musico:played_musical_work                      ex:NelBluDipintoDiBlu ;
+                                                            musico:felt_emotion                             mfoem:euphporia ,
+                                                                                                            mfoem:joy ,
+                                                                                                            mfoem:satisfaction .      
+
+ex:LinoLLobetsPerformance1TourKZ2021Session1                rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:LinoLLobets ;
+                                                            musico:involved_event                           ex:Performance1TourKZ2021Session1 ;
+                                                            musico:played_instrument                        ex:steinweissSmartPiano ;
+                                                            musico:played_musical_work                      ex:NelBluDipintoDiBlu ;
+                                                            musico:felt_emotion                             mfoem:stress ,
+                                                                                                            mfoem:anxiety ,
+                                                                                                            mfoem:satisfaction .    
+
+ex:CristinaLadynektPerformance1TourKZ2021Session2           rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:CristinaLadynekt ;
+                                                            musico:involved_event                           ex:Performance1TourKZ2021Session2 ;
+                                                            musico:played_instrument                        ex:stradiusSmartViolin ;
+                                                            musico:played_musical_work                      ex:SummerTime ;
+                                                            musico:felt_emotion                             mfoem:euphporia ,
+                                                                                                            mfoem:joy .      
+
+ex:LinoLLobetsPerformance1TourKZ2021Session2                rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:LinoLLobets ;
+                                                            musico:involved_event                           ex:Performance1TourKZ2021Session2 ;
+                                                            musico:played_instrument                        ex:steinweissSmartPiano ;
+                                                            musico:played_musical_work                      ex:SummerTime ;
+                                                            musico:felt_emotion                             mfoem:joy ,
+                                                                                                            mfoem:satisfaction .    
+
+ex:Performance1TourKZ2021Session1                           rdf:type                                        musico:MusicalSession ;
+                                                            schema:isPartOf                                 ex:Performance1TourKZ2021 ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                        tl:duration "PT7M34s"^^xsd:duration ;
+                                                                                                            ] .    
+
+ex:Performance1TourKZ2021Session2                           rdf:type                                        musico:MusicalSession ;
+                                                            schema:isPartOf                                 ex:Performance1TourKZ2021 ;   
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                        tl:duration "PT8M11s"^^xsd:duration ;
+                                                                                                            ] .                                                 
+
+ex:Performance1TourKZ2021                                   rdf:type                                        musico:Performance ;
+                                                            schema:isPartOf                                 ex:TourKZ2021 ;
+                                                            schema:hasPart                                  ex:Performance1TourKZ2021Session1 ,
+                                                                                                            ex:Performance1TourKZ2021Session2 ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                        tl:at "2021-02-13T21:00:00"^^xsd:dateTime ;
+	                                                                                                        tl:duration "PT2H38M7s"^^xsd:duration ;
+                                                                                                            ] ;
+                                                            schema:location                                 ex:RoyalAlbertHall .
+
+ex:Performance2TourKZ2021                                   rdf:type                                        musico:Performance ;
+                                                            schema:isPartOf                                 ex:TourKZ2021 ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                        tl:at "2021-05-10T22:00:00"^^xsd:dateTime ;
+	                                                                                                        tl:duration "PT2H18M5s"^^xsd:duration ;
+                                                                                                            ] ;
+                                                            schema:location                                 ex:IdroscaloMilan .
+
+ex:Performance3TourKZ2021                                   rdf:type                                        musico:Performance ;
+                                                            schema:isPartOf                                 ex:TourKZ2021 ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                        tl:at "2021-11-10T20:00:00"^^xsd:dateTime ;
+	                                                                                                        tl:duration "PT2H131M19s"^^xsd:duration ;
+                                                                                                            ] ;
+                                                            schema:location                                 ex:LeBalBlomet .
+
+ex:TourKZ2021                                               rdf:type                                        musico:Tour ;
+                                                            foaf:name                                       "Tour KZ 2021" ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Instant ;
+                                                                                                            tl:at "2021"^^xsd:gYear ;
+                                                                                                            ] ;
+                                                            schema:hasPart                                  ex:Performance1TourKZ2021 , 
+                                                                                                            ex:Performance2TourKZ2021 , 
+                                                                                                            ex:Performance3TourKZ2021 .
+
+ex:RoyalAlbertHall                                          rdf:type                                        musico:MusicVenue ,
+                                                                                                            musico:ConcertHall ;
+                                                            foaf:name                                       "Royal Albert Hall" ;
+                                                            schema:location                                 ex:London .
+
+ex:IdroscaloMilan                                           rdf:type                                        musico:MusicVenue ,
+                                                                                                            musico:Park ;
+                                                            foaf:name                                       "Idroscalo Milan" ;
+                                                            schema:location                                 ex:Milan .
+
+ex:LeBalBlomet                                              rdf:type                                        musico:MusicVenue ,
+                                                                                                            musico:JazzClub ;
+                                                            foaf:name                                       "Le Bal Blomet" ;
+                                                            schema:location                                 ex:Paris .
+
+ex:Jazz                                                     rdf:type                                        mo:Genre ;
+                                                            rdf:label                                       "Jazz" .
+
+ex:Pop                                                      rdf:type                                        mo:Genre ;
+                                                            rdf:label                                       "Pop" .
+
+ex:Folk                                                     rdf:type                                        mo:Genre ;
+                                                            rdf:label                                       "Folk" .
+
+ex:sensusSmartGuitar                                        rdf:type                                        iomust:SmartInstrument ,
+                                                                                                            smi:SmartGuitar , 
+                                                                                                            smi:SmartElectroacousticGuitar .
+
+ex:stradiusSmartViolin                                      rdf:type                                        iomust:SmartInstrument ,
+                                                                                                            smi:SmartViolin , 
+                                                                                                            smi:SmartElectricViolin .
+
+ex:pifferSmartSax                                           rdf:type                                        iomust:SmartInstrument ,
+                                                                                                            smi:SmartSaxophone , 
+                                                                                                            smi:SmartElectroacousticSaxophone .
+
+ex:steinweissSmartPiano                                     rdf:type                                        iomust:SmartInstrument ,
+                                                                                                            smi:SmartPiano , 
+                                                                                                            smi:SmartElectricPiano .
+
+ex:Singapore                                                rdf:type                                        schema:City ;
+                                                            foaf:name                                       "Singapore" .                
+
+ex:Verona                                                   rdf:type                                        schema:City ;
+                                                            foaf:name                                       "Verona" .                
+
+ex:Tokyo                                                    rdf:type                                        schema:City ;
+                                                            foaf:name                                       "Tokyo" .                
+
+ex:London                                                   rdf:type                                        schema:City ;
+                                                            foaf:name                                       "London" .                
+
+ex:NewYork                                                  rdf:type                                        schema:City ;
+                                                            foaf:name                                       "NewYork" .                
+
+ex:Paris                                                    rdf:type                                        schema:City ;
+                                                            foaf:name                                       "Paris" .                
+
+ex:Milan                                                    rdf:type                                        schema:City ;
+                                                            foaf:name                                       "Milan" .                
+
+ex:Stockholm                                                rdf:type                                        schema:City ;
+                                                            foaf:name                                       "Stockholm" .                
+
+ex:NelBluDipintoDiBlu                                       rdf:type                                        mo:MusicalWork ;
+                                                            dc:title                                        "Nel blu, dipinto di blu" .
+
+ex:SummerTime                                               rdf:type                                        mo:MusicalWork ;
+                                                            dc:title                                        "Summer time" .
+
+
+
+
+
+
+
+
+
+
+
