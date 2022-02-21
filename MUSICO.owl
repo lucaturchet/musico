@@ -1334,28 +1334,6 @@
     
 
 
-    <!-- http://purl.org/ontology/musico#Classical -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/musico#Classical"/>
-    
-
-
-    <!-- http://purl.org/ontology/musico#Classical_music -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/musico#Classical_music">
-        <rdf:type rdf:resource="http://purl.org/ontology/mo/Genre"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://purl.org/ontology/musico#Electronic_music -->
-
-    <owl:NamedIndividual rdf:about="http://purl.org/ontology/musico#Electronic_music">
-        <rdf:type rdf:resource="http://purl.org/ontology/mo/Genre"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://purl.org/ontology/musico#Facebook -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/musico#Facebook">
@@ -1436,6 +1414,14 @@
     
 
 
+    <!-- http://purl.org/ontology/musico/ClassicalMusic -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/musico/ClassicalMusic">
+        <rdf:type rdf:resource="http://purl.org/ontology/mo/Genre"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://purl.org/ontology/musico/CristinaLadinekt -->
 
     <owl:NamedIndividual rdf:about="http://purl.org/ontology/musico/CristinaLadinekt">
@@ -1452,6 +1438,14 @@
         <foaf:firstName>Cristina</foaf:firstName>
         <foaf:gender>female</foaf:gender>
         <foaf:lastName>Ladinekt</foaf:lastName>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/ontology/musico/ElectronicMusic -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/ontology/musico/ElectronicMusic">
+        <rdf:type rdf:resource="http://purl.org/ontology/mo/Genre"/>
     </owl:NamedIndividual>
     
 
