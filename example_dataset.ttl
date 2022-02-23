@@ -1,4 +1,4 @@
-@prefix ex: <http://www.example.audio/ex> . 
+@prefix ex: <http://www.example.audio/> . 
 @prefix musico: <http://purl.org/ontology/musico#> . 
 @prefix smi: <http://purl.org/ontology/iomust/smi#> . 
 @prefix iot: <http://purl.org/ontology/iomust/internet_of_things/> . 
@@ -864,10 +864,12 @@ ex:MariaGomez                                               rdf:type            
                                                             musico:expertise_level                          "Intermediate" ;
                                                             musico:plays_genre	                            ex:Rock ,
                                                                                                             ex:Jazz ;
-                                                            musico:plays_instrument                         ex:sensusSmartGuitar ,
+                                                            musico:plays_instrument                         smi:SmartGuitar ,
+                                                                                                            ex:sensusSmartGuitar ,
                                                                                                             ex:steinweissSmartPiano ;
                                                             foaf:based_near                                 ex:London ;
-                                                            musico:in_participation                         ex:MariaGomezLesson1Session1 .
+                                                            musico:in_participation                         ex:MariaGomezLesson1Session1 ,
+                                                                                                            ex:MariaGomezSelfLearning1HomeSession1 .
 
 ex:ZoltanGiocovich                                          rdf:type                                        musico:HumanMusicLearner ;
                                                             foaf:firstName                                  "Zoltan" ;
@@ -895,6 +897,19 @@ ex:LindaOzburn                                              rdf:type            
                                                             musico:plays_instrument                         ex:sensusSmartGuitar ;
                                                             foaf:based_near                                 ex:London ;
                                                             musico:in_participation                         ex:LindaOzburnLesson1Session1 .
+
+ex:MariaGomezSelfLearning1HomeSession1                      rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:MariaGomez ;
+                                                            musico:involved_event                           ex:SelfLearning1HomeSession1 ;
+                                                            musico:learnt_musical_work                      ex:MyFavoriteThings .
+
+ex:SelfLearning1HomeSession1                                rdf:type                                        musico:MusicalSession ;
+                                                            schema:isPartOf                                 ex:SelfLearning1Home .
+
+ex:SelfLearning1Home                                        rdf:type                                        musico:SelfLearning ;
+                                                            schema:hasPart                                  ex:SelfLearning1HomeSession1 ;
+                                                            schema:location                                 ex:HomeMariaGomez .
+
 
 ex:ZoltanGiocovichKMHLesson1Session1                        rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:ZoltanGiocovich ;
@@ -1148,6 +1163,11 @@ ex:KMHRoyalCollegeOfMusic                                   rdf:type            
                                                             foaf:name                                       "KMH Royal College of Music" ;
                                                             schema:location                                 ex:Stockholm .                                                
 
+ex:HomeMariaGomez                                           rdf:type                                        musico:MusicVenue ,
+                                                                                                            musico:Home ;
+                                                            foaf:name                                       "Home of Maria Gomez" ;
+                                                            schema:location                                 ex:Paris . 
+
 ex:Jazz                                                     rdf:type                                        mo:Genre ;
                                                             rdf:label                                       "Jazz" .
 
@@ -1176,7 +1196,17 @@ ex:karaokeSmartMicrophone                                   rdf:type            
 
 ex:sensusSmartGuitar                                        rdf:type                                        iomust:SmartInstrument ,
                                                                                                             smi:SmartGuitar , 
-                                                                                                            smi:SmartElectroacousticGuitar .
+                                                                                                            smi:SmartElectroacousticGuitar ;
+                                                            smi:smi_application                             ex:SelfLearningSmartGuitarAppPiano345GX .   
+                                        
+ex:SelfLearningSmartGuitarAppPiano345GX                     rdf:type                                        smi:SMIApplication ;
+                                                            musico:has_virtual_musician                     ex:virtualTeacherForSmartGuitar .
+
+ex:virtualTeacherForSmartGuitar                             rdf:type								                        musico:VirtualMusicTeacher ;
+                                                            musico:virtually_plays_instrument               ex:VirtualPiano137B .
+
+ex:VirtualPiano137B                                         rdf:type                                        mo:Instrument ,
+                                                                                                            smi:Piano . 
 
 ex:stradiusSmartViolin                                      rdf:type                                        iomust:SmartInstrument ,
                                                                                                             smi:SmartViolin , 

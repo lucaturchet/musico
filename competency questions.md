@@ -5,7 +5,7 @@ The given SPARQL are _examples_ that may be reinterpreted and reused for applica
 Prefixes:
 
 ```
-PREFIX ex: <http://www.example.audio/ex> 
+PREFIX ex: <http://www.example.audio/> 
 PREFIX musico: <http://purl.org/ontology/musico#> 
 PREFIX smi: <http://purl.org/ontology/iomust/smi#> 
 PREFIX iot: <http://purl.org/ontology/iomust/internet_of_things/> 
@@ -108,7 +108,37 @@ SELECT ?emotion
 
 
 
-5.	How long poly-instrumentalist musicians from Brazil play on average each day for recreational music making?
+5.	Which are the three virtual teachers playing piano with which smart guitar players interact most frequently while self-learning at home?
+```
+SELECT ?virtualMusician (COUNT(?virtualMusician) as ?num_virtual_musicians)
+	WHERE {
+		?Guitarist 						musico:plays_instrument					?instrument ;
+										musico:in_participation					?SelfLearnerParticipation .
+		?SelfLearnerParticipation		musico:involved_event					?SelfLearningSession .
+		?SelfLearningSession			rdf:type 								musico:MusicalSession ;
+										schema:isPartOf 						?SelfLearningActivity .
+		?SelfLearningActivity			rdf:type 								musico:SelfLearning ;
+										schema:location							?home .
+		?home							rdf:type								musico:Home .
+		?instrument						rdf:type 								smi:SmartGuitar ;
+										smi:smi_application						?application .
+		?application					rdf:type								smi:SMIApplication ;
+										musico:has_virtual_musician				?virtualMusician .
+		?virtualMusician				rdf:type								musico:VirtualMusicTeacher ; 	
+										musico:virtually_plays_instrument		?virtualInstrument .
+		?virtualInstrument				rdf:type								smi:Piano . 	
+}
+
+GROUP BY ?virtualMusician
+ORDER BY DESC(?num_virtual_musicians)
+LIMIT 3
+
+```
+
+
+Qui vorrei una regola che dice che se un musicista suona più di uno strumento allora è polistrumentista
+
+6.	How long poly-instrumentalist musicians from Brazil play on average each day for recreational music making?
 ```
 SELECT ?a
 	WHERE {
@@ -116,13 +146,6 @@ SELECT ?a
 }
 ```
 
-6.	What are the virtual musicians with which smart electric guitar players interact most frequently while self-learning?
-```
-SELECT ?a
-	WHERE {
-	
-}
-```
 
 7.	When the smart electric bass player Arturo Sakamoto has rehearsed with the other members of his band The Unicorns?
 ```
