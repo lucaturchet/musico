@@ -31,7 +31,7 @@ PREFIX schema: <https://schema.org/docs/schemaorg.owl>
 ```
 SELECT  ?firstName ?lastName ?instrument ?role  
 	WHERE {
-    	?musician 						a/rdfs:subClassOf*  					musico:HumanMusician ;
+    	?Musician 						a/rdfs:subClassOf*  					musico:HumanMusician ;
     									foaf:based_near							ex:London ;
     	 								foaf:firstName							?firstName ;
     	 								foaf:lastName							?lastName ;
@@ -81,7 +81,7 @@ SELECT  (COUNT(?MusicalSession) as ?num_sessions)
 ```
 
 
-4.	What are the emotions of beginner smart guitar players while learning the study number 5 of Fernando Sor's "20 studies for guitar" during lessons with Prof. Cristina Ladynekt at KMH Royal College of Music in Stockholm ?
+4.	What are the emotions of beginner smart guitar players while learning the study number 5 of Fernando Sor's "20 studies for guitar" during lessons with Prof. Cristina Ladynekt at KMH Royal College of Music in Stockholm?
 ```
 SELECT ?emotion
 	WHERE {
@@ -168,3 +168,21 @@ SELECT ?Musician (AVG(?Duration) AS ?avg)
 }
 GROUP BY ?Musician
 ```
+
+8.	How many synchronous, displaced performances have the musicians from London performed in 2020?
+```
+SELECT (COUNT(DISTINCT ?Performance) as ?count)
+	WHERE {
+		?Musician 						a/rdfs:subClassOf*  					musico:HumanMusician ;
+    									foaf:based_near							ex:London ;
+										musico:in_participation					?MusicianParticipation .
+		?MusicianParticipation 			musico:involved_event					?MusicalSession .
+		?MusicalSession					schema:isPartOf							?Performance .
+		?Performance					rdf:type 								musico:Performance ;
+										musico:is_displaced                     true ;
+										musico:is_synchronous					true .
+		
+}
+```
+
+

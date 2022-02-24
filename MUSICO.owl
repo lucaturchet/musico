@@ -247,15 +247,6 @@
     
 
 
-    <!-- http://purl.org/ontology/musico#venue -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico#venue">
-        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:comment xml:lang="en">Predicate indicating that an event occurs at a Music_venue</rdfs:comment>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://purl.org/ontology/musico#virtually_plays_instrument -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico#virtually_plays_instrument">
@@ -497,33 +488,6 @@
     
 
 
-    <!-- http://purl.org/ontology/musico#situated_displaced -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico#situated_displaced">
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>Displaced</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>Situated</rdf:first>
-                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-        <rdfs:comment xml:lang="en">Specifies whether virtual and/or human musicians take part to the activity at the same or at a different location.</rdfs:comment>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- http://purl.org/ontology/musico#synchronous_asynchronous -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico#synchronous_asynchronous">
@@ -597,6 +561,37 @@
     
 
 
+    <!-- http://purl.org/ontology/musico/is_asynchronous -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico/is_asynchronous">
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/musico/is_synchronous"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/musico/is_displaced -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico/is_displaced">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/musico/is_remote"/>
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/musico/is_in_presence -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico/is_in_presence">
+        <owl:equivalentProperty rdf:resource="http://purl.org/ontology/musico/is_situated"/>
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/musico/is_remote"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/ontology/musico/is_multiagent_event -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico/is_multiagent_event">
@@ -604,7 +599,26 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/musico/is_solo_event"/>
         <rdfs:comment xml:lang="en">This property is used to describe events that involve more than one agent.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/musico/is_remote -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico/is_remote">
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/musico/is_situated -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico/is_situated">
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -617,6 +631,15 @@
         <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
         <rdfs:comment xml:lang="en">This property is used to describe events that involve only one agent.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ontology/musico/is_synchronous -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ontology/musico/is_synchronous">
+        <rdfs:domain rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
     </owl:DatatypeProperty>
     
 
@@ -729,7 +752,7 @@
     <!-- http://purl.org/ontology/musico#ConcertHall -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#ConcertHall">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
@@ -745,7 +768,7 @@
     <!-- http://purl.org/ontology/musico#Home -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Home">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
@@ -915,7 +938,7 @@
     <!-- http://purl.org/ontology/musico#IndoorArena -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#IndoorArena">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
@@ -933,7 +956,7 @@
     <!-- http://purl.org/ontology/musico#JazzClub -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#JazzClub">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
@@ -984,7 +1007,7 @@
     <!-- http://purl.org/ontology/musico#MusicSchool -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#MusicSchool">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
@@ -993,15 +1016,6 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#MusicTeacher">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/musico#MusicVenue -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/musico#MusicVenue">
-        <rdfs:subClassOf rdf:resource="https://schema.org/Place"/>
-        <rdfs:comment xml:lang="en">The venue in which a musical activity (i.e., an Event) occurs.</rdfs:comment>
     </owl:Class>
     
 
@@ -1027,7 +1041,7 @@
     <!-- http://purl.org/ontology/musico#OpenSpace -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#OpenSpace">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
@@ -1035,7 +1049,7 @@
     <!-- http://purl.org/ontology/musico#OperaHouse -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#OperaHouse">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
@@ -1071,7 +1085,7 @@
     <!-- http://purl.org/ontology/musico#RehearsalRoom -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#RehearsalRoom">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
@@ -1263,6 +1277,14 @@
     
 
 
+    <!-- http://purl.org/ontology/musico/ChamberEnsemble -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico/ChamberEnsemble">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ontology/musico/CompositionSession -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico/CompositionSession">
@@ -1322,6 +1344,15 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico/MusiciansGroup">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
+        <rdfs:comment>A group of musicians who perform a musical activity together.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/musico/Orchestra -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico/Orchestra">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
     </owl:Class>
     
 
@@ -1337,7 +1368,7 @@
     <!-- http://purl.org/ontology/musico/RecordingStudio -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico/RecordingStudio">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicVenue"/>
+        <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
     </owl:Class>
     
 
