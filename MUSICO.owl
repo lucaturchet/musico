@@ -274,6 +274,15 @@
     
 
 
+    <!-- http://purl.org/ontology/musico/has_group -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico/has_group">
+        <rdfs:domain rdf:resource="http://purl.org/ontology/musico/MusicalEvent"/>
+        <rdfs:range rdf:resource="http://purl.org/ontology/musico/MusiciansGroup"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/ontology/musico/has_virtual_musician -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/ontology/musico/has_virtual_musician">
@@ -708,6 +717,15 @@
     
 
 
+    <!-- http://purl.org/ontology/musico#ComposersGroup -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico#ComposersGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico/MusiciansGroup"/>
+        <rdfs:comment xml:lang="en">A group of composers (e.g., involved in a collaborative music composition activity)</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ontology/musico#ConcertHall -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#ConcertHall">
@@ -920,6 +938,15 @@
     
 
 
+    <!-- http://purl.org/ontology/musico#LearnersGroup -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico#LearnersGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico/MusiciansGroup"/>
+        <rdfs:comment xml:lang="en">A group of music learners (e.g., involved in a music lesson).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ontology/musico#Lesson -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Lesson">
@@ -1074,6 +1101,15 @@
     
 
 
+    <!-- http://purl.org/ontology/musico#TeachersGroup -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico#TeachersGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico/MusiciansGroup"/>
+        <rdfs:comment xml:lang="en">A group of teachers (e.g., involved in a music lesson).</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ontology/musico#VirtualArranger -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#VirtualArranger">
@@ -1219,38 +1255,10 @@
     
 
 
-    <!-- http://purl.org/ontology/musico#composers_group -->
+    <!-- http://purl.org/ontology/musico/Band -->
 
-    <owl:Class rdf:about="http://purl.org/ontology/musico#composers_group">
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <rdfs:comment xml:lang="en">A group of composers (e.g., involved in a collaborative music composition activity)</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/musico#learners_group -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/musico#learners_group">
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <rdfs:comment xml:lang="en">A group of music learners (e.g., involved in a music lesson).</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/musico#musicians_group -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/musico#musicians_group">
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <rdfs:comment xml:lang="en">A group of musicians who play together. An example is a group of musicians involved in a jam session.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/ontology/musico#teachers_group -->
-
-    <owl:Class rdf:about="http://purl.org/ontology/musico#teachers_group">
-        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
-        <rdfs:comment xml:lang="en">A group of teachers (e.g., involved in a music lesson).</rdfs:comment>
+    <owl:Class rdf:about="http://purl.org/ontology/musico/Band">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
     </owl:Class>
     
 
@@ -1306,6 +1314,14 @@
     <owl:Class rdf:about="http://purl.org/ontology/musico/MusicianParticipation">
         <rdfs:subClassOf rdf:resource="https://schema.org/Action"/>
         <rdfs:comment>The act of a given musician of participating in a musical event</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/musico/MusiciansGroup -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico/MusiciansGroup">
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Group"/>
     </owl:Class>
     
 

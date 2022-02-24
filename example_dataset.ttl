@@ -40,6 +40,9 @@
   ns0:license <https://www.gnu.org/licenses/gpl.html> ;
   owl:versionInfo <http://purl.org/ontology/musico> .
 
+dc:abstract a owl:AnnotationProperty .
+dc:title a owl:AnnotationProperty .
+ns0:license a owl:AnnotationProperty .
 <http://purl.org/NET/c4dm/event.owl#agent> a owl:ObjectProperty .
 <http://purl.org/NET/c4dm/event.owl#isAgentIn> a owl:ObjectProperty .
 <http://purl.org/ontology/musico#displays_emotion>
@@ -135,6 +138,17 @@
   rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
   rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
 
+<http://purl.org/ontology/musico/has_group>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicalEvent> ;
+  rdfs:range <http://purl.org/ontology/musico/MusiciansGroup> .
+
+<http://purl.org/ontology/musico/has_virtual_musician>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  rdfs:domain <http://purl.org/ontology/iomust/smi#SMIApplication> ;
+  rdfs:range <http://purl.org/ontology/musico#VirtualMusician> .
+
 <http://purl.org/ontology/musico/in_participation>
   a owl:ObjectProperty ;
   owl:inverseOf <http://purl.org/ontology/musico/participating_musician> ;
@@ -197,10 +211,6 @@
   rdfs:range <https://schema.org/MusicVenue> .
 
 <http://purl.org/vocab/bio/0.1/event> a owl:ObjectProperty .
-owl:topObjectProperty
-  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
-  rdfs:range <http://purl.org/ontology/mo/MusicalWork> .
-
 <http://purl.org/ontology/musico#expertise_level>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain <http://purl.org/ontology/musico#Musician> ;
@@ -295,6 +305,11 @@ owl:topObjectProperty
   rdfs:comment "This property is used to describe events that involve only one agent."@en .
 
 <http://purl.obolibrary.org/obo/MFOEM_000193> owl:equivalentClass foaf:Person .
+<http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> a owl:Class .
+<http://purl.org/ontology/iomust/smi#SmartElectricPiano> a owl:Class .
+<http://purl.org/ontology/iomust/smi#SmartElectricViolin> a owl:Class .
+<http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar> a owl:Class .
+<http://purl.org/ontology/iomust/smi#SmartElectroacousticSaxophone> a owl:Class .
 <http://purl.org/ontology/mo/Arranger> a owl:Class .
 <http://purl.org/ontology/mo/Composer> a owl:Class .
 <http://purl.org/ontology/mo/Conductor> a owl:Class .
@@ -307,6 +322,11 @@ owl:topObjectProperty
 <http://purl.org/ontology/mo/SoundEngineer>
   a owl:Class ;
   owl:equivalentClass <http://purl.org/ontology/musico#StudioProducer>, <http://purl.org/ontology/musico/SoundEngineer> .
+
+<http://purl.org/ontology/musico#ComposersGroup>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/musico/MusiciansGroup> ;
+  rdfs:comment "A group of composers (e.g., involved in a collaborative music composition activity)"@en .
 
 <http://purl.org/ontology/musico#ConcertHall>
   a owl:Class ;
@@ -443,6 +463,11 @@ owl:topObjectProperty
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
 
+<http://purl.org/ontology/musico#LearnersGroup>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/musico/MusiciansGroup> ;
+  rdfs:comment "A group of music learners (e.g., involved in a music lesson)."@en .
+
 <http://purl.org/ontology/musico#Lesson>
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico/MusicalEvent> ;
@@ -479,6 +504,7 @@ owl:topObjectProperty
 
 <http://purl.org/ontology/musico#MusicalService>
   a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/studio/device/Service> ;
   rdfs:comment "A service used by a musician (e.g., social networks, music editing software, digital audio workstations, music streaming services, or collaborative music making online platforms)"@en .
 
 <http://purl.org/ontology/musico#Musician>
@@ -526,6 +552,11 @@ owl:topObjectProperty
   a owl:Class ;
   owl:equivalentClass <http://purl.org/ontology/musico/SoundEngineer> ;
   rdfs:subClassOf foaf:Agent .
+
+<http://purl.org/ontology/musico#TeachersGroup>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/musico/MusiciansGroup> ;
+  rdfs:comment "A group of teachers (e.g., involved in a music lesson)."@en .
 
 <http://purl.org/ontology/musico#VirtualArranger>
   a owl:Class ;
@@ -627,25 +658,9 @@ owl:topObjectProperty
   ] ;
   rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> .
 
-<http://purl.org/ontology/musico#composers_group>
+<http://purl.org/ontology/musico/Band>
   a owl:Class ;
-  rdfs:subClassOf foaf:Group ;
-  rdfs:comment "A group of composers (e.g., involved in a collaborative music composition activity)"@en .
-
-<http://purl.org/ontology/musico#learners_group>
-  a owl:Class ;
-  rdfs:subClassOf foaf:Group ;
-  rdfs:comment "A group of music learners (e.g., involved in a music lesson)."@en .
-
-<http://purl.org/ontology/musico#musicians_group>
-  a owl:Class ;
-  rdfs:subClassOf foaf:Group ;
-  rdfs:comment "A group of musicians who play together. An example is a group of musicians involved in a jam session."@en .
-
-<http://purl.org/ontology/musico#teachers_group>
-  a owl:Class ;
-  rdfs:subClassOf foaf:Group ;
-  rdfs:comment "A group of teachers (e.g., involved in a music lesson)."@en .
+  rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> .
 
 <http://purl.org/ontology/musico/CompositionSession>
   a owl:Class ;
@@ -678,6 +693,10 @@ owl:topObjectProperty
   rdfs:subClassOf <https://schema.org/Action> ;
   rdfs:comment "The act of a given musician of participating in a musical event" .
 
+<http://purl.org/ontology/musico/MusiciansGroup>
+  a owl:Class ;
+  rdfs:subClassOf foaf:Group .
+
 <http://purl.org/ontology/musico/Performance>
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico/MusicalEvent> .
@@ -685,6 +704,10 @@ owl:topObjectProperty
 <http://purl.org/ontology/musico/RecordingStudio>
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+
+<http://purl.org/ontology/musico/SelfLearning>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/musico/MusicalEvent> .
 
 <http://purl.org/ontology/musico/SoloEvent>
   a owl:Class ;
@@ -702,6 +725,7 @@ owl:topObjectProperty
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico/MusicalEvent> .
 
+<http://purl.org/ontology/studio/device/Service> a owl:Class .
 <http://purl.org/vocab/bio/0.1/Event> a owl:Class .
 <http://sw.opencyc.org/2009/04/07/concept/en/Event> a owl:Class .
 <http://purl.org/ontology/musico#AbletonLive> a owl:NamedIndividual, <http://purl.org/ontology/musico#MusicalService> .
@@ -718,37 +742,8 @@ owl:topObjectProperty
 <http://purl.org/ontology/musico#YouTube> a owl:NamedIndividual, <http://purl.org/ontology/musico#MusicalService> .
 <http://purl.org/ontology/musico/ClassicalMusic> a owl:NamedIndividual, <http://purl.org/ontology/mo/Genre> .
 <http://purl.org/ontology/musico/ElectronicMusic> a owl:NamedIndividual, <http://purl.org/ontology/mo/Genre> .
-<http://purl.org/ontology/musico/London>
-  a owl:NamedIndividual, <https://schema.org/City> ;
-  foaf:name "London" .
 
-<http://purl.org/ontology/musico/NewYork>
-  a owl:NamedIndividual, <https://schema.org/City> ;
-  foaf:name "New York" .
 
-<http://purl.org/ontology/musico/Paris>
-  a owl:NamedIndividual, <https://schema.org/City> ;
-  foaf:name "Paris" .
-
-<http://purl.org/ontology/musico/Singapore>
-  a owl:NamedIndividual, <https://schema.org/City> ;
-  foaf:name "Singapore" .
-
-<http://purl.org/ontology/musico/Tokyo>
-  a owl:NamedIndividual, <https://schema.org/City> ;
-  foaf:name "Tokyo" .
-
-<http://purl.org/ontology/musico/Verona>
-  a owl:NamedIndividual, <https://schema.org/City> ;
-  foaf:name "Verona" .
-
-<http://purl.org/ontology/musico/pifferSmartSax>
-  a owl:NamedIndividual, <http://purl.org/ontology/iomust/smi#SmartElectroacousticSaxophone> ;
-  foaf:based_near <http://purl.org/ontology/musico/Verona> .
-
-<http://purl.org/ontology/musico/sensusSmartGuitar> a owl:NamedIndividual, <http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar> .
-<http://purl.org/ontology/musico/steinweissSmartPiano> a owl:NamedIndividual, <http://purl.org/ontology/iomust/smi#SmartElectricPiano> .
-<http://purl.org/ontology/musico/stradiusSmartViolin> a owl:NamedIndividual, <http://purl.org/ontology/iomust/smi#SmartElectricViolin> .
 _:genid82
   a owl:Restriction ;
   owl:onProperty <http://purl.org/ontology/musico/is_multiagent_event> ;
@@ -759,26 +754,9 @@ _:genid86
   owl:onProperty <http://purl.org/ontology/musico/is_solo_event> ;
   owl:hasValue true .
 
-
 #########################################################################################################################################################
 # Individuals           
 #########################################################################################################################################################
-
-###  http://purl.org/ontology/musico#AbletonLive
-musico:AbletonLive rdf:type owl:NamedIndividual ,
-                      musico:MusicalService .
-
-
-###  http://purl.org/ontology/musico#Audacity
-musico:Audacity rdf:type owl:NamedIndividual ,
-                   musico:MusicalService .
-
-
-###  http://purl.org/ontology/musico#Facebook
-musico:Facebook rdf:type owl:NamedIndividual ,
-                   musico:MusicalService .
-
-
 
 ex:CristinaLadynekt                                         rdf:type                                        musico:HumanPerformer ,
                                                                                                             musico:HumanMusicTeacher ;
@@ -796,11 +774,13 @@ ex:CristinaLadynekt                                         rdf:type            
                                                                                                             ex:stradiusSmartViolin ;
                                                             musico:is_mentor_of                             ex:ZoltanGiocovich ;
                                                             musico:teaches_music_at                         ex:KMHRoyalCollegeOfMusic ;
+                                                            foaf:member_of                                  ex:TheUnicornsAndCamels ;
                                                             foaf:based_near                                 ex:Stockholm ;
                                                             musico:in_participation                         ex:CristinaLadynektPerformance1TourKZ2021Session1 , 
                                                                                                             ex:CristinaLadynektPerformance1TourKZ2021Session2 , 
                                                                                                             ex:CristinaLadynektPerformance1TourKZ2021Session3 ,
-                                                                                                            ex:CristinaLadinektKMHLesson1Session1 .
+                                                                                                            ex:CristinaLadinektsKMHLesson1Session1 ,
+                                                                                                            ex:CristinaLadinektsRehearsal1Session1 .
                                                     
 ex:LinoLLobets                                              rdf:type                                        musico:HumanPerformer ,
                                                                                                             musico:HumanComposer ;
@@ -815,10 +795,12 @@ ex:LinoLLobets                                              rdf:type            
                                                                                                             ex:Jazz , 
                                                                                                             ex:Folk ;
                                                             musico:plays_instrument                         ex:steinweissSmartPiano ;
+                                                            foaf:member_of                                  ex:TheUnicornsAndCamels ;
                                                             foaf:based_near                                 ex:Singapore ;
                                                             musico:in_participation                         ex:LinoLLobetsPerformance1TourKZ2021Session1 ,
                                                                                                             ex:LinoLLobetsPerformance1TourKZ2021Session2 ,
-                                                                                                            ex:LinoLLobetsPerformance1TourKZ2021Session3 .
+                                                                                                            ex:LinoLLobetsPerformance1TourKZ2021Session3 ,
+                                                                                                            ex:LinoLLobetsRehearsal1Session1 .
 
 ex:SharanGiptas                                             rdf:type                                        musico:HumanPerformer ,
                                                                                                             musico:HumanStudioProducer ;
@@ -832,10 +814,12 @@ ex:SharanGiptas                                             rdf:type            
                                                                                                             ex:Jazz ;
                                                             musico:plays_instrument                         ex:pifferSmartSax ,
                                                                                                             ex:steinweissSmartPiano ;
+                                                            foaf:member_of                                  ex:TheUnicornsAndCamels ;
                                                             foaf:based_near                                 ex:Mumbai ;
                                                             musico:in_participation                         ex:SharanGiptasPerformance1TourKZ2021Session1 ,
                                                                                                             ex:SharanGiptasPerformance1TourKZ2021Session2 ,
-                                                                                                            ex:SharanGiptasPerformance1TourKZ2021Session3 .
+                                                                                                            ex:SharanGiptasPerformance1TourKZ2021Session3 ,
+                                                                                                            ex:SharanGiptasRehearsal1Session1 .
 
 ex:MikalisPortnoi                                           rdf:type                                        musico:HumanPerformer ,
                                                                                                             musico:HumanMusicTeacher ;
@@ -849,10 +833,12 @@ ex:MikalisPortnoi                                           rdf:type            
                                                                                                             ex:Jazz , 
                                                                                                             ex:Rock ;
                                                             musico:plays_instrument                         ex:pearlSmartDrums ;
+                                                            foaf:member_of                                  ex:TheUnicornsAndCamels ;
                                                             foaf:based_near                                 ex:NewYork ;
                                                             musico:in_participation                         ex:MikalisPortnoiPerformance1TourKZ2021Session1 ,
                                                                                                             ex:MikalisPortnoiPerformance1TourKZ2021Session2 ,
-                                                                                                            ex:MikalisPortnoiPerformance1TourKZ2021Session3 .
+                                                                                                            ex:MikalisPortnoiPerformance1TourKZ2021Session3 ,
+                                                                                                            ex:MikalisPortnoiRehearsal1Session1 .
 
 ex:MariaGomez                                               rdf:type                                        musico:HumanMusicLearner ,
                                                                                                             musico:HumanStudioProducer ;
@@ -898,6 +884,114 @@ ex:LindaOzburn                                              rdf:type            
                                                             foaf:based_near                                 ex:London ;
                                                             musico:in_participation                         ex:LindaOzburnLesson1Session1 .
 
+ex:AtaiSakamoton                                            rdf:type                                        musico:HumanMusician ;
+                                                            foaf:firstName                                  "Atai" ;
+                                                            foaf:lastName                                   "Sakamoton" ;
+                                                            foaf:gender                                     "female" ;   
+                                                            musico:has_disability                           false ;
+                                                            musico:professional_level	                      "Amateur" ;
+                                                            musico:expertise_level                          "Intermediate" ;
+                                                            musico:plays_genre	                            ex:Pop ,
+                                                                                                            ex:Folk ;
+                                                            musico:plays_instrument                         ex:stradiusSmartViolin ,
+                                                                                                            ex:steinweissSmartPiano ,
+                                                                                                            ex:sensusSmartGuitar ;
+                                                            musico:multi-instrumentalism_level		          "multi-instrumentalist" ;
+                                                            foaf:based_near                                 ex:Tokyo ;
+                                                            musico:in_participation                         ex:AtaiSakamotonRecreational1Session1 ,
+                                                                                                            ex:AtaiSakamotonRecreational2Session1 ,
+                                                                                                            ex:AtaiSakamotonRecreational3Session1 . 
+                                                                                                            
+ex:AtaiSakamotonRecreational1Session1                       rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:AtaiSakamoton ;
+                                                            musico:involved_event                           ex:Recreational1Session1 .
+
+ex:AtaiSakamotonRecreational2Session1                       rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:AtaiSakamoton ;
+                                                            musico:involved_event                           ex:Recreational2Session1 .
+
+ex:AtaiSakamotonRecreational3Session1                       rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:AtaiSakamoton ;
+                                                            musico:involved_event                           ex:Recreational3Session1 .
+
+ex:Recreational1Session1                                    rdf:type                                        musico:MusicalSession ;
+                                                            schema:isPartOf                                 ex:Recreational1 .
+
+ex:Recreational2Session1                                    rdf:type                                        musico:MusicalSession ;
+                                                            schema:isPartOf                                 ex:Recreational2 .
+
+ex:Recreational3Session1                                    rdf:type                                        musico:MusicalSession ;
+                                                            schema:isPartOf                                 ex:Recreational3 .
+
+ex:Recreational1                                            rdf:type                                        musico:RecreationalMusicMaking ;
+                                                            schema:hasPart                                  ex:Recreational1Session1 ;
+                                                            musico:is_solo_event                            true ;
+                                                            musico:is_multiagent_event                      false ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                          tl:at "2021-08-22T16:00:00"^^xsd:dateTime ;
+	                                                                                                          tl:duration "PT2H18M07S"^^xsd:duration ;
+                                                                                                            ] ;
+                                                            schema:location                                 ex:RehearsalRoomVG245Tokyo .
+
+ex:Recreational2                                            rdf:type                                        musico:RecreationalMusicMaking ;
+                                                            schema:hasPart                                  ex:Recreational2Session1 ;
+                                                            musico:is_solo_event                            true ;
+                                                            musico:is_multiagent_event                      false ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                          tl:at "2021-08-22T16:00:00"^^xsd:dateTime ;
+	                                                                                                          tl:duration "PT3H48M02S"^^xsd:duration ;
+                                                                                                            ] ;
+                                                            schema:location                                 ex:HomeAtaiSakamotonTokyo . 
+
+ex:Recreational3                                            rdf:type                                        musico:RecreationalMusicMaking ;
+                                                            schema:hasPart                                  ex:Recreational3Session1 ;
+                                                            musico:is_solo_event                            true ;
+                                                            musico:is_multiagent_event                      false ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                          tl:at "2021-08-22T16:00:00"^^xsd:dateTime ;
+	                                                                                                          tl:duration "PT4H15M53S"^^xsd:duration ;
+                                                                                                            ] ;
+                                                            schema:location                                 ex:TokyoCollegeOfMusic .  
+
+ex:CristinaLadynektRehearsal1Session1                       rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:CristinaLadynekt ;
+                                                            musico:involved_event                           ex:Rehearsal1Session1 .
+
+ex:LinoLlobetsRehearsal1Session1                            rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:LinoLlobets ;
+                                                            musico:involved_event                           ex:Rehearsal1Session1 .
+
+ex:SharanGiptasRehearsal1Session1                           rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:SharanGiptas ;
+                                                            musico:involved_event                           ex:Rehearsal1Session1 .
+
+ex:MikalisPortnoiRehearsal1Session1                         rdf:type                                        musico:MusicianParticipation ;
+                                                            musico:participating_musician                   ex:MikalisPortnoi ;
+                                                            musico:involved_event                           ex:Rehearsal1Session1 .
+
+ex:Rehearsal1Session1                                       rdf:type                                        musico:MusicalSession ;
+                                                            schema:isPartOf                                 ex:Rehearsal1 .
+
+ex:Rehearsal1                                               rdf:type                                        musico:Rehearsal ;
+                                                            schema:hasPart                                  ex:Rehearsal1Session1 ;
+                                                            musico:has_group                                ex:TheUnicornsAndCamels ;
+                                                            event:time                                      [ 
+                                                                                                            a tl:Interval ;
+	                                                                                                          tl:at "2021-01-22T16:00:00"^^xsd:dateTime ;
+	                                                                                                          tl:duration "PT4H18M37S"^^xsd:duration ;
+                                                                                                            ] ;
+                                                            schema:location                                 ex:RehearsalRoomTR556Singapore  .
+
+ex:TheUnicornsAndCamels                                     rdf:type                                        mo:MusicGroup ;
+                                                            foaf:name                                       "The Unicorns and Camels" ;
+                                                            foaf:member                                     ex:CristinaLadynekt ,
+                                                                                                            ex:LinoLlobets ,
+                                                                                                            ex:SharanGiptas ,
+                                                                                                            ex:MikalisPortnoi .
+
 ex:MariaGomezSelfLearning1HomeSession1                      rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:MariaGomez ;
                                                             musico:involved_event                           ex:SelfLearning1HomeSession1 ;
@@ -908,8 +1002,8 @@ ex:SelfLearning1HomeSession1                                rdf:type            
 
 ex:SelfLearning1Home                                        rdf:type                                        musico:SelfLearning ;
                                                             schema:hasPart                                  ex:SelfLearning1HomeSession1 ;
+                                                            musico:is_multiagent_event                      true ;
                                                             schema:location                                 ex:HomeMariaGomez .
-
 
 ex:ZoltanGiocovichKMHLesson1Session1                        rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:ZoltanGiocovich ;
@@ -918,7 +1012,7 @@ ex:ZoltanGiocovichKMHLesson1Session1                        rdf:type            
                                                             musico:felt_emotion                             mfoem:anxiety ,
                                                                                                             mfoem:curiosity .
                                                                                              
-ex:CristinaLadinektKMHLesson1Session1                       rdf:type                                        musico:MusicianParticipation ;
+ex:CristinaLadinektsKMHLesson1Session1                       rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:CristinaLadinekt ;
                                                             musico:involved_event                           ex:KMHLesson1Session1 ;
                                                             musico:taught_musical_work                      ex:study5Sor20Studies ;
@@ -935,6 +1029,7 @@ ex:KMHLesson1Session1                                       rdf:type            
 ex:KMHLesson1                                               rdf:type                                        musico:Lesson ;
                                                             schema:hasPart                                  ex:KMHLesson1Session1 ,
                                                                                                             ex:KMHLesson1Session2 ;
+                                                            musico:is_multiagent_event                      true ;                                            
                                                             event:time                                      [ 
                                                                                                             a tl:Interval ;
 	                                                                                                          tl:at "2021-07-10T10:00:00"^^xsd:dateTime ;
@@ -1105,6 +1200,8 @@ ex:Performance3TourKZ2021Session3                           rdf:type            
 
 ex:Performance1TourKZ2021                                   rdf:type                                        musico:Performance ;
                                                             schema:isPartOf                                 ex:TourKZ2021 ;
+                                                            musico:has_group                                ex:TheUnicornsAndCamels ;
+                                                            musico:is_multiagent_event                      true ;
                                                             schema:hasPart                                  ex:Performance1TourKZ2021Session1 ,
                                                                                                             ex:Performance1TourKZ2021Session2 ,
                                                                                                             ex:Performance1TourKZ2021Session3 ;
@@ -1117,6 +1214,8 @@ ex:Performance1TourKZ2021                                   rdf:type            
 
 ex:Performance2TourKZ2021                                   rdf:type                                        musico:Performance ;
                                                             schema:isPartOf                                 ex:TourKZ2021 ;
+                                                            musico:has_group                                ex:TheUnicornsAndCamels ;
+                                                            musico:is_multiagent_event                      true ;
                                                             event:time                                      [ 
                                                                                                             a tl:Interval ;
 	                                                                                                          tl:at "2021-05-10T22:00:00"^^xsd:dateTime ;
@@ -1126,6 +1225,8 @@ ex:Performance2TourKZ2021                                   rdf:type            
 
 ex:Performance3TourKZ2021                                   rdf:type                                        musico:Performance ;
                                                             schema:isPartOf                                 ex:TourKZ2021 ;
+                                                            musico:has_group                                ex:TheUnicornsAndCamels ;
+                                                            musico:is_multiagent_event                      true ;
                                                             event:time                                      [ 
                                                                                                             a tl:Interval ;
 	                                                                                                          tl:at "2021-11-10T20:00:00"^^xsd:dateTime ;
@@ -1134,7 +1235,8 @@ ex:Performance3TourKZ2021                                   rdf:type            
                                                             schema:location                                 ex:LeBalBlomet .
 
 ex:TourKZ2021                                               rdf:type                                        musico:Tour ;
-                                                            foaf:name                                       "Tour KZ 2021" ;
+                                                            foaf:name                                       "Tour KZ 2021 of the band The Unicorns and Camels" ;
+                                                            musico:has_group                                ex:TheUnicornsAndCamels ;
                                                             event:time                                      [ 
                                                                                                             a tl:Instant ;
                                                                                                             tl:at "2021"^^xsd:gYear ;
@@ -1163,10 +1265,30 @@ ex:KMHRoyalCollegeOfMusic                                   rdf:type            
                                                             foaf:name                                       "KMH Royal College of Music" ;
                                                             schema:location                                 ex:Stockholm .                                                
 
+ex:TokyoCollegeOfMusic                                      rdf:type                                        musico:MusicVenue ,
+                                                                                                            musico:ConservatoryOfMusic ;
+                                                            foaf:name                                       "Tokyo College of Music" ;
+                                                            schema:location                                 ex:Tokyo .           
+
+ex:HomeAtaiSakamotonTokyo                                   rdf:type                                        musico:MusicVenue ,
+                                                                                                            musico:Home ;
+                                                            foaf:name                                       "Home of Atai Sakamoto in Tokyo" ;
+                                                            schema:location                                 ex:Tokyo . 
+
 ex:HomeMariaGomez                                           rdf:type                                        musico:MusicVenue ,
                                                                                                             musico:Home ;
                                                             foaf:name                                       "Home of Maria Gomez" ;
                                                             schema:location                                 ex:Paris . 
+
+ex:RehearsalRoomVG245Tokyo                                  rdf:type                                        musico:MusicVenue ,
+                                                                                                            musico:RehearsalRoom ;
+                                                            foaf:name                                       "Rehearsal Room VG245 in Tokyo" ;
+                                                            schema:location                                 ex:Tokyo . 
+
+ex:RehearsalRoomTR556Singapore                              rdf:type                                        musico:MusicVenue ,
+                                                                                                            musico:RehearsalRoom ;
+                                                            foaf:name                                       "Rehearsal Room TR556 in Singapore" ;
+                                                            schema:location                                 ex:Singapore . 
 
 ex:Jazz                                                     rdf:type                                        mo:Genre ;
                                                             rdf:label                                       "Jazz" .

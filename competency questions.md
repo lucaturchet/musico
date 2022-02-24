@@ -20,13 +20,11 @@ PREFIX mo: <http://purl.org/ontology/mo/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
 PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
 PREFIX time: <https://www.w3.org/2006/time>
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#> 
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX gn: <http://www.geonames.org/ontology#>
 PREFIX schema: <https://schema.org/docs/schemaorg.owl>
 ```
-
-
-
 
 
 1. What is the name, last name, played instrument and role of all visually-impaired female musicians living in London who are amateur and play rock?
@@ -112,7 +110,7 @@ SELECT ?emotion
 ```
 SELECT ?virtualMusician (COUNT(?virtualMusician) as ?num_virtual_musicians)
 	WHERE {
-		?Guitarist 						musico:plays_instrument					?instrument ;
+		?Musician 						musico:plays_instrument					?instrument ;
 										musico:in_participation					?SelfLearnerParticipation .
 		?SelfLearnerParticipation		musico:involved_event					?SelfLearningSession .
 		?SelfLearningSession			rdf:type 								musico:MusicalSession ;
@@ -135,46 +133,38 @@ LIMIT 3
 
 ```
 
-
-Qui vorrei una regola che dice che se un musicista suona più di uno strumento allora è polistrumentista
-
-6.	How long poly-instrumentalist musicians from Brazil play on average each day for recreational music making?
+6.	When is the last time the musician Sharan Giptas has rehearsed with the other members of his band "The Unicorns and Camels"?
 ```
-SELECT ?a
+SELECT ?DateTime
 	WHERE {
-	
+		ex:SharanGiptas		     		musico:in_participation					?MusicianParticipation .
+		?MusicianParticipation 			musico:involved_event					?MusicalSession .
+  		?MusicalSession					schema:isPartOf							?Rehearsal .
+		?Rehearsal						rdf:type								musico:Rehearsal ;
+										musico:has_group                        ex:TheUnicornsAndCamels ;
+										event:time								?Time .
+		?Time							rdf:type								tl:Interval ;
+										tl:at									?DateTime .
 }
+ORDER BY DESC(?Time)
+LIMIT 1
 ```
 
-
-7.	When the smart electric bass player Arturo Sakamoto has rehearsed with the other members of his band The Unicorns?
+7.	How long poly-instrumentalist musicians from Tokyo play on average each day for recreational music making?
 ```
-SELECT ?a
+SELECT ?Musician (AVG(?Duration) AS ?avg)
 	WHERE {
-	
+		?Musician 						musico:multi-instrumentalism_level		"multi-instrumentalist" ;
+										foaf:based_near							ex:Tokyo ;
+										musico:in_participation					?Participation .
+	    ?Participation					rdf:type                            	musico:MusicianParticipation ;
+										musico:involved_event                   ?Session .
+	    ?Session 						rdf:type                                musico:MusicalSession ;
+										schema:isPartOf							?RecreatinalMusicMaking .
+		?RecreatinalMusicMaking			rdf:type								musico:RecreationalMusicMaking ;
+										event:time 								?Time .
+		?Time							rdf:type								tl:Interval ;
+										tl:duration								?Duration .
 }
-```
-
-8.	How many times the smart synthesizers produced by Mooggy have been used in remote live concerts?
-```
-SELECT ?a
-	WHERE {
-	
-}
-```
-
-9.	What software tools intermediate composers use for supporting their compositional practice?
-```
-SELECT ?a
-	WHERE {
-	
-}
-```
-
-10.	In which venues of the city of Madrid amateur rock musicians perform more frequently?
-```
-SELECT ?a
-	WHERE {
-	
-}
+GROUP BY ?Musician
 ```
