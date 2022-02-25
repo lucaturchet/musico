@@ -80,7 +80,6 @@ SELECT  (COUNT(?MusicalSession) as ?num_sessions)
 }
 ```
 
-
 4.	What are the emotions of beginner smart guitar players while learning the study number 5 of Fernando Sor's "20 studies for guitar" during lessons with Prof. Cristina Ladynekt at KMH Royal College of Music in Stockholm?
 ```
 SELECT ?emotion
@@ -103,8 +102,6 @@ SELECT ?emotion
 										musico:taught_musical_work              ex:study5Sor20Studies .
 }
 ```
-
-
 
 5.	Which are the three virtual teachers playing piano with which smart guitar players interact most frequently while self-learning at home?
 ```

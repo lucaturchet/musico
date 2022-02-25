@@ -5,19 +5,12 @@
 @prefix iomust: <http://purl.org/ontology/iomust/internet_of_things/iomust> . 
 @prefix mfoem: <http://purl.obolibrary.org/obo/MFOEM.owl> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-# @prefix owl: <http://www.w3.org/2002/07/owl#> .
-# @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-# @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix studio: <http://purl.org/ontology/studio/> . 
 @prefix mo: <http://purl.org/ontology/mo/> . 
-# @prefix foaf: <http://xmlns.com/foaf/0.1/> . 
 @prefix event: <http://purl.org/NET/c4dm/event.owl#> .
 @prefix tl: <http://purl.org/NET/c4dm/timeline.owl#> .
-# @prefix dc: <http://purl.org/dc/elements/1.1/> .
 @prefix gn: <http://www.geonames.org/ontology#> .
 @prefix schema: <https://schema.org/docs/schemaorg.owl> .
-
-
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix time: <http://www.w3.org/2006/time#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
@@ -47,7 +40,7 @@ ns0:license a owl:AnnotationProperty .
 <http://purl.org/NET/c4dm/event.owl#isAgentIn> a owl:ObjectProperty .
 <http://purl.org/ontology/musico#displays_emotion>
   a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#Software_Agent> ;
+  rdfs:domain <http://purl.org/ontology/musico#SoftwareAgent> ;
   rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
 
 <http://purl.org/ontology/musico#displays_mood>
@@ -105,12 +98,12 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico#recognizes_emotion>
   a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#Software_Agent> ;
+  rdfs:domain <http://purl.org/ontology/musico#SoftwareAgent> ;
   rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
 
 <http://purl.org/ontology/musico#recognizes_mood>
   a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#Software_Agent> ;
+  rdfs:domain <http://purl.org/ontology/musico#SoftwareAgent> ;
   rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
 
 <http://purl.org/ontology/musico#sub_genre>
@@ -540,7 +533,7 @@ ns0:license a owl:AnnotationProperty .
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
 
-<http://purl.org/ontology/musico#Software_Agent>
+<http://purl.org/ontology/musico#SoftwareAgent>
   a owl:Class ;
   rdfs:subClassOf foaf:Agent .
 
@@ -630,7 +623,7 @@ ns0:license a owl:AnnotationProperty .
     a owl:Class ;
     owl:intersectionOf (
      <http://purl.org/ontology/musico#Musician>
-     <http://purl.org/ontology/musico#Software_Agent>
+     <http://purl.org/ontology/musico#SoftwareAgent>
    )
   ] ;
   rdfs:subClassOf <http://purl.org/ontology/musico#Musician> ;
