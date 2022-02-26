@@ -92,7 +92,7 @@ SELECT ?emotion
 										musico:felt_emotion 					?emotion .
 		?LessonSession					rdf:type 								musico:MusicalSession ;
 										schema:isPartOf 						?Lesson .
-		?Lesson							rdf:type 								musico:Lesson ;
+		?Lesson							rdf:type 								musico:MusicLesson ;
 										schema:location                         ex:KMHRoyalCollegeOfMusic .
 		?Teacher						rdf:type								musico:HumanMusicTeacher ;
 										foaf:firstName							"Cristina" ;
@@ -120,7 +120,7 @@ SELECT ?virtualMusician (COUNT(?virtualMusician) as ?num_virtual_musicians)
 		?application					rdf:type								smi:SMIApplication ;
 										musico:has_virtual_musician				?virtualMusician .
 		?virtualMusician				rdf:type								musico:VirtualMusicTeacher ; 	
-										musico:virtually_plays_instrument		?virtualInstrument .
+										musico:plays_instrument					?virtualInstrument .
 		?virtualInstrument				rdf:type								smi:Piano . 	
 }
 

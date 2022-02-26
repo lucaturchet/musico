@@ -38,36 +38,6 @@ dc:title a owl:AnnotationProperty .
 ns0:license a owl:AnnotationProperty .
 <http://purl.org/NET/c4dm/event.owl#agent> a owl:ObjectProperty .
 <http://purl.org/NET/c4dm/event.owl#isAgentIn> a owl:ObjectProperty .
-<http://purl.org/ontology/musico#displays_emotion>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#SoftwareAgent> ;
-  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
-
-<http://purl.org/ontology/musico#displays_mood>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#VirtualMusician> ;
-  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
-
-<http://purl.org/ontology/musico#expresses_emotion>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://purl.obolibrary.org/obo/MF_0000016> ;
-  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
-
-<http://purl.org/ontology/musico#expresses_mood>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://purl.obolibrary.org/obo/MF_0000016> ;
-  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
-
-<http://purl.org/ontology/musico#feels_emotion>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://purl.obolibrary.org/obo/MF_0000016> ;
-  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
-
-<http://purl.org/ontology/musico#feels_mood>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://purl.obolibrary.org/obo/MF_0000016> ;
-  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
-
 <http://purl.org/ontology/musico#is_mentor_of>
   a owl:ObjectProperty ;
   owl:inverseOf <http://purl.org/ontology/musico#is_pupil_of> ;
@@ -93,18 +63,8 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico#plays_instrument>
   a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#HumanMusician> ;
+  rdfs:domain <http://purl.org/ontology/musico#Musician> ;
   rdfs:range <http://purl.org/ontology/mo/Instrument> .
-
-<http://purl.org/ontology/musico#recognizes_emotion>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#SoftwareAgent> ;
-  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
-
-<http://purl.org/ontology/musico#recognizes_mood>
-  a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#SoftwareAgent> ;
-  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
 
 <http://purl.org/ontology/musico#sub_genre>
   a owl:ObjectProperty ;
@@ -116,20 +76,37 @@ ns0:license a owl:AnnotationProperty .
   rdfs:domain <http://purl.org/ontology/musico#HumanMusician> ;
   rdfs:range <http://purl.org/ontology/musico#MusicalService> .
 
-<http://purl.org/ontology/musico#venue>
+<http://purl.org/ontology/musico/displayed_emotion>
   a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
-  rdfs:comment "Predicate indicating that an event occurs at a Music_venue"@en .
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
+  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
 
-<http://purl.org/ontology/musico#virtually_plays_instrument>
+<http://purl.org/ontology/musico/displayed_mood>
   a owl:ObjectProperty ;
-  rdfs:domain <http://purl.org/ontology/musico#VirtualMusician> ;
-  rdfs:range <http://purl.org/ontology/mo/Instrument> .
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
+  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
+
+<http://purl.org/ontology/musico/expressed_emotion>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
+  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
+
+<http://purl.org/ontology/musico/expressed_mood>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
+  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
 
 <http://purl.org/ontology/musico/felt_emotion>
   a owl:ObjectProperty ;
   rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
   rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
+
+<http://purl.org/ontology/musico/felt_mood>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
+  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
 
 <http://purl.org/ontology/musico/has_group>
   a owl:ObjectProperty ;
@@ -192,6 +169,17 @@ ns0:license a owl:AnnotationProperty .
   rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
   rdfs:range <http://purl.org/ontology/mo/MusicalWork> .
 
+<http://purl.org/ontology/musico/recognized_emotion>
+  a owl:ObjectProperty ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
+  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000001> .
+
+<http://purl.org/ontology/musico/recognized_mood>
+  a owl:ObjectProperty ;
+  rdfs:subPropertyOf owl:topObjectProperty ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
+  rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
+
 <http://purl.org/ontology/musico/taught_musical_work>
   a owl:ObjectProperty ;
   rdfs:subPropertyOf owl:topObjectProperty ;
@@ -241,18 +229,6 @@ ns0:license a owl:AnnotationProperty .
   ] ;
   rdfs:comment "The level of professionality of a musician (either amateur or professional)"@en .
 
-<http://purl.org/ontology/musico#situated_displaced>
-  a owl:DatatypeProperty, owl:FunctionalProperty ;
-  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
-  rdfs:range [
-    a rdfs:Datatype ;
-    owl:oneOf (
-     "Displaced"
-     "Situated"
-   )
-  ] ;
-  rdfs:comment "Specifies whether virtual and/or human musicians take part to the activity at the same or at a different location."@en .
-
 <http://purl.org/ontology/musico#synchronous_asynchronous>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
@@ -283,12 +259,42 @@ ns0:license a owl:AnnotationProperty .
   rdfs:domain foaf:Person ;
   rdfs:range xsd:boolean .
 
+<http://purl.org/ontology/musico/is_asynchronous>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
+  rdfs:range xsd:boolean ;
+  owl:propertyDisjointWith <http://purl.org/ontology/musico/is_synchronous> .
+
+<http://purl.org/ontology/musico/is_displaced>
+  a owl:DatatypeProperty ;
+  owl:equivalentProperty <http://purl.org/ontology/musico/is_remote> ;
+  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
+  rdfs:range xsd:boolean .
+
+<http://purl.org/ontology/musico/is_in_presence>
+  a owl:DatatypeProperty ;
+  owl:equivalentProperty <http://purl.org/ontology/musico/is_situated> ;
+  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
+  rdfs:range xsd:boolean ;
+  owl:propertyDisjointWith <http://purl.org/ontology/musico/is_remote> .
+
 <http://purl.org/ontology/musico/is_multiagent_event>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:subPropertyOf owl:topDataProperty ;
   rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
   rdfs:range xsd:boolean ;
+  owl:propertyDisjointWith <http://purl.org/ontology/musico/is_solo_event> ;
   rdfs:comment "This property is used to describe events that involve more than one agent."@en .
+
+<http://purl.org/ontology/musico/is_remote>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
+  rdfs:range xsd:boolean .
+
+<http://purl.org/ontology/musico/is_situated>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
+  rdfs:range xsd:boolean .
 
 <http://purl.org/ontology/musico/is_solo_event>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
@@ -297,8 +303,14 @@ ns0:license a owl:AnnotationProperty .
   rdfs:range xsd:boolean ;
   rdfs:comment "This property is used to describe events that involve only one agent."@en .
 
+<http://purl.org/ontology/musico/is_synchronous>
+  a owl:DatatypeProperty ;
+  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
+  rdfs:range xsd:boolean .
+
 <http://purl.obolibrary.org/obo/MFOEM_000193> owl:equivalentClass foaf:Person .
 <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument> a owl:Class .
+<http://purl.org/ontology/iomust/smi#SMIApplication> a owl:Class .
 <http://purl.org/ontology/iomust/smi#SmartElectricPiano> a owl:Class .
 <http://purl.org/ontology/iomust/smi#SmartElectricViolin> a owl:Class .
 <http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar> a owl:Class .
@@ -323,7 +335,7 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico#ConcertHall>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico#ConservatoryOfMusic>
   a owl:Class ;
@@ -331,7 +343,7 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico#Home>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico#HumanArranger>
   a owl:Class ;
@@ -444,7 +456,7 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico#IndoorArena>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico#JamSession>
   a owl:Class ;
@@ -454,18 +466,12 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico#JazzClub>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico#LearnersGroup>
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico/MusiciansGroup> ;
   rdfs:comment "A group of music learners (e.g., involved in a music lesson)."@en .
-
-<http://purl.org/ontology/musico#Lesson>
-  a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico/MusicalEvent> ;
-  rdfs:comment """A music lesson event.
-        Takes as agents the music teacher and music learner, as well as  teachers group and learners groups."""@en .
 
 <http://purl.org/ontology/musico#LiveSoundEngineer>
   a owl:Class ;
@@ -482,18 +488,19 @@ ns0:license a owl:AnnotationProperty .
   a owl:Class ;
   rdfs:subClassOf foaf:Agent .
 
+<http://purl.org/ontology/musico#MusicLesson>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/musico/MusicalEvent> ;
+  rdfs:comment """A music lesson event.
+        Takes as agents the music teacher and music learner, as well as  teachers group and learners groups."""@en .
+
 <http://purl.org/ontology/musico#MusicSchool>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico#MusicTeacher>
   a owl:Class ;
   rdfs:subClassOf foaf:Agent .
-
-<http://purl.org/ontology/musico#MusicVenue>
-  a owl:Class ;
-  rdfs:subClassOf <https://schema.org/Place> ;
-  rdfs:comment "The venue in which a musical activity (i.e., an Event) occurs."@en .
 
 <http://purl.org/ontology/musico#MusicalService>
   a owl:Class ;
@@ -507,11 +514,11 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico#OpenSpace>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico#OperaHouse>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico#Park>
   a owl:Class ;
@@ -531,7 +538,7 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico#RehearsalRoom>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico#SoftwareAgent>
   a owl:Class ;
@@ -655,6 +662,10 @@ ns0:license a owl:AnnotationProperty .
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> .
 
+<http://purl.org/ontology/musico/ChamberEnsemble>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> .
+
 <http://purl.org/ontology/musico/CompositionSession>
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico/MusicalEvent> .
@@ -665,11 +676,15 @@ ns0:license a owl:AnnotationProperty .
     a owl:Class ;
     owl:intersectionOf (
      <http://sw.opencyc.org/2009/04/07/concept/en/Event>
-     _:genid82
+     _:genid79
    )
   ] ;
   rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> ;
   owl:disjointWith <http://purl.org/ontology/musico/SoloEvent> .
+
+<http://purl.org/ontology/musico/MusicalApplication>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/studio/device/Application> .
 
 <http://purl.org/ontology/musico/MusicalEvent>
   a owl:Class ;
@@ -688,7 +703,12 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico/MusiciansGroup>
   a owl:Class ;
-  rdfs:subClassOf foaf:Group .
+  rdfs:subClassOf foaf:Group ;
+  rdfs:comment "A group of musicians who perform a musical activity together." .
+
+<http://purl.org/ontology/musico/Orchestra>
+  a owl:Class ;
+  rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> .
 
 <http://purl.org/ontology/musico/Performance>
   a owl:Class ;
@@ -696,7 +716,7 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico/RecordingStudio>
   a owl:Class ;
-  rdfs:subClassOf <http://purl.org/ontology/musico#MusicVenue> .
+  rdfs:subClassOf <https://schema.org/MusicVenue> .
 
 <http://purl.org/ontology/musico/SelfLearning>
   a owl:Class ;
@@ -708,7 +728,7 @@ ns0:license a owl:AnnotationProperty .
     a owl:Class ;
     owl:intersectionOf (
      <http://purl.org/vocab/bio/0.1/Event>
-     _:genid86
+     _:genid83
    )
   ] ;
   rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> .
@@ -718,9 +738,11 @@ ns0:license a owl:AnnotationProperty .
   a owl:Class ;
   rdfs:subClassOf <http://purl.org/ontology/musico/MusicalEvent> .
 
+<http://purl.org/ontology/studio/device/Application> a owl:Class .
 <http://purl.org/ontology/studio/device/Service> a owl:Class .
 <http://purl.org/vocab/bio/0.1/Event> a owl:Class .
 <http://sw.opencyc.org/2009/04/07/concept/en/Event> a owl:Class .
+foaf:Person owl:equivalentClass <https://schema.org/Person> .
 <http://purl.org/ontology/musico#AbletonLive> a owl:NamedIndividual, <http://purl.org/ontology/musico#MusicalService> .
 <http://purl.org/ontology/musico#Audacity> a owl:NamedIndividual, <http://purl.org/ontology/musico#MusicalService> .
 <http://purl.org/ontology/musico#Facebook> a owl:NamedIndividual, <http://purl.org/ontology/musico#MusicalService> .
@@ -735,18 +757,18 @@ ns0:license a owl:AnnotationProperty .
 <http://purl.org/ontology/musico#YouTube> a owl:NamedIndividual, <http://purl.org/ontology/musico#MusicalService> .
 <http://purl.org/ontology/musico/ClassicalMusic> a owl:NamedIndividual, <http://purl.org/ontology/mo/Genre> .
 <http://purl.org/ontology/musico/ElectronicMusic> a owl:NamedIndividual, <http://purl.org/ontology/mo/Genre> .
-
-
-_:genid82
+<http://purl.org/ontology/musico/sensusSmartGuitar> a owl:NamedIndividual, <http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar> .
+<http://purl.org/ontology/musico/steinweissSmartPiano> a owl:NamedIndividual, <http://purl.org/ontology/iomust/smi#SmartElectricPiano> .
+<http://purl.org/ontology/musico/stradiusSmartViolin> a owl:NamedIndividual, <http://purl.org/ontology/iomust/smi#SmartElectricViolin> .
+_:genid79
   a owl:Restriction ;
   owl:onProperty <http://purl.org/ontology/musico/is_multiagent_event> ;
   owl:hasValue true .
 
-_:genid86
+_:genid83
   a owl:Restriction ;
   owl:onProperty <http://purl.org/ontology/musico/is_solo_event> ;
   owl:hasValue true .
-
 #########################################################################################################################################################
 # Individuals           
 #########################################################################################################################################################
@@ -1047,7 +1069,7 @@ ex:KMHLesson1Session1                                       rdf:type            
 	                                                                                                          tl:duration "PT1H03M22S"^^xsd:duration ;
                                                                                                             ] .  
 
-ex:KMHLesson1                                               rdf:type                                        musico:Lesson ;
+ex:KMHLesson1                                               rdf:type                                        musico:MusicLesson ;
                                                             schema:hasPart                                  ex:KMHLesson1Session1 ,
                                                                                                             ex:KMHLesson1Session2 ;
                                                             musico:is_multiagent_event                      true ;                 
@@ -1354,7 +1376,7 @@ ex:SelfLearningSmartGuitarAppPiano345GX                     rdf:type            
                                                             musico:has_virtual_musician                     ex:virtualTeacherForSmartGuitar .
 
 ex:virtualTeacherForSmartGuitar                             rdf:type								                        musico:VirtualMusicTeacher ;
-                                                            musico:virtually_plays_instrument               ex:VirtualPiano137B .
+                                                            musico:plays_instrument                         ex:VirtualPiano137B .
 
 ex:VirtualPiano137B                                         rdf:type                                        mo:Instrument ,
                                                                                                             smi:Piano . 
