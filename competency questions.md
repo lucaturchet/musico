@@ -173,12 +173,15 @@ SELECT (COUNT(DISTINCT ?Performance) as ?count)
 		?Musician 						a/rdfs:subClassOf*  					musico:HumanMusician ;
     									foaf:based_near							ex:London ;
 										musico:in_participation					?MusicianParticipation .
-		?MusicianParticipation 			musico:involved_event					?MusicalSession .
+		?MusicianParticipation 			musico:involved_event					?MusicalSession ;
+										musico:is_situated                      false ;
+										musico:is_synchronous					true .
 		?MusicalSession					schema:isPartOf							?Performance .
 		?Performance					rdf:type 								musico:Performance ;
-										musico:is_displaced                     true ;
-										musico:is_synchronous					true .
-		
+										event : time 							[
+																				a tl: Instant ;
+																				tl: at "2020"^^xsd:gYear ;
+																				] .
 }
 ```
 

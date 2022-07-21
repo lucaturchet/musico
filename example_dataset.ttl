@@ -259,25 +259,6 @@ ns0:license a owl:AnnotationProperty .
   rdfs:domain foaf:Person ;
   rdfs:range xsd:boolean .
 
-<http://purl.org/ontology/musico/is_asynchronous>
-  a owl:DatatypeProperty ;
-  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
-  rdfs:range xsd:boolean ;
-  owl:propertyDisjointWith <http://purl.org/ontology/musico/is_synchronous> .
-
-<http://purl.org/ontology/musico/is_displaced>
-  a owl:DatatypeProperty ;
-  owl:equivalentProperty <http://purl.org/ontology/musico/is_remote> ;
-  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
-  rdfs:range xsd:boolean .
-
-<http://purl.org/ontology/musico/is_in_presence>
-  a owl:DatatypeProperty ;
-  owl:equivalentProperty <http://purl.org/ontology/musico/is_situated> ;
-  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
-  rdfs:range xsd:boolean ;
-  owl:propertyDisjointWith <http://purl.org/ontology/musico/is_remote> .
-
 <http://purl.org/ontology/musico/is_multiagent_event>
   a owl:DatatypeProperty, owl:FunctionalProperty ;
   rdfs:subPropertyOf owl:topDataProperty ;
@@ -286,14 +267,10 @@ ns0:license a owl:AnnotationProperty .
   owl:propertyDisjointWith <http://purl.org/ontology/musico/is_solo_event> ;
   rdfs:comment "This property is used to describe events that involve more than one agent."@en .
 
-<http://purl.org/ontology/musico/is_remote>
-  a owl:DatatypeProperty ;
-  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
-  rdfs:range xsd:boolean .
 
 <http://purl.org/ontology/musico/is_situated>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
   rdfs:range xsd:boolean .
 
 <http://purl.org/ontology/musico/is_solo_event>
@@ -305,7 +282,7 @@ ns0:license a owl:AnnotationProperty .
 
 <http://purl.org/ontology/musico/is_synchronous>
   a owl:DatatypeProperty ;
-  rdfs:domain <http://purl.org/NET/c4dm/event.owl#Event> ;
+  rdfs:domain <http://purl.org/ontology/musico/MusicianParticipation> ;
   rdfs:range xsd:boolean .
 
 <http://purl.obolibrary.org/obo/MFOEM_000193> owl:equivalentClass foaf:Person .
@@ -920,6 +897,8 @@ ex:AtaiSakamoton                                            rdf:type            
 
 ex:LindaOzburnRemotePerformance1Session1                    rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:LindaOzburn ;
+                                                            musico:is_situated                              false ;
+                                                            musico:is_synchronous                           true ;
                                                             musico:involved_event                           ex:RemotePerformance1Session1 .
 
 ex:RemotePerformance1Session1                               rdf:type                                        musico:MusicalSession ;
@@ -929,10 +908,6 @@ ex:RemotePerformance1                                       rdf:type            
                                                             schema:hasPart                                  ex:RemotePerformance1Session1 ;
                                                             musico:is_solo_event                            false ;
                                                             musico:is_multiagent_event                      true ;
-                                                            musico:is_situated                              false ;
-                                                            musico:is_displaced                             true ;
-                                                            musico:is_synchronous                           true ;
-                                                            musico:is_asynchronous                          false ;
                                                             event:time                                      [ 
                                                                                                             a tl:Interval ;
                                                                                                             tl:at "2020"^^xsd:gYear ;
@@ -997,18 +972,26 @@ ex:Recreational3                                            rdf:type            
 
 ex:CristinaLadynektRehearsal1Session1                       rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:CristinaLadynekt ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Rehearsal1Session1 .
 
 ex:LinoLlobetsRehearsal1Session1                            rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:LinoLlobets ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Rehearsal1Session1 .
 
 ex:SharanGiptasRehearsal1Session1                           rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:SharanGiptas ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Rehearsal1Session1 .
 
 ex:MikalisPortnoiRehearsal1Session1                         rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:MikalisPortnoi ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Rehearsal1Session1 .
 
 ex:Rehearsal1Session1                                       rdf:type                                        musico:MusicalSession ;
@@ -1017,8 +1000,6 @@ ex:Rehearsal1Session1                                       rdf:type            
 ex:Rehearsal1                                               rdf:type                                        musico:Rehearsal ;
                                                             schema:hasPart                                  ex:Rehearsal1Session1 ;
                                                             musico:has_group                                ex:TheUnicornsAndCamels ;
-                                                            musico:is_synchronous                           true ;
-                                                            musico:is_situated                              true ;
                                                             event:time                                      [ 
                                                                                                             a tl:Interval ;
 	                                                                                                          tl:at "2021-01-22T16:00:00"^^xsd:dateTime ;
@@ -1035,6 +1016,8 @@ ex:TheUnicornsAndCamels                                     rdf:type            
 
 ex:MariaGomezSelfLearning1HomeSession1                      rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:MariaGomez ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:SelfLearning1HomeSession1 ;
                                                             musico:learnt_musical_work                      ex:MyFavoriteThings .
 
@@ -1044,12 +1027,12 @@ ex:SelfLearning1HomeSession1                                rdf:type            
 ex:SelfLearning1Home                                        rdf:type                                        musico:SelfLearning ;
                                                             schema:hasPart                                  ex:SelfLearning1HomeSession1 ;
                                                             musico:is_multiagent_event                      true ;
-                                                            musico:is_synchronous                           true ;
-                                                            musico:is_situated                              true ;
                                                             schema:location                                 ex:HomeMariaGomez .
 
 ex:ZoltanGiocovichKMHLesson1Session1                        rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:ZoltanGiocovich ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;   
                                                             musico:involved_event                           ex:KMHLesson1Session1 ;
                                                             musico:learnt_musical_work                      ex:study5Sor20Studies ;
                                                             musico:felt_emotion                             mfoem:anxiety ,
@@ -1057,6 +1040,8 @@ ex:ZoltanGiocovichKMHLesson1Session1                        rdf:type            
                                                                                              
 ex:CristinaLadinektKMHLesson1Session1                       rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:CristinaLadinekt ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;   
                                                             musico:involved_event                           ex:KMHLesson1Session1 ;
                                                             musico:taught_musical_work                      ex:study5Sor20Studies ;
                                                             musico:felt_emotion                             mfoem:expectant , 
@@ -1072,9 +1057,7 @@ ex:KMHLesson1Session1                                       rdf:type            
 ex:KMHLesson1                                               rdf:type                                        musico:MusicLesson ;
                                                             schema:hasPart                                  ex:KMHLesson1Session1 ,
                                                                                                             ex:KMHLesson1Session2 ;
-                                                            musico:is_multiagent_event                      true ;                 
-                                                            musico:is_synchronous                           true ;
-                                                            musico:is_situated                              true ;                           
+                                                            musico:is_multiagent_event                      true ;                                         
                                                             event:time                                      [ 
                                                                                                             a tl:Interval ;
 	                                                                                                          tl:at "2021-07-10T10:00:00"^^xsd:dateTime ;
@@ -1084,6 +1067,8 @@ ex:KMHLesson1                                               rdf:type            
 
 ex:CristinaLadynektPerformance1TourKZ2021Session1           rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:CristinaLadynekt ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session1 ;
                                                             musico:played_instrument                        ex:sensusSmartGuitar ;
                                                             musico:played_musical_work                      ex:MyFavoriteThings ;
@@ -1094,6 +1079,8 @@ ex:CristinaLadynektPerformance1TourKZ2021Session1           rdf:type            
 
 ex:LinoLLobetsPerformance1TourKZ2021Session1                rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:LinoLLobets ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session1 ;
                                                             musico:played_instrument                        ex:steinweissSmartPiano ;
                                                             musico:played_musical_work                      ex:MyFavoriteThings ;
@@ -1102,6 +1089,8 @@ ex:LinoLLobetsPerformance1TourKZ2021Session1                rdf:type            
 
 ex:SharanGiptasPerformance1TourKZ2021Session1               rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:SharanGiptas ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session1 ;
                                                             musico:played_instrument                        ex:pifferSmartSax ;
                                                             musico:played_musical_work                      ex:MyFavoriteThings ;
@@ -1118,6 +1107,8 @@ ex:MikalisPortnoiPerformance1TourKZ2021Session1             rdf:type            
 
 ex:CristinaLadynektPerformance1TourKZ2021Session2           rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:CristinaLadynekt ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session2 ;
                                                             musico:played_instrument                        ex:karaokeSmartMicrophone ;
                                                             musico:played_musical_work                      ex:SummerTime ;
@@ -1126,6 +1117,8 @@ ex:CristinaLadynektPerformance1TourKZ2021Session2           rdf:type            
 
 ex:LinoLLobetsPerformance1TourKZ2021Session2                rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:LinoLLobets ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session2 ;
                                                             musico:played_instrument                        ex:steinweissSmartPiano ;
                                                             musico:played_musical_work                      ex:SummerTime ;
@@ -1134,6 +1127,8 @@ ex:LinoLLobetsPerformance1TourKZ2021Session2                rdf:type            
 
 ex:SharanGiptasPerformance1TourKZ2021Session2               rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:SharanGiptas ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session2 ;
                                                             musico:played_instrument                        ex:karaokeSmartMicrophone ;
                                                             musico:played_musical_work                      ex:SummerTime ;
@@ -1142,6 +1137,8 @@ ex:SharanGiptasPerformance1TourKZ2021Session2               rdf:type            
 
 ex:MikalisPortnoiPerformance1TourKZ2021Session2             rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:MikalisPortnoi ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session2 ;
                                                             musico:played_instrument                        ex:steinweissSmartPiano ;
                                                             musico:played_musical_work                      ex:SummerTime ;
@@ -1150,6 +1147,8 @@ ex:MikalisPortnoiPerformance1TourKZ2021Session2             rdf:type            
 
 ex:CristinaLadynektPerformance1TourKZ2021Session3           rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:CristinaLadynekt ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session3 ;
                                                             musico:played_instrument                        ex:stradiusSmartViolin ;
                                                             musico:played_musical_work                      ex:RoundMidnight ;
@@ -1158,6 +1157,8 @@ ex:CristinaLadynektPerformance1TourKZ2021Session3           rdf:type            
 
 ex:LinoLLobetsPerformance1TourKZ2021Session3                rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:LinoLLobets ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session3 ;
                                                             musico:played_instrument                        ex:steinweissSmartPiano ;
                                                             musico:played_musical_work                      ex:RoundMidnight ;
@@ -1166,6 +1167,8 @@ ex:LinoLLobetsPerformance1TourKZ2021Session3                rdf:type            
 
 ex:SharanGiptasPerformance1TourKZ2021Session3               rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:SharanGiptas ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session3 ;
                                                             musico:played_instrument                        ex:stradiusSmartViolin ;
                                                             musico:played_musical_work                      ex:RoundMidnight ;
@@ -1174,6 +1177,8 @@ ex:SharanGiptasPerformance1TourKZ2021Session3               rdf:type            
 
 ex:MikalisPortnoiPerformance1TourKZ2021Session3             rdf:type                                        musico:MusicianParticipation ;
                                                             musico:participating_musician                   ex:MikalisPortnoi ;
+                                                            musico:is_synchronous                           true ;
+                                                            musico:is_situated                              true ;
                                                             musico:involved_event                           ex:Performance1TourKZ2021Session3 ;
                                                             musico:played_instrument                        ex:steinweissSmartPiano ;
                                                             musico:played_musical_work                      ex:RoundMidnight ;
@@ -1247,8 +1252,6 @@ ex:Performance1TourKZ2021                                   rdf:type            
                                                             schema:isPartOf                                 ex:TourKZ2021 ;
                                                             musico:has_group                                ex:TheUnicornsAndCamels ;
                                                             musico:is_multiagent_event                      true ;
-                                                            musico:is_synchronous                           true ;
-                                                            musico:is_situated                              true ;
                                                             schema:hasPart                                  ex:Performance1TourKZ2021Session1 ,
                                                                                                             ex:Performance1TourKZ2021Session2 ,
                                                                                                             ex:Performance1TourKZ2021Session3 ;
@@ -1263,8 +1266,6 @@ ex:Performance2TourKZ2021                                   rdf:type            
                                                             schema:isPartOf                                 ex:TourKZ2021 ;
                                                             musico:has_group                                ex:TheUnicornsAndCamels ;
                                                             musico:is_multiagent_event                      true ;
-                                                            musico:is_synchronous                           true ;
-                                                            musico:is_situated                              true ;
                                                             event:time                                      [ 
                                                                                                             a tl:Interval ;
 	                                                                                                          tl:at "2021-05-10T22:00:00"^^xsd:dateTime ;
@@ -1276,8 +1277,6 @@ ex:Performance3TourKZ2021                                   rdf:type            
                                                             schema:isPartOf                                 ex:TourKZ2021 ;
                                                             musico:has_group                                ex:TheUnicornsAndCamels ;
                                                             musico:is_multiagent_event                      true ;
-                                                            musico:is_synchronous                           true ;
-                                                            musico:is_situated                              true ;
                                                             event:time                                      [ 
                                                                                                             a tl:Interval ;
 	                                                                                                          tl:at "2021-11-10T20:00:00"^^xsd:dateTime ;
