@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://dbpedia.org/ontology/" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/dbpedia_ontology/ontology--DEV_type=orig.owl"/>
     <uri id="User Entered Import Resolution" name="http://xmlns.com/foaf/0.1/" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/foaf/foaf.rdf"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/ontology/mo/" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/mo/musicontology.owl"/>
     <uri id="Imports Wizard Entry" name="http://purl.org/NET/c4dm/timeline.owl" uri="file:/Users/luca/Documents/Development/semantic_web/ontologies/ontologies_George/timeline/timeline.n3"/>
@@ -8,8 +9,8 @@
     <uri id="Imports Wizard Entry" name="https://schema.org/" uri="https://schema.org/docs/schemaorg.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2006/time#2016" uri="https://www.w3.org/2006/time"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1713878995712" name="duplicate:http://purl.org/ontology/musico" uri="MUSICO_light.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1713878995712" name="duplicate:http://purl.org/ontology/musico" uri="MUSICO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1713878995712" name="http://purl.org/ontology/musico/" uri="docs/ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1716298492507" name="duplicate:http://purl.org/ontology/musico" uri="MUSICO_light.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1716298492507" name="duplicate:http://purl.org/ontology/musico" uri="MUSICO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1716298492507" name="http://purl.org/ontology/musico/" uri="docs/ontology.rdf"/>
     </group>
 </catalog>
