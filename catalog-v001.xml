@@ -9,8 +9,8 @@
     <uri id="Imports Wizard Entry" name="https://schema.org/" uri="https://schema.org/docs/schemaorg.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2006/time#2016" uri="https://www.w3.org/2006/time"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1716298492507" name="duplicate:http://purl.org/ontology/musico" uri="MUSICO_light.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1716298492507" name="duplicate:http://purl.org/ontology/musico" uri="MUSICO.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1716298492507" name="http://purl.org/ontology/musico/" uri="docs/ontology.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1717420891687" name="duplicate:http://purl.org/ontology/musico" uri="MUSICO_light.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1717420891687" name="duplicate:http://purl.org/ontology/musico" uri="MUSICO.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1717420891687" name="http://purl.org/ontology/musico/" uri="docs/ontology.rdf"/>
     </group>
 </catalog>
