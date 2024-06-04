@@ -49,7 +49,7 @@
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <owl:imports rdf:resource="https://schema.org/"/>
         <dc:contributor>Andrea Molinari</dc:contributor>
-	  <dc:contributor>Jacopo Tomelleri</dc:contributor>
+        <dc:contributor>Jacopo Tomelleri</dc:contributor>
         <dc:contributor>Paolo Bouquet</dc:contributor>
         <dc:creator>Luca Turchet</dc:creator>
         <dc:rights rdf:resource="https://www.gnu.org/licenses/gpl.html"/>
