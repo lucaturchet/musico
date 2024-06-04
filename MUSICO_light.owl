@@ -45,7 +45,7 @@
         <dc:creator>Luca Turchet</dc:creator>
         <dc:rights rdf:resource="https://www.gnu.org/licenses/gpl.html"/>
         <terms:abstract rdf:resource="http://purl.org/ontology/musico"/>
-        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2020-08-03T10:00:00</terms:created>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-03T10:00:00</terms:created>
         <terms:title>Musician&apos;s Context Ontology</terms:title>
         <cc:license rdf:resource="https://www.gnu.org/licenses/gpl.html"/>
         <owl:versionInfo rdf:resource="http://purl.org/ontology/musico"/>
