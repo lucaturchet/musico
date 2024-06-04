@@ -1,19 +1,20 @@
-@prefix : <http://purl.org/ontology/musico/> .
+@prefix : <http://purl.org/ontology/musico#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://purl.org/ontology/musico/> .
+@base <http://purl.org/ontology/musico#> .
 
-<http://purl.org/ontology/musico/> rdf:type owl:Ontology ;
-                                    owl:versionIRI <http://purl.org/ontology/musico/0.1> ;
+<http://purl.org/ontology/musico#> rdf:type owl:Ontology ;
+                                    owl:versionIRI <http://purl.org/ontology/musico#0.1> ;
                                     <http://purl.org/dc/elements/1.1/contributor> "Andrea Molinari" ,
+                                                                                  "Jacopo Tomelleri" ,
                                                                                   "Paolo Bouquet" ;
                                     <http://purl.org/dc/elements/1.1/creator> "Luca Turchet" ;
                                     <http://purl.org/dc/elements/1.1/rights> <https://www.gnu.org/licenses/gpl.html> ;
                                     <http://purl.org/dc/terms/abstract> <http://purl.org/ontology/musico> ;
-                                    <http://purl.org/dc/terms/created> "2020-08-03T10:00:00"^^xsd:dateTime ;
+                                    <http://purl.org/dc/terms/created> "2024-06-03T10:00:00"^^xsd:dateTime ;
                                     <http://purl.org/dc/terms/title> "Musician's Context Ontology" ;
                                     <http://web.resource.org/cc/license> <https://www.gnu.org/licenses/gpl.html> ;
                                     owl:versionInfo <http://purl.org/ontology/musico> .
@@ -46,6 +47,10 @@
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
 
 
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
 ###  http://web.resource.org/cc/license
 <http://web.resource.org/cc/license> rdf:type owl:AnnotationProperty .
 
@@ -56,19 +61,6 @@
 
 ###  http://xmlns.com/foaf/0.1/name
 <http://xmlns.com/foaf/0.1/name> rdf:type owl:AnnotationProperty .
-
-
-#################################################################
-#    Datatypes
-#################################################################
-
-###  http://xmlns.com/foaf/0.1/Person
-<http://xmlns.com/foaf/0.1/Person> rdf:type rdfs:Datatype ;
-                                   owl:equivalentClass <https://schema.org/Person> .
-
-
-###  https://schema.org/Person
-<https://schema.org/Person> rdf:type rdfs:Datatype .
 
 
 #################################################################
@@ -83,70 +75,11 @@
 <http://purl.org/NET/c4dm/event.owl#isAgentIn> rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/ontology/musico#is_mentor_of
-<http://purl.org/ontology/musico#is_mentor_of> rdf:type owl:ObjectProperty ;
-                                               owl:inverseOf <http://purl.org/ontology/musico#is_pupil_of> ;
-                                               rdfs:domain <http://purl.org/ontology/musico#MusicTeacher> ;
-                                               rdfs:range <http://purl.org/ontology/musico#MusicLearner> ;
-                                               rdfs:label "is_mentor_of"@en .
+###  http://purl.org/ontology/mo/similar_to
+<http://purl.org/ontology/mo/similar_to> rdf:type owl:ObjectProperty .
 
 
-###  http://purl.org/ontology/musico#is_pupil_of
-<http://purl.org/ontology/musico#is_pupil_of> rdf:type owl:ObjectProperty ;
-                                              rdfs:domain <http://purl.org/ontology/musico#MusicLearner> ;
-                                              rdfs:range <http://purl.org/ontology/musico#MusicTeacher> ;
-                                              rdfs:label "is_pupil_of"@en .
-
-
-###  http://purl.org/ontology/musico#live_engineered
-<http://purl.org/ontology/musico#live_engineered> rdf:type owl:ObjectProperty ;
-                                                  rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#isAgentIn> ,
-                                                                     <http://purl.org/vocab/bio/0.1/event> ;
-                                                  owl:inverseOf :live_engineer ;
-                                                  rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
-                                                  rdfs:range <http://purl.org/ontology/mo/Performance> ;
-                                                  rdfs:label "live_engineered"@en .
-
-
-###  http://purl.org/ontology/musico#plays_genre
-<http://purl.org/ontology/musico#plays_genre> rdf:type owl:ObjectProperty ,
-                                                       owl:AsymmetricProperty ,
-                                                       owl:IrreflexiveProperty ;
-                                              rdfs:domain <http://purl.org/ontology/musico#Musician> ;
-                                              rdfs:range <http://purl.org/ontology/mo/Genre> ;
-                                              rdfs:label "plays_genre"@en .
-
-
-###  http://purl.org/ontology/musico#plays_instrument
-<http://purl.org/ontology/musico#plays_instrument> rdf:type owl:ObjectProperty ,
-                                                            owl:AsymmetricProperty ,
-                                                            owl:IrreflexiveProperty ;
-                                                   rdfs:domain <http://purl.org/ontology/musico#Musician> ;
-                                                   rdfs:range <http://purl.org/ontology/mo/Instrument> ;
-                                                   rdfs:label "plays_instrument"@en .
-
-
-###  http://purl.org/ontology/musico#sub_genre
-<http://purl.org/ontology/musico#sub_genre> rdf:type owl:ObjectProperty ,
-                                                     owl:AsymmetricProperty ,
-                                                     owl:IrreflexiveProperty ;
-                                            rdfs:domain <http://purl.org/ontology/mo/Genre> ;
-                                            rdfs:range <http://purl.org/ontology/mo/Genre> ;
-                                            rdfs:comment "A property relating a genre as a subgenre of another. E.g., Bop or Swing are sub-genres of the Jazz genre."@en ;
-                                            rdfs:label "sub_genre"@en .
-
-
-###  http://purl.org/ontology/musico#uses
-<http://purl.org/ontology/musico#uses> rdf:type owl:ObjectProperty ,
-                                                owl:AsymmetricProperty ,
-                                                owl:IrreflexiveProperty ;
-                                       rdfs:domain <http://purl.org/ontology/musico#HumanMusician> ;
-                                       rdfs:range <http://purl.org/ontology/musico#MusicalService> ;
-                                       rdfs:comment "Property that models the fact that a human musician utilizes some kind of musical services."@en ;
-                                       rdfs:label "uses"@en .
-
-
-###  http://purl.org/ontology/musico/displayed_emotion
+###  http://purl.org/ontology/musico#displayed_emotion
 :displayed_emotion rdf:type owl:ObjectProperty ,
                             owl:AsymmetricProperty ,
                             owl:IrreflexiveProperty ;
@@ -155,7 +88,7 @@
                    rdfs:label "displayed_emotion"@en .
 
 
-###  http://purl.org/ontology/musico/displayed_mood
+###  http://purl.org/ontology/musico#displayed_mood
 :displayed_mood rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
                 rdf:type owl:AsymmetricProperty ,
@@ -163,7 +96,7 @@
                 rdfs:domain :MusicianParticipation .
 
 
-###  http://purl.org/ontology/musico/expressed_emotion
+###  http://purl.org/ontology/musico#expressed_emotion
 :expressed_emotion rdf:type owl:ObjectProperty ,
                             owl:AsymmetricProperty ,
                             owl:IrreflexiveProperty ;
@@ -172,17 +105,15 @@
                    rdfs:label "expressed_emotion"@en .
 
 
-###  http://purl.org/ontology/musico/expressed_mood
+###  http://purl.org/ontology/musico#expressed_mood
 :expressed_mood rdf:type owl:ObjectProperty ;
                 rdfs:subPropertyOf owl:topObjectProperty ;
                 rdf:type owl:AsymmetricProperty ,
                          owl:IrreflexiveProperty ;
-                rdfs:domain :MusicianParticipation ;
-                rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> ;
-                rdfs:label "expressed_mood"@en .
+                rdfs:domain :MusicianParticipation .
 
 
-###  http://purl.org/ontology/musico/felt_emotion
+###  http://purl.org/ontology/musico#felt_emotion
 :felt_emotion rdf:type owl:ObjectProperty ,
                        owl:AsymmetricProperty ,
                        owl:IrreflexiveProperty ;
@@ -191,14 +122,59 @@
               rdfs:label "felt_emotion"@en .
 
 
-###  http://purl.org/ontology/musico/felt_mood
+###  http://purl.org/ontology/musico#felt_mood
 :felt_mood rdf:type owl:ObjectProperty ,
                     owl:AsymmetricProperty ,
                     owl:IrreflexiveProperty ;
            rdfs:domain :MusicianParticipation .
 
 
-###  http://purl.org/ontology/musico/has_group
+###  http://purl.org/ontology/musico#gets_recommendation
+:gets_recommendation rdf:type owl:ObjectProperty ;
+                     rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                     rdfs:range owl:Thing .
+
+
+###  http://purl.org/ontology/musico#gets_recommended_event
+:gets_recommended_event rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :gets_recommendation ;
+                        rdfs:domain :HumanMusician ;
+                        rdfs:range :MusicalEvent .
+
+
+###  http://purl.org/ontology/musico#gets_recommended_genre
+:gets_recommended_genre rdf:type owl:ObjectProperty ;
+                        rdfs:subPropertyOf :gets_recommendation ;
+                        rdfs:domain :HumanMusician ;
+                        rdfs:range <http://purl.org/ontology/mo/Genre> .
+
+
+###  http://purl.org/ontology/musico#gets_recommended_instrument
+:gets_recommended_instrument rdf:type owl:ObjectProperty ;
+                             rdfs:subPropertyOf :gets_recommendation ;
+                             rdfs:domain :HumanMusician ;
+                             rdfs:range [ rdf:type owl:Class ;
+                                          owl:unionOf ( <http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument>
+                                                        <http://purl.org/ontology/mo/Instrument>
+                                                      )
+                                        ] .
+
+
+###  http://purl.org/ontology/musico#gets_recommended_music_venue
+:gets_recommended_music_venue rdf:type owl:ObjectProperty ;
+                              rdfs:subPropertyOf :gets_recommendation ;
+                              rdfs:domain :HumanMusician ;
+                              rdfs:range <https://schema.org/MusicVenue> .
+
+
+###  http://purl.org/ontology/musico#gets_recommended_user
+:gets_recommended_user rdf:type owl:ObjectProperty ;
+                       rdfs:subPropertyOf :gets_recommendation ;
+                       rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                       rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
+
+
+###  http://purl.org/ontology/musico#has_group
 :has_group rdf:type owl:ObjectProperty ,
                     owl:AsymmetricProperty ,
                     owl:IrreflexiveProperty ;
@@ -207,27 +183,33 @@
            rdfs:label "has_group"@en .
 
 
-###  http://purl.org/ontology/musico/has_virtual_musician
+###  http://purl.org/ontology/musico#has_virtual_musician
 :has_virtual_musician rdf:type owl:ObjectProperty ;
                       rdfs:subPropertyOf owl:topObjectProperty ;
                       rdf:type owl:AsymmetricProperty ,
                                owl:IrreflexiveProperty ;
                       rdfs:domain <http://purl.org/ontology/iomust/smi#SMIApplication> ;
-                      rdfs:range <http://purl.org/ontology/musico#VirtualMusician> ;
+                      rdfs:range :VirtualMusician ;
                       rdfs:label "has_virtual_musician"@en .
 
 
-###  http://purl.org/ontology/musico/in_participation
+###  http://purl.org/ontology/musico#in_participation
 :in_participation rdf:type owl:ObjectProperty ;
                   owl:inverseOf :participating_musician ;
                   rdf:type owl:AsymmetricProperty ,
                            owl:IrreflexiveProperty ;
-                  rdfs:domain <http://purl.org/ontology/musico#HumanMusician> ;
+                  rdfs:domain :HumanMusician ;
                   rdfs:range :MusicianParticipation ;
                   rdfs:label "in_participation"@en .
 
 
-###  http://purl.org/ontology/musico/involved_event
+###  http://purl.org/ontology/musico#interested_in
+:interested_in rdf:type owl:ObjectProperty ;
+               rdfs:domain :HumanMusician ;
+               rdfs:range :MusicalEvent .
+
+
+###  http://purl.org/ontology/musico#involved_event
 :involved_event rdf:type owl:ObjectProperty ,
                          owl:FunctionalProperty ,
                          owl:AsymmetricProperty ,
@@ -241,16 +223,31 @@
                 rdfs:label "involved_event"@en .
 
 
-###  http://purl.org/ontology/musico/learns_music_at
+###  http://purl.org/ontology/musico#is_mentor_of
+:is_mentor_of rdf:type owl:ObjectProperty ;
+              owl:inverseOf :is_pupil_of ;
+              rdfs:domain :MusicTeacher ;
+              rdfs:range :MusicLearner ;
+              rdfs:label "is_mentor_of"@en .
+
+
+###  http://purl.org/ontology/musico#is_pupil_of
+:is_pupil_of rdf:type owl:ObjectProperty ;
+             rdfs:domain :MusicLearner ;
+             rdfs:range :MusicTeacher ;
+             rdfs:label "is_pupil_of"@en .
+
+
+###  http://purl.org/ontology/musico#learns_music_at
 :learns_music_at rdf:type owl:ObjectProperty ,
                           owl:AsymmetricProperty ,
                           owl:IrreflexiveProperty ;
-                 rdfs:domain <http://purl.org/ontology/musico#MusicLearner> ;
+                 rdfs:domain :MusicLearner ;
                  rdfs:range <https://schema.org/MusicVenue> ;
                  rdfs:label "learns_music_at"@en .
 
 
-###  http://purl.org/ontology/musico/learnt_musical_work
+###  http://purl.org/ontology/musico#learnt_musical_work
 :learnt_musical_work rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdf:type owl:AsymmetricProperty ,
@@ -260,24 +257,40 @@
                      rdfs:label "learnt_musical_work"@en .
 
 
-###  http://purl.org/ontology/musico/live_engineer
+###  http://purl.org/ontology/musico#live_engineer
 :live_engineer rdf:type owl:ObjectProperty ;
                rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#agent> ;
+               owl:inverseOf :live_engineered ;
                rdfs:domain <http://purl.org/ontology/mo/Performance> ;
                rdfs:range <http://xmlns.com/foaf/0.1/Agent> .
 
 
-###  http://purl.org/ontology/musico/participating_musician
+###  http://purl.org/ontology/musico#live_engineered
+:live_engineered rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf <http://purl.org/NET/c4dm/event.owl#isAgentIn> ,
+                                    <http://purl.org/vocab/bio/0.1/event> ;
+                 rdfs:domain <http://xmlns.com/foaf/0.1/Agent> ;
+                 rdfs:range <http://purl.org/ontology/mo/Performance> ;
+                 rdfs:label "live_engineered"@en .
+
+
+###  http://purl.org/ontology/musico#participating_musician
 :participating_musician rdf:type owl:ObjectProperty ;
                         rdfs:subPropertyOf <https://schema.org/participant> ;
                         rdf:type owl:AsymmetricProperty ,
                                  owl:IrreflexiveProperty ;
                         rdfs:domain :MusicianParticipation ;
-                        rdfs:range <http://purl.org/ontology/musico#HumanMusician> ;
+                        rdfs:range :HumanMusician ;
                         rdfs:label "participating_musician"@en .
 
 
-###  http://purl.org/ontology/musico/played_instrument
+###  http://purl.org/ontology/musico#played_genre
+:played_genre rdf:type owl:ObjectProperty ;
+              rdfs:domain <https://schema.org/MusicVenue> ;
+              rdfs:range <http://purl.org/ontology/mo/Genre> .
+
+
+###  http://purl.org/ontology/musico#played_instrument
 :played_instrument rdf:type owl:ObjectProperty ,
                             owl:AsymmetricProperty ,
                             owl:IrreflexiveProperty ;
@@ -286,7 +299,7 @@
                    rdfs:label "played_instrument"@en .
 
 
-###  http://purl.org/ontology/musico/played_musical_work
+###  http://purl.org/ontology/musico#played_musical_work
 :played_musical_work rdf:type owl:ObjectProperty ,
                               owl:AsymmetricProperty ,
                               owl:IrreflexiveProperty ;
@@ -295,7 +308,29 @@
                      rdfs:label "played_musical_work"@en .
 
 
-###  http://purl.org/ontology/musico/recognized_emotion
+###  http://purl.org/ontology/musico#plays_genre
+:plays_genre rdf:type owl:ObjectProperty ,
+                      owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain [ rdf:type owl:Class ;
+                           owl:unionOf ( :Musician
+                                         <http://purl.org/ontology/musico/MusiciansGroup>
+                                       )
+                         ] ;
+             rdfs:range <http://purl.org/ontology/mo/Genre> ;
+             rdfs:label "plays_genre"@en .
+
+
+###  http://purl.org/ontology/musico#plays_instrument
+:plays_instrument rdf:type owl:ObjectProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain :Musician ;
+                  rdfs:range <http://purl.org/ontology/mo/Instrument> ;
+                  rdfs:label "plays_instrument"@en .
+
+
+###  http://purl.org/ontology/musico#recognized_emotion
 :recognized_emotion rdf:type owl:ObjectProperty ,
                              owl:AsymmetricProperty ,
                              owl:IrreflexiveProperty ;
@@ -304,7 +339,7 @@
                     rdfs:label "recognized_emotion"@en .
 
 
-###  http://purl.org/ontology/musico/recognized_mood
+###  http://purl.org/ontology/musico#recognized_mood
 :recognized_mood rdf:type owl:ObjectProperty ;
                  rdfs:subPropertyOf owl:topObjectProperty ;
                  rdf:type owl:AsymmetricProperty ,
@@ -314,7 +349,17 @@
                  rdfs:label "recognized_mood"@en .
 
 
-###  http://purl.org/ontology/musico/taught_musical_work
+###  http://purl.org/ontology/musico#sub_genre
+:sub_genre rdf:type owl:ObjectProperty ,
+                    owl:AsymmetricProperty ,
+                    owl:IrreflexiveProperty ;
+           rdfs:domain <http://purl.org/ontology/mo/Genre> ;
+           rdfs:range <http://purl.org/ontology/mo/Genre> ;
+           rdfs:comment "A property relating a genre as a subgenre of another. E.g., Bop or Swing are sub-genres of the Jazz genre."@en ;
+           rdfs:label "sub_genre"@en .
+
+
+###  http://purl.org/ontology/musico#taught_musical_work
 :taught_musical_work rdf:type owl:ObjectProperty ;
                      rdfs:subPropertyOf owl:topObjectProperty ;
                      rdf:type owl:AsymmetricProperty ,
@@ -324,17 +369,31 @@
                      rdfs:label "taught_musical_work"@en .
 
 
-###  http://purl.org/ontology/musico/teaches_music_at
+###  http://purl.org/ontology/musico#teaches_music_at
 :teaches_music_at rdf:type owl:ObjectProperty ,
                            owl:AsymmetricProperty ,
                            owl:IrreflexiveProperty ;
-                  rdfs:domain <http://purl.org/ontology/musico#MusicTeacher> ;
+                  rdfs:domain :MusicTeacher ;
                   rdfs:range <https://schema.org/MusicVenue> ;
                   rdfs:label "teaches_music_at"@en .
 
 
+###  http://purl.org/ontology/musico#uses
+:uses rdf:type owl:ObjectProperty ,
+               owl:AsymmetricProperty ,
+               owl:IrreflexiveProperty ;
+      rdfs:domain :HumanMusician ;
+      rdfs:range :MusicalService ;
+      rdfs:comment "Property that models the fact that a human musician utilizes some kind of musical services."@en ;
+      rdfs:label "uses"@en .
+
+
 ###  http://purl.org/vocab/bio/0.1/event
 <http://purl.org/vocab/bio/0.1/event> rdf:type owl:ObjectProperty .
+
+
+###  http://xmlns.com/foaf/0.1/knows
+<http://xmlns.com/foaf/0.1/knows> rdf:type owl:ObjectProperty .
 
 
 ###  https://schema.org/participant
@@ -345,61 +404,7 @@
 #    Data properties
 #################################################################
 
-###  http://purl.org/ontology/musico#expertise_level
-<http://purl.org/ontology/musico#expertise_level> rdf:type owl:DatatypeProperty ,
-                                                           owl:FunctionalProperty ;
-                                                  rdfs:domain <http://purl.org/ontology/musico#Musician> ;
-                                                  rdfs:range [ rdf:type rdfs:Datatype ;
-                                                               owl:oneOf [ rdf:type rdf:List ;
-                                                                           rdf:first "Beginner" ;
-                                                                           rdf:rest [ rdf:type rdf:List ;
-                                                                                      rdf:first "Expert" ;
-                                                                                      rdf:rest [ rdf:type rdf:List ;
-                                                                                                 rdf:first "Intermediate" ;
-                                                                                                 rdf:rest rdf:nil
-                                                                                               ]
-                                                                                    ]
-                                                                         ]
-                                                             ] ;
-                                                  rdfs:comment "The expertise level of a musician (three contrained values: beginner, expert and intermediate)"@en ;
-                                                  rdfs:label "expertise_level"@en .
-
-
-###  http://purl.org/ontology/musico#multi-instrumentalism_level
-<http://purl.org/ontology/musico#multi-instrumentalism_level> rdf:type owl:DatatypeProperty ,
-                                                                       owl:FunctionalProperty ;
-                                                              rdfs:domain <http://purl.org/ontology/musico#Musician> ;
-                                                              rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                           owl:oneOf [ rdf:type rdf:List ;
-                                                                                       rdf:first "multi-instrumentalist" ;
-                                                                                       rdf:rest [ rdf:type rdf:List ;
-                                                                                                  rdf:first "single-instrumentalist" ;
-                                                                                                  rdf:rest rdf:nil
-                                                                                                ]
-                                                                                     ]
-                                                                         ] ;
-                                                              rdfs:comment "This property is used to describe agents able to play either one musical instrument  (single-instrumentalist) or more than one musical instrument (multi-instrumentalist)"@en ;
-                                                              rdfs:label "multi-instrumentalism_level"@en .
-
-
-###  http://purl.org/ontology/musico#professional_level
-<http://purl.org/ontology/musico#professional_level> rdf:type owl:DatatypeProperty ,
-                                                              owl:FunctionalProperty ;
-                                                     rdfs:domain <http://purl.org/ontology/musico#Musician> ;
-                                                     rdfs:range [ rdf:type rdfs:Datatype ;
-                                                                  owl:oneOf [ rdf:type rdf:List ;
-                                                                              rdf:first "Amateur" ;
-                                                                              rdf:rest [ rdf:type rdf:List ;
-                                                                                         rdf:first "Professional" ;
-                                                                                         rdf:rest rdf:nil
-                                                                                       ]
-                                                                            ]
-                                                                ] ;
-                                                     rdfs:comment "The level of professionality of a musician (either amateur or professional)"@en ;
-                                                     rdfs:label "professional_level"@en .
-
-
-###  http://purl.org/ontology/musico/disability_type
+###  http://purl.org/ontology/musico#disability_type
 :disability_type rdf:type owl:DatatypeProperty ;
                  rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
                  rdfs:range [ rdf:type rdfs:Datatype ;
@@ -420,17 +425,42 @@
                  rdfs:label "disability_type"@en .
 
 
-###  http://purl.org/ontology/musico/displayed_mood
+###  http://purl.org/ontology/musico#displayed_mood
 :displayed_mood rdf:type owl:DatatypeProperty ;
                 rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
 
 
-###  http://purl.org/ontology/musico/felt_mood
+###  http://purl.org/ontology/musico#expertise_level
+:expertise_level rdf:type owl:DatatypeProperty ,
+                          owl:FunctionalProperty ;
+                 rdfs:domain :Musician ;
+                 rdfs:range [ rdf:type rdfs:Datatype ;
+                              owl:oneOf [ rdf:type rdf:List ;
+                                          rdf:first "Beginner" ;
+                                          rdf:rest [ rdf:type rdf:List ;
+                                                     rdf:first "Expert" ;
+                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                rdf:first "Intermediate" ;
+                                                                rdf:rest rdf:nil
+                                                              ]
+                                                   ]
+                                        ]
+                            ] ;
+                 rdfs:comment "The expertise level of a musician (three contrained values: beginner, expert and intermediate)"@en ;
+                 rdfs:label "expertise_level"@en .
+
+
+###  http://purl.org/ontology/musico#expressed_mood
+:expressed_mood rdf:type owl:DatatypeProperty ;
+                rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
+
+
+###  http://purl.org/ontology/musico#felt_mood
 :felt_mood rdf:type owl:DatatypeProperty ;
            rdfs:range <http://purl.obolibrary.org/obo/MFOEM_000193> .
 
 
-###  http://purl.org/ontology/musico/has_disability
+###  http://purl.org/ontology/musico#has_disability
 :has_disability rdf:type owl:DatatypeProperty ,
                          owl:FunctionalProperty ;
                 rdfs:domain <http://xmlns.com/foaf/0.1/Person> ;
@@ -438,7 +468,7 @@
                 rdfs:label "has_disability"@en .
 
 
-###  http://purl.org/ontology/musico/is_multiagent_event
+###  http://purl.org/ontology/musico#is_multiagent_event
 :is_multiagent_event rdf:type owl:DatatypeProperty ;
                      rdfs:subPropertyOf owl:topDataProperty ;
                      rdf:type owl:FunctionalProperty ;
@@ -449,7 +479,7 @@
                      rdfs:label "is_multiagent_event"@en .
 
 
-###  http://purl.org/ontology/musico/is_situated
+###  http://purl.org/ontology/musico#is_situated
 :is_situated rdf:type owl:DatatypeProperty ;
              rdfs:domain :MusicianParticipation ;
              rdfs:range xsd:boolean ;
@@ -457,7 +487,7 @@
              rdfs:label "is_situated"@en .
 
 
-###  http://purl.org/ontology/musico/is_solo_event
+###  http://purl.org/ontology/musico#is_solo_event
 :is_solo_event rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf owl:topDataProperty ;
                rdf:type owl:FunctionalProperty ;
@@ -467,7 +497,7 @@
                rdfs:label "is_solo_event"@en .
 
 
-###  http://purl.org/ontology/musico/is_synchronous
+###  http://purl.org/ontology/musico#is_synchronous
 :is_synchronous rdf:type owl:DatatypeProperty ;
                 rdfs:domain :MusicianParticipation ;
                 rdfs:range xsd:boolean ;
@@ -475,9 +505,65 @@
                 rdfs:label "is_synchronous"@en .
 
 
+###  http://purl.org/ontology/musico#multi-instrumentalism_level
+:multi-instrumentalism_level rdf:type owl:DatatypeProperty ,
+                                      owl:FunctionalProperty ;
+                             rdfs:domain :Musician ;
+                             rdfs:range [ rdf:type rdfs:Datatype ;
+                                          owl:oneOf [ rdf:type rdf:List ;
+                                                      rdf:first "multi-instrumentalist" ;
+                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                 rdf:first "single-instrumentalist" ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                        ] ;
+                             rdfs:comment "This property is used to describe agents able to play either one musical instrument  (single-instrumentalist) or more than one musical instrument (multi-instrumentalist)"@en ;
+                             rdfs:label "multi-instrumentalism_level"@en .
+
+
+###  http://purl.org/ontology/musico#professional_level
+:professional_level rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Musician
+                                                :MusiciansGroup
+                                              )
+                                ] ;
+                    rdfs:range [ rdf:type rdfs:Datatype ;
+                                 owl:oneOf [ rdf:type rdf:List ;
+                                             rdf:first "Amateur" ;
+                                             rdf:rest [ rdf:type rdf:List ;
+                                                        rdf:first "Professional" ;
+                                                        rdf:rest rdf:nil
+                                                      ]
+                                           ]
+                               ] ;
+                    rdfs:comment "The level of professionality of a musician (either amateur or professional)"@en ;
+                    rdfs:label "professional_level"@en .
+
+
+###  http://purl.org/ontology/musico#public_access
+:public_access rdf:type owl:DatatypeProperty ;
+               rdfs:subPropertyOf owl:topDataProperty ;
+               rdfs:domain :MusicalEvent ;
+               rdfs:range xsd:boolean ;
+               rdfs:comment "A MusicalEvent may be either public or private"^^rdfs:Literal .
+
+
 #################################################################
 #    Classes
 #################################################################
+
+###  http://dbpedia.org/ontology/Instrument
+<http://dbpedia.org/ontology/Instrument> rdf:type owl:Class ;
+                                         owl:equivalentClass <http://purl.org/ontology/mo/Instrument> .
+
+
+###  http://dbpedia.org/ontology/MusicGenre
+<http://dbpedia.org/ontology/MusicGenre> rdf:type owl:Class ;
+                                         owl:equivalentClass <http://purl.org/ontology/mo/Genre> .
+
 
 ###  http://purl.obolibrary.org/obo/MFOEM_000001
 <http://purl.obolibrary.org/obo/MFOEM_000001> rdf:type owl:Class .
@@ -555,406 +641,204 @@
 
 ###  http://purl.org/ontology/mo/SoundEngineer
 <http://purl.org/ontology/mo/SoundEngineer> rdf:type owl:Class ;
-                                            owl:equivalentClass <http://purl.org/ontology/musico#StudioProducer> ,
-                                                                :SoundEngineer ;
+                                            owl:equivalentClass :SoundEngineer ,
+                                                                :StudioProducer ;
                                             rdfs:label "SoundEngineer"@en .
 
 
-###  http://purl.org/ontology/musico#ComposersGroup
-<http://purl.org/ontology/musico#ComposersGroup> rdf:type owl:Class ;
-                                                 rdfs:subClassOf :MusiciansGroup ;
-                                                 rdfs:comment "A group of composers (e.g., involved in a collaborative music composition activity)"@en ;
-                                                 rdfs:label "ComposersGroup"@en .
-
-
-###  http://purl.org/ontology/musico#ConcertHall
-<http://purl.org/ontology/musico#ConcertHall> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://schema.org/MusicVenue> ;
-                                              rdfs:label "ConcertHall"@en .
-
-
-###  http://purl.org/ontology/musico#ConservatoryOfMusic
-<http://purl.org/ontology/musico#ConservatoryOfMusic> rdf:type owl:Class ;
-                                                      rdfs:subClassOf <http://purl.org/ontology/musico#MusicSchool> ;
-                                                      rdfs:label "ConservatoryOfMusic"@en .
-
-
-###  http://purl.org/ontology/musico#Home
-<http://purl.org/ontology/musico#Home> rdf:type owl:Class ;
-                                       rdfs:subClassOf <https://schema.org/MusicVenue> ;
-                                       rdfs:label "Home"@en .
-
-
-###  http://purl.org/ontology/musico#HumanArranger
-<http://purl.org/ontology/musico#HumanArranger> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Arranger>
-                                                                                           <http://purl.org/ontology/musico#HumanMusician>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://purl.org/ontology/musico#HumanMusician> ;
-                                                rdfs:label "HumanArranger"@en .
-
-
-###  http://purl.org/ontology/musico#HumanComposer
-<http://purl.org/ontology/musico#HumanComposer> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Composer>
-                                                                                           <http://purl.org/ontology/musico#HumanMusician>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://purl.org/ontology/musico#HumanMusician> ;
-                                                rdfs:label "HumanComposer"@en .
-
-
-###  http://purl.org/ontology/musico#HumanConductor
-<http://purl.org/ontology/musico#HumanConductor> rdf:type owl:Class ;
-                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Conductor>
-                                                                                            <http://purl.org/ontology/musico#HumanMusician>
-                                                                                          ) ;
-                                                                       rdf:type owl:Class
-                                                                     ] ;
-                                                 rdfs:subClassOf <http://purl.org/ontology/musico#HumanMusician> ;
-                                                 rdfs:label "HumanConductor"@en .
-
-
-###  http://purl.org/ontology/musico#HumanLiveSoundEngineer
-<http://purl.org/ontology/musico#HumanLiveSoundEngineer> rdf:type owl:Class ;
-                                                         owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#HumanMusician>
-                                                                                                    <http://purl.org/ontology/musico#LiveSoundEngineer>
-                                                                                                  ) ;
-                                                                               rdf:type owl:Class
-                                                                             ] ;
-                                                         rdfs:subClassOf <http://purl.org/ontology/musico#HumanMusician> ;
-                                                         rdfs:label "HumanLiveSoundEngineer"@en .
-
-
-###  http://purl.org/ontology/musico#HumanMusicLearner
-<http://purl.org/ontology/musico#HumanMusicLearner> rdf:type owl:Class ;
-                                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#HumanMusician>
-                                                                                               <http://purl.org/ontology/musico#MusicLearner>
-                                                                                             ) ;
-                                                                          rdf:type owl:Class
-                                                                        ] ;
-                                                    rdfs:subClassOf <http://purl.org/ontology/musico#HumanMusician> ;
-                                                    rdfs:label "HumanMusicLearner"@en .
-
-
-###  http://purl.org/ontology/musico#HumanMusicTeacher
-<http://purl.org/ontology/musico#HumanMusicTeacher> rdf:type owl:Class ;
-                                                    owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#HumanMusician>
-                                                                                               <http://purl.org/ontology/musico#MusicTeacher>
-                                                                                             ) ;
-                                                                          rdf:type owl:Class
-                                                                        ] ;
-                                                    rdfs:subClassOf <http://purl.org/ontology/musico#HumanMusician> ;
-                                                    rdfs:label "HumanMusicTeacher"@en .
-
-
-###  http://purl.org/ontology/musico#HumanMusician
-<http://purl.org/ontology/musico#HumanMusician> rdf:type owl:Class ;
-                                                owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#Musician>
-                                                                                           <http://xmlns.com/foaf/0.1/Person>
-                                                                                         ) ;
-                                                                      rdf:type owl:Class
-                                                                    ] ;
-                                                rdfs:subClassOf <http://purl.org/ontology/musico#Musician> ;
-                                                owl:disjointWith <http://purl.org/ontology/musico#VirtualMusician> ;
-                                                rdfs:comment "An actual human being involved in a musical activity (e.g., composition, performance)"@en ;
-                                                rdfs:label "HumanMusician"@en .
-
-
-###  http://purl.org/ontology/musico#HumanPerformer
-<http://purl.org/ontology/musico#HumanPerformer> rdf:type owl:Class ;
-                                                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Performer>
-                                                                                            <http://purl.org/ontology/musico#HumanMusician>
-                                                                                          ) ;
-                                                                       rdf:type owl:Class
-                                                                     ] ;
-                                                 rdfs:subClassOf <http://purl.org/ontology/musico#HumanMusician> ;
-                                                 rdfs:label "HumanPerformer"@en .
-
-
-###  http://purl.org/ontology/musico#HumanStudioProducer
-<http://purl.org/ontology/musico#HumanStudioProducer> rdf:type owl:Class ;
-                                                      owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#HumanMusician>
-                                                                                                 <http://purl.org/ontology/musico#StudioProducer>
-                                                                                               ) ;
-                                                                            rdf:type owl:Class
-                                                                          ] ;
-                                                      rdfs:subClassOf <http://purl.org/ontology/musico#HumanMusician> ;
-                                                      rdfs:label "HumanStudioProducer"@en .
-
-
-###  http://purl.org/ontology/musico#HumanStudioProducerBedroom
-<http://purl.org/ontology/musico#HumanStudioProducerBedroom> rdf:type owl:Class ;
-                                                             rdfs:subClassOf <http://purl.org/ontology/musico#HumanStudioProducer> ;
-                                                             rdfs:label "HumanStudioProducerBedroom"@en .
-
-
-###  http://purl.org/ontology/musico#HumanStudioProducerProfessional
-<http://purl.org/ontology/musico#HumanStudioProducerProfessional> rdf:type owl:Class ;
-                                                                  rdfs:subClassOf <http://purl.org/ontology/musico#HumanStudioProducer> ;
-                                                                  rdfs:label "HumanStudioProducerProfessional"@en .
-
-
-###  http://purl.org/ontology/musico#IndoorArena
-<http://purl.org/ontology/musico#IndoorArena> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://schema.org/MusicVenue> ;
-                                              rdfs:label "IndoorArena"@en .
-
-
-###  http://purl.org/ontology/musico#JamSession
-<http://purl.org/ontology/musico#JamSession> rdf:type owl:Class ;
-                                             rdfs:subClassOf :MusicalEvent ;
-                                             rdfs:comment """A jam session event.
-        Takes as agent a musicians group."""@en .
-
-
-###  http://purl.org/ontology/musico#JazzClub
-<http://purl.org/ontology/musico#JazzClub> rdf:type owl:Class ;
-                                           rdfs:subClassOf <https://schema.org/MusicVenue> ;
-                                           rdfs:label "JazzClub"@en .
-
-
-###  http://purl.org/ontology/musico#LearnersGroup
-<http://purl.org/ontology/musico#LearnersGroup> rdf:type owl:Class ;
-                                                rdfs:subClassOf :MusiciansGroup ;
-                                                rdfs:comment "A group of music learners (e.g., involved in a music lesson)."@en ;
-                                                rdfs:label "LearnersGroup"@en .
-
-
-###  http://purl.org/ontology/musico#LiveSoundEngineer
-<http://purl.org/ontology/musico#LiveSoundEngineer> rdf:type owl:Class ;
-                                                    owl:equivalentClass [ rdf:type owl:Restriction ;
-                                                                          owl:onProperty <http://purl.org/ontology/musico#live_engineered> ;
-                                                                          owl:someValuesFrom <http://purl.org/ontology/mo/Performance>
-                                                                        ] ;
-                                                    rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
-                                                    rdfs:comment "A sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances)."@en ;
-                                                    rdfs:label "LiveSoundEngineer"@en .
-
-
-###  http://purl.org/ontology/musico#MusicLearner
-<http://purl.org/ontology/musico#MusicLearner> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
-                                               rdfs:label "MusicLearner"@en .
-
-
-###  http://purl.org/ontology/musico#MusicLesson
-<http://purl.org/ontology/musico#MusicLesson> rdf:type owl:Class ;
-                                              rdfs:subClassOf :MusicalEvent ;
-                                              rdfs:comment """A music lesson event.
-        Takes as agents the music teacher and music learner, as well as  teachers group and learners groups."""@en .
-
-
-###  http://purl.org/ontology/musico#MusicSchool
-<http://purl.org/ontology/musico#MusicSchool> rdf:type owl:Class ;
-                                              rdfs:subClassOf <https://schema.org/MusicVenue> ;
-                                              rdfs:label "MusicSchool"@en .
-
-
-###  http://purl.org/ontology/musico#MusicTeacher
-<http://purl.org/ontology/musico#MusicTeacher> rdf:type owl:Class ;
-                                               rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
-                                               rdfs:label "MusicTeacher"@en .
-
-
-###  http://purl.org/ontology/musico#MusicalService
-<http://purl.org/ontology/musico#MusicalService> rdf:type owl:Class ;
-                                                 rdfs:subClassOf <http://purl.org/ontology/studio/device/Service> ;
-                                                 rdfs:comment "A service used by a musician (e.g., social networks, music editing software, digital audio workstations, music streaming services, or collaborative music making online platforms)"@en ;
-                                                 rdfs:label "MusicalService"@en .
-
-
-###  http://purl.org/ontology/musico#Musician
-<http://purl.org/ontology/musico#Musician> rdf:type owl:Class ;
-                                           rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
-                                           rdfs:comment "An actual human being involved in a musical activity (e.g., composition, performance) or a software agent capable of performing a musical activity"@en ;
-                                           rdfs:label "Musician"@en .
-
-
-###  http://purl.org/ontology/musico#OpenSpace
-<http://purl.org/ontology/musico#OpenSpace> rdf:type owl:Class ;
-                                            rdfs:subClassOf <https://schema.org/MusicVenue> ;
-                                            rdfs:label "OpenSpace"@en .
-
-
-###  http://purl.org/ontology/musico#OperaHouse
-<http://purl.org/ontology/musico#OperaHouse> rdf:type owl:Class ;
-                                             rdfs:subClassOf <https://schema.org/MusicVenue> ;
-                                             rdfs:label "OperaHouse"@en .
-
-
-###  http://purl.org/ontology/musico#Park
-<http://purl.org/ontology/musico#Park> rdf:type owl:Class ;
-                                       rdfs:subClassOf <http://purl.org/ontology/musico#OpenSpace> ;
-                                       rdfs:label "Park"@en .
-
-
-###  http://purl.org/ontology/musico#RecreationalMusicMaking
-<http://purl.org/ontology/musico#RecreationalMusicMaking> rdf:type owl:Class ;
-                                                          rdfs:subClassOf :MusicalEvent ;
-                                                          rdfs:comment """An event where a musician plays for fun an instrument, alone or in group.
-        Takes as agent the performer."""@en .
-
-
-###  http://purl.org/ontology/musico#Rehearsal
-<http://purl.org/ontology/musico#Rehearsal> rdf:type owl:Class ;
-                                            rdfs:subClassOf :MusicalEvent ;
-                                            rdfs:comment """A rehearsal event.
-        Takes as agent the performer as well as a musicians group."""@en .
-
-
-###  http://purl.org/ontology/musico#RehearsalRoom
-<http://purl.org/ontology/musico#RehearsalRoom> rdf:type owl:Class ;
-                                                rdfs:subClassOf <https://schema.org/MusicVenue> ;
-                                                rdfs:label "RehearsalRoom"@en .
-
-
-###  http://purl.org/ontology/musico#SoftwareAgent
-<http://purl.org/ontology/musico#SoftwareAgent> rdf:type owl:Class ;
-                                                rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
-                                                rdfs:label "SoftwareAgent"@en .
-
-
-###  http://purl.org/ontology/musico#Stadium
-<http://purl.org/ontology/musico#Stadium> rdf:type owl:Class ;
-                                          rdfs:subClassOf <http://purl.org/ontology/musico#OpenSpace> ;
-                                          rdfs:label "Stadium"@en .
-
-
-###  http://purl.org/ontology/musico#StudioProducer
-<http://purl.org/ontology/musico#StudioProducer> rdf:type owl:Class ;
-                                                 owl:equivalentClass :SoundEngineer ;
-                                                 rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
-                                                 rdfs:label "StudioProducer"@en .
-
-
-###  http://purl.org/ontology/musico#TeachersGroup
-<http://purl.org/ontology/musico#TeachersGroup> rdf:type owl:Class ;
-                                                rdfs:subClassOf :MusiciansGroup ;
-                                                rdfs:comment "A group of teachers (e.g., involved in a music lesson)."@en ;
-                                                rdfs:label "TeachersGroup"@en .
-
-
-###  http://purl.org/ontology/musico#VirtualArranger
-<http://purl.org/ontology/musico#VirtualArranger> rdf:type owl:Class ;
-                                                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Arranger>
-                                                                                             <http://purl.org/ontology/musico#VirtualMusician>
-                                                                                           ) ;
-                                                                        rdf:type owl:Class
-                                                                      ] ;
-                                                  rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> ;
-                                                  rdfs:label "VirtualArranger"@en .
-
-
-###  http://purl.org/ontology/musico#VirtualComposer
-<http://purl.org/ontology/musico#VirtualComposer> rdf:type owl:Class ;
-                                                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Composer>
-                                                                                             <http://purl.org/ontology/musico#VirtualMusician>
-                                                                                           ) ;
-                                                                        rdf:type owl:Class
-                                                                      ] ;
-                                                  rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> ;
-                                                  rdfs:label "VirtualComposer"@en .
-
-
-###  http://purl.org/ontology/musico#VirtualConductor
-<http://purl.org/ontology/musico#VirtualConductor> rdf:type owl:Class ;
-                                                   owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Conductor>
-                                                                                              <http://purl.org/ontology/musico#VirtualMusician>
-                                                                                            ) ;
-                                                                         rdf:type owl:Class
-                                                                       ] ;
-                                                   rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> ;
-                                                   rdfs:label "VirtualConductor"@en .
-
-
-###  http://purl.org/ontology/musico#VirtualLiveSoundEngineeer
-<http://purl.org/ontology/musico#VirtualLiveSoundEngineeer> rdf:type owl:Class ;
-                                                            owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#LiveSoundEngineer>
-                                                                                                       <http://purl.org/ontology/musico#VirtualMusician>
-                                                                                                     ) ;
-                                                                                  rdf:type owl:Class
-                                                                                ] ;
-                                                            rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> .
-
-
-###  http://purl.org/ontology/musico#VirtualMusicLearner
-<http://purl.org/ontology/musico#VirtualMusicLearner> rdf:type owl:Class ;
-                                                      owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#MusicLearner>
-                                                                                                 <http://purl.org/ontology/musico#VirtualMusician>
-                                                                                               ) ;
-                                                                            rdf:type owl:Class
-                                                                          ] ;
-                                                      rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> ;
-                                                      rdfs:label "VirtualMusicLearner"@en .
-
-
-###  http://purl.org/ontology/musico#VirtualMusicTeacher
-<http://purl.org/ontology/musico#VirtualMusicTeacher> rdf:type owl:Class ;
-                                                      owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#MusicTeacher>
-                                                                                                 <http://purl.org/ontology/musico#VirtualMusician>
-                                                                                               ) ;
-                                                                            rdf:type owl:Class
-                                                                          ] ;
-                                                      rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> ;
-                                                      rdfs:label "VirtualMusicTeacher"@en .
-
-
-###  http://purl.org/ontology/musico#VirtualMusician
-<http://purl.org/ontology/musico#VirtualMusician> rdf:type owl:Class ;
-                                                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#Musician>
-                                                                                             <http://purl.org/ontology/musico#SoftwareAgent>
-                                                                                           ) ;
-                                                                        rdf:type owl:Class
-                                                                      ] ;
-                                                  rdfs:subClassOf <http://purl.org/ontology/musico#Musician> ;
-                                                  rdfs:comment "A software agent capable of performing a musical activity (e.g., composition via computational creativity techniques)"@en ;
-                                                  rdfs:label "VirtualMusician"@en .
-
-
-###  http://purl.org/ontology/musico#VirtualPerformer
-<http://purl.org/ontology/musico#VirtualPerformer> rdf:type owl:Class ;
-                                                   owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Performer>
-                                                                                              <http://purl.org/ontology/musico#VirtualMusician>
-                                                                                            ) ;
-                                                                         rdf:type owl:Class
-                                                                       ] ;
-                                                   rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> ;
-                                                   rdfs:label "VirtualPerformer"@en .
-
-
-###  http://purl.org/ontology/musico#VirtualStudioProducer
-<http://purl.org/ontology/musico#VirtualStudioProducer> rdf:type owl:Class ;
-                                                        owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/musico#StudioProducer>
-                                                                                                   <http://purl.org/ontology/musico#VirtualMusician>
-                                                                                                 ) ;
-                                                                              rdf:type owl:Class
-                                                                            ] ;
-                                                        rdfs:subClassOf <http://purl.org/ontology/musico#VirtualMusician> ;
-                                                        rdfs:label "VirtualStudioProducer"@en .
-
-
-###  http://purl.org/ontology/musico/Band
+###  http://purl.org/ontology/musico#Band
 :Band rdf:type owl:Class ;
       rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> ;
       rdfs:label "Band"@en .
 
 
-###  http://purl.org/ontology/musico/ChamberEnsemble
+###  http://purl.org/ontology/musico#ChamberEnsemble
 :ChamberEnsemble rdf:type owl:Class ;
                  rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> ;
                  rdfs:label "ChamberEnsemble"@en .
 
 
-###  http://purl.org/ontology/musico/CompositionSession
+###  http://purl.org/ontology/musico#ComposersGroup
+:ComposersGroup rdf:type owl:Class ;
+                rdfs:subClassOf :MusiciansGroup ;
+                rdfs:comment "A group of composers (e.g., involved in a collaborative music composition activity)"@en ;
+                rdfs:label "ComposersGroup"@en .
+
+
+###  http://purl.org/ontology/musico#CompositionSession
 :CompositionSession rdf:type owl:Class ;
                     rdfs:subClassOf :MusicalEvent .
 
 
-###  http://purl.org/ontology/musico/MultiagentEvent
+###  http://purl.org/ontology/musico#ConcertHall
+:ConcertHall rdf:type owl:Class ;
+             rdfs:subClassOf <https://schema.org/MusicVenue> ;
+             rdfs:label "ConcertHall"@en .
+
+
+###  http://purl.org/ontology/musico#ConservatoryOfMusic
+:ConservatoryOfMusic rdf:type owl:Class ;
+                     rdfs:subClassOf :MusicSchool ;
+                     rdfs:label "ConservatoryOfMusic"@en .
+
+
+###  http://purl.org/ontology/musico#Home
+:Home rdf:type owl:Class ;
+      rdfs:subClassOf <https://schema.org/MusicVenue> ;
+      rdfs:label "Home"@en .
+
+
+###  http://purl.org/ontology/musico#HumanArranger
+:HumanArranger rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Arranger>
+                                                          :HumanMusician
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :HumanMusician ;
+               rdfs:label "HumanArranger"@en .
+
+
+###  http://purl.org/ontology/musico#HumanComposer
+:HumanComposer rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Composer>
+                                                          :HumanMusician
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :HumanMusician ;
+               rdfs:label "HumanComposer"@en .
+
+
+###  http://purl.org/ontology/musico#HumanConductor
+:HumanConductor rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Conductor>
+                                                           :HumanMusician
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :HumanMusician ;
+                rdfs:label "HumanConductor"@en .
+
+
+###  http://purl.org/ontology/musico#HumanLiveSoundEngineer
+:HumanLiveSoundEngineer rdf:type owl:Class ;
+                        owl:equivalentClass [ owl:intersectionOf ( :HumanMusician
+                                                                   :LiveSoundEngineer
+                                                                 ) ;
+                                              rdf:type owl:Class
+                                            ] ;
+                        rdfs:subClassOf :HumanMusician ;
+                        rdfs:label "HumanLiveSoundEngineer"@en .
+
+
+###  http://purl.org/ontology/musico#HumanMusicLearner
+:HumanMusicLearner rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :HumanMusician
+                                                              :MusicLearner
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :HumanMusician ;
+                   rdfs:label "HumanMusicLearner"@en .
+
+
+###  http://purl.org/ontology/musico#HumanMusicTeacher
+:HumanMusicTeacher rdf:type owl:Class ;
+                   owl:equivalentClass [ owl:intersectionOf ( :HumanMusician
+                                                              :MusicTeacher
+                                                            ) ;
+                                         rdf:type owl:Class
+                                       ] ;
+                   rdfs:subClassOf :HumanMusician ;
+                   rdfs:label "HumanMusicTeacher"@en .
+
+
+###  http://purl.org/ontology/musico#HumanMusician
+:HumanMusician rdf:type owl:Class ;
+               owl:equivalentClass [ owl:intersectionOf ( :Musician
+                                                          <http://xmlns.com/foaf/0.1/Person>
+                                                        ) ;
+                                     rdf:type owl:Class
+                                   ] ;
+               rdfs:subClassOf :Musician ;
+               owl:disjointWith :VirtualMusician ;
+               rdfs:comment "An actual human being involved in a musical activity (e.g., composition, performance)"@en ;
+               rdfs:label "HumanMusician"@en .
+
+
+###  http://purl.org/ontology/musico#HumanPerformer
+:HumanPerformer rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Performer>
+                                                           :HumanMusician
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :HumanMusician ;
+                rdfs:label "HumanPerformer"@en .
+
+
+###  http://purl.org/ontology/musico#HumanStudioProducer
+:HumanStudioProducer rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :HumanMusician
+                                                                :StudioProducer
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :HumanMusician ;
+                     rdfs:label "HumanStudioProducer"@en .
+
+
+###  http://purl.org/ontology/musico#HumanStudioProducerBedroom
+:HumanStudioProducerBedroom rdf:type owl:Class ;
+                            rdfs:subClassOf :HumanStudioProducer ;
+                            rdfs:label "HumanStudioProducerBedroom"@en .
+
+
+###  http://purl.org/ontology/musico#HumanStudioProducerProfessional
+:HumanStudioProducerProfessional rdf:type owl:Class ;
+                                 rdfs:subClassOf :HumanStudioProducer ;
+                                 rdfs:label "HumanStudioProducerProfessional"@en .
+
+
+###  http://purl.org/ontology/musico#IndoorArena
+:IndoorArena rdf:type owl:Class ;
+             rdfs:subClassOf <https://schema.org/MusicVenue> ;
+             rdfs:label "IndoorArena"@en .
+
+
+###  http://purl.org/ontology/musico#JamSession
+:JamSession rdf:type owl:Class ;
+            rdfs:subClassOf :MusicalEvent ;
+            rdfs:comment """A jam session event.
+        Takes as agent a musicians group."""@en .
+
+
+###  http://purl.org/ontology/musico#JazzClub
+:JazzClub rdf:type owl:Class ;
+          rdfs:subClassOf <https://schema.org/MusicVenue> ;
+          rdfs:label "JazzClub"@en .
+
+
+###  http://purl.org/ontology/musico#LearnersGroup
+:LearnersGroup rdf:type owl:Class ;
+               rdfs:subClassOf :MusiciansGroup ;
+               rdfs:comment "A group of music learners (e.g., involved in a music lesson)."@en ;
+               rdfs:label "LearnersGroup"@en .
+
+
+###  http://purl.org/ontology/musico#LiveSoundEngineer
+:LiveSoundEngineer rdf:type owl:Class ;
+                   owl:equivalentClass [ rdf:type owl:Restriction ;
+                                         owl:onProperty :live_engineered ;
+                                         owl:someValuesFrom <http://purl.org/ontology/mo/Performance>
+                                       ] ;
+                   rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                   rdfs:comment "A sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances)."@en ;
+                   rdfs:label "LiveSoundEngineer"@en .
+
+
+###  http://purl.org/ontology/musico#MultiagentEvent
 :MultiagentEvent rdf:type owl:Class ;
                  owl:equivalentClass [ owl:intersectionOf ( <http://sw.opencyc.org/2009/04/07/concept/en/Event>
                                                             [ rdf:type owl:Restriction ;
@@ -969,64 +853,147 @@
                  rdfs:label "MultiagentEvent"@en .
 
 
-###  http://purl.org/ontology/musico/MusicalApplication
+###  http://purl.org/ontology/musico#MusicLearner
+:MusicLearner rdf:type owl:Class ;
+              rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+              rdfs:label "MusicLearner"@en .
+
+
+###  http://purl.org/ontology/musico#MusicLesson
+:MusicLesson rdf:type owl:Class ;
+             rdfs:subClassOf :MusicalEvent ;
+             rdfs:comment """A music lesson event.
+        Takes as agents the music teacher and music learner, as well as  teachers group and learners groups."""@en .
+
+
+###  http://purl.org/ontology/musico#MusicSchool
+:MusicSchool rdf:type owl:Class ;
+             rdfs:subClassOf <https://schema.org/MusicVenue> ;
+             rdfs:label "MusicSchool"@en .
+
+
+###  http://purl.org/ontology/musico#MusicTeacher
+:MusicTeacher rdf:type owl:Class ;
+              rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+              rdfs:label "MusicTeacher"@en .
+
+
+###  http://purl.org/ontology/musico#MusicalApplication
 :MusicalApplication rdf:type owl:Class ;
                     rdfs:subClassOf <http://purl.org/ontology/studio/device/Application> ;
-                    rdfs:label "A software application specific to the musical domain."@en ,
-                               "MusicalApplication"@en .
+                    rdfs:comment "A software application specific to the musical domain."@en ;
+                    rdfs:label "MusicalApplication"@en .
 
 
-###  http://purl.org/ontology/musico/MusicalEvent
+###  http://purl.org/ontology/musico#MusicalEvent
 :MusicalEvent rdf:type owl:Class ;
               rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> ;
               rdfs:comment "A musical event related to a musical activity, such as a performance, lesson, rehearsal. A musical event is composed by different musical sessions."@en ;
               rdfs:label "MusicalEvent"@en .
 
 
-###  http://purl.org/ontology/musico/MusicalSession
+###  http://purl.org/ontology/musico#MusicalService
+:MusicalService rdf:type owl:Class ;
+                rdfs:subClassOf <http://purl.org/ontology/studio/device/Service> ;
+                rdfs:comment "A service used by a musician (e.g., social networks, music editing software, digital audio workstations, music streaming services, or collaborative music making online platforms)"@en ;
+                rdfs:label "MusicalService"@en .
+
+
+###  http://purl.org/ontology/musico#MusicalSession
 :MusicalSession rdf:type owl:Class ;
                 rdfs:subClassOf <http://purl.org/NET/c4dm/event.owl#Event> ;
                 rdfs:comment "A part of a musical event (e.g., the period in which a given musical piece has been played)" ;
                 rdfs:label "MusicalSession"@en .
 
 
-###  http://purl.org/ontology/musico/MusicianParticipation
+###  http://purl.org/ontology/musico#Musician
+:Musician rdf:type owl:Class ;
+          rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+          rdfs:comment "An actual human being involved in a musical activity (e.g., composition, performance) or a software agent capable of performing a musical activity"@en ;
+          rdfs:label "Musician"@en .
+
+
+###  http://purl.org/ontology/musico#MusicianParticipation
 :MusicianParticipation rdf:type owl:Class ;
                        rdfs:subClassOf <https://schema.org/Action> ;
                        rdfs:comment "The act of a given musician of participating in a musical event" ;
                        rdfs:label "MusicianParticipation"@en .
 
 
-###  http://purl.org/ontology/musico/MusiciansGroup
+###  http://purl.org/ontology/musico#MusiciansGroup
 :MusiciansGroup rdf:type owl:Class ;
                 rdfs:subClassOf <http://xmlns.com/foaf/0.1/Group> ;
                 rdfs:comment "A group of musicians who perform a musical activity together." ;
                 rdfs:label "MusiciansGroup"@en .
 
 
-###  http://purl.org/ontology/musico/Orchestra
+###  http://purl.org/ontology/musico#OpenSpace
+:OpenSpace rdf:type owl:Class ;
+           rdfs:subClassOf <https://schema.org/MusicVenue> ;
+           rdfs:label "OpenSpace"@en .
+
+
+###  http://purl.org/ontology/musico#OperaHouse
+:OperaHouse rdf:type owl:Class ;
+            rdfs:subClassOf <https://schema.org/MusicVenue> ;
+            rdfs:label "OperaHouse"@en .
+
+
+###  http://purl.org/ontology/musico#Orchestra
 :Orchestra rdf:type owl:Class ;
            rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> ;
            rdfs:label "Orchestra"@en .
 
 
-###  http://purl.org/ontology/musico/Performance
+###  http://purl.org/ontology/musico#Park
+:Park rdf:type owl:Class ;
+      rdfs:subClassOf :OpenSpace ;
+      rdfs:label "Park"@en .
+
+
+###  http://purl.org/ontology/musico#Performance
 :Performance rdf:type owl:Class ;
              rdfs:subClassOf :MusicalEvent .
 
 
-###  http://purl.org/ontology/musico/RecordingStudio
+###  http://purl.org/ontology/musico#RecordingStudio
 :RecordingStudio rdf:type owl:Class ;
                  rdfs:subClassOf <https://schema.org/MusicVenue> ;
                  rdfs:label "RecordingStudio"@en .
 
 
-###  http://purl.org/ontology/musico/SelfLearning
+###  http://purl.org/ontology/musico#RecreationalMusicMaking
+:RecreationalMusicMaking rdf:type owl:Class ;
+                         rdfs:subClassOf :MusicalEvent ;
+                         rdfs:comment """An event where a musician plays for fun an instrument, alone or in group.
+        Takes as agent the performer."""@en .
+
+
+###  http://purl.org/ontology/musico#Rehearsal
+:Rehearsal rdf:type owl:Class ;
+           rdfs:subClassOf :MusicalEvent ;
+           rdfs:comment """A rehearsal event.
+        Takes as agent the performer as well as a musicians group."""@en .
+
+
+###  http://purl.org/ontology/musico#RehearsalRoom
+:RehearsalRoom rdf:type owl:Class ;
+               rdfs:subClassOf <https://schema.org/MusicVenue> ;
+               rdfs:label "RehearsalRoom"@en .
+
+
+###  http://purl.org/ontology/musico#SelfLearning
 :SelfLearning rdf:type owl:Class ;
               rdfs:subClassOf :MusicalEvent .
 
 
-###  http://purl.org/ontology/musico/SoloEvent
+###  http://purl.org/ontology/musico#SoftwareAgent
+:SoftwareAgent rdf:type owl:Class ;
+               rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+               rdfs:label "SoftwareAgent"@en .
+
+
+###  http://purl.org/ontology/musico#SoloEvent
 :SoloEvent rdf:type owl:Class ;
            owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/vocab/bio/0.1/Event>
                                                       [ rdf:type owl:Restriction ;
@@ -1040,14 +1007,137 @@
            rdfs:label "SoloEvent"@en .
 
 
-###  http://purl.org/ontology/musico/SoundEngineer
+###  http://purl.org/ontology/musico#SoundEngineer
 :SoundEngineer rdf:type owl:Class ;
+               owl:equivalentClass :StudioProducer ;
                rdfs:label "SoundEngineer"@en .
 
 
-###  http://purl.org/ontology/musico/Tour
+###  http://purl.org/ontology/musico#Stadium
+:Stadium rdf:type owl:Class ;
+         rdfs:subClassOf :OpenSpace ;
+         rdfs:label "Stadium"@en .
+
+
+###  http://purl.org/ontology/musico#StudioProducer
+:StudioProducer rdf:type owl:Class ;
+                rdfs:subClassOf <http://xmlns.com/foaf/0.1/Agent> ;
+                rdfs:label "StudioProducer"@en .
+
+
+###  http://purl.org/ontology/musico#TeachersGroup
+:TeachersGroup rdf:type owl:Class ;
+               rdfs:subClassOf :MusiciansGroup ;
+               rdfs:comment "A group of teachers (e.g., involved in a music lesson)."@en ;
+               rdfs:label "TeachersGroup"@en .
+
+
+###  http://purl.org/ontology/musico#Tour
 :Tour rdf:type owl:Class ;
       rdfs:subClassOf :MusicalEvent .
+
+
+###  http://purl.org/ontology/musico#VirtualArranger
+:VirtualArranger rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Arranger>
+                                                            :VirtualMusician
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :VirtualMusician ;
+                 rdfs:label "VirtualArranger"@en .
+
+
+###  http://purl.org/ontology/musico#VirtualComposer
+:VirtualComposer rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Composer>
+                                                            :VirtualMusician
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :VirtualMusician ;
+                 rdfs:label "VirtualComposer"@en .
+
+
+###  http://purl.org/ontology/musico#VirtualConductor
+:VirtualConductor rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Conductor>
+                                                             :VirtualMusician
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :VirtualMusician ;
+                  rdfs:label "VirtualConductor"@en .
+
+
+###  http://purl.org/ontology/musico#VirtualLiveSoundEngineeer
+:VirtualLiveSoundEngineeer rdf:type owl:Class ;
+                           owl:equivalentClass [ owl:intersectionOf ( :LiveSoundEngineer
+                                                                      :VirtualMusician
+                                                                    ) ;
+                                                 rdf:type owl:Class
+                                               ] ;
+                           rdfs:subClassOf :VirtualMusician .
+
+
+###  http://purl.org/ontology/musico#VirtualMusicLearner
+:VirtualMusicLearner rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :MusicLearner
+                                                                :VirtualMusician
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :VirtualMusician ;
+                     rdfs:label "VirtualMusicLearner"@en .
+
+
+###  http://purl.org/ontology/musico#VirtualMusicTeacher
+:VirtualMusicTeacher rdf:type owl:Class ;
+                     owl:equivalentClass [ owl:intersectionOf ( :MusicTeacher
+                                                                :VirtualMusician
+                                                              ) ;
+                                           rdf:type owl:Class
+                                         ] ;
+                     rdfs:subClassOf :VirtualMusician ;
+                     rdfs:label "VirtualMusicTeacher"@en .
+
+
+###  http://purl.org/ontology/musico#VirtualMusician
+:VirtualMusician rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Musician
+                                                            :SoftwareAgent
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :Musician ;
+                 rdfs:comment "A software agent capable of performing a musical activity (e.g., composition via computational creativity techniques)"@en ;
+                 rdfs:label "VirtualMusician"@en .
+
+
+###  http://purl.org/ontology/musico#VirtualPerformer
+:VirtualPerformer rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( <http://purl.org/ontology/mo/Performer>
+                                                             :VirtualMusician
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:subClassOf :VirtualMusician ;
+                  rdfs:label "VirtualPerformer"@en .
+
+
+###  http://purl.org/ontology/musico#VirtualStudioProducer
+:VirtualStudioProducer rdf:type owl:Class ;
+                       owl:equivalentClass [ owl:intersectionOf ( :StudioProducer
+                                                                  :VirtualMusician
+                                                                ) ;
+                                             rdf:type owl:Class
+                                           ] ;
+                       rdfs:subClassOf :VirtualMusician ;
+                       rdfs:label "VirtualStudioProducer"@en .
+
+
+###  http://purl.org/ontology/musico/MusiciansGroup
+<http://purl.org/ontology/musico/MusiciansGroup> rdf:type owl:Class .
 
 
 ###  http://purl.org/ontology/studio/device/Application
@@ -1074,6 +1164,11 @@
 <http://xmlns.com/foaf/0.1/Group> rdf:type owl:Class .
 
 
+###  http://xmlns.com/foaf/0.1/Person
+<http://xmlns.com/foaf/0.1/Person> rdf:type owl:Class ;
+                                   owl:equivalentClass <https://schema.org/Person> .
+
+
 ###  https://schema.org/Action
 <https://schema.org/Action> rdf:type owl:Class .
 
@@ -1082,119 +1177,135 @@
 <https://schema.org/MusicVenue> rdf:type owl:Class .
 
 
+###  https://schema.org/Person
+<https://schema.org/Person> rdf:type owl:Class .
+
+
 #################################################################
 #    Individuals
 #################################################################
 
 ###  http://purl.org/ontology/musico#AbletonLive
-<http://purl.org/ontology/musico#AbletonLive> rdf:type owl:NamedIndividual ,
-                                                       <http://purl.org/ontology/musico#MusicalService> .
+:AbletonLive rdf:type owl:NamedIndividual ,
+                      :MusicalService .
 
 
 ###  http://purl.org/ontology/musico#Audacity
-<http://purl.org/ontology/musico#Audacity> rdf:type owl:NamedIndividual ,
-                                                    <http://purl.org/ontology/musico#MusicalService> .
+:Audacity rdf:type owl:NamedIndividual ,
+                   :MusicalService .
 
 
-###  http://purl.org/ontology/musico#Facebook
-<http://purl.org/ontology/musico#Facebook> rdf:type owl:NamedIndividual ,
-                                                    <http://purl.org/ontology/musico#MusicalService> .
-
-
-###  http://purl.org/ontology/musico#Folk
-<http://purl.org/ontology/musico#Folk> rdf:type owl:NamedIndividual .
-
-
-###  http://purl.org/ontology/musico#Jazz
-<http://purl.org/ontology/musico#Jazz> rdf:type owl:NamedIndividual .
-
-
-###  http://purl.org/ontology/musico#Logic
-<http://purl.org/ontology/musico#Logic> rdf:type owl:NamedIndividual ,
-                                                 <http://purl.org/ontology/musico#MusicalService> .
-
-
-###  http://purl.org/ontology/musico#Metal
-<http://purl.org/ontology/musico#Metal> rdf:type owl:NamedIndividual .
-
-
-###  http://purl.org/ontology/musico#Pop
-<http://purl.org/ontology/musico#Pop> rdf:type owl:NamedIndividual .
-
-
-###  http://purl.org/ontology/musico#Rock
-<http://purl.org/ontology/musico#Rock> rdf:type owl:NamedIndividual .
-
-
-###  http://purl.org/ontology/musico#SoundCloud
-<http://purl.org/ontology/musico#SoundCloud> rdf:type owl:NamedIndividual ,
-                                                      <http://purl.org/ontology/musico#MusicalService> .
-
-
-###  http://purl.org/ontology/musico#SoundTrap
-<http://purl.org/ontology/musico#SoundTrap> rdf:type owl:NamedIndividual ,
-                                                     <http://purl.org/ontology/musico#MusicalService> .
-
-
-###  http://purl.org/ontology/musico#YouTube
-<http://purl.org/ontology/musico#YouTube> rdf:type owl:NamedIndividual ,
-                                                   <http://purl.org/ontology/musico#MusicalService> .
-
-
-###  http://purl.org/ontology/musico/ClassicalMusic
+###  http://purl.org/ontology/musico#ClassicalMusic
 :ClassicalMusic rdf:type owl:NamedIndividual .
 
 
-###  http://purl.org/ontology/musico/ElectronicMusic
+###  http://purl.org/ontology/musico#ElectronicMusic
 :ElectronicMusic rdf:type owl:NamedIndividual .
 
 
-###  http://purl.org/ontology/musico/London
+###  http://purl.org/ontology/musico#Facebook
+:Facebook rdf:type owl:NamedIndividual ,
+                   :MusicalService .
+
+
+###  http://purl.org/ontology/musico#Folk
+:Folk rdf:type owl:NamedIndividual .
+
+
+###  http://purl.org/ontology/musico#Jazz
+:Jazz rdf:type owl:NamedIndividual .
+
+
+###  http://purl.org/ontology/musico#Logic
+:Logic rdf:type owl:NamedIndividual ,
+                :MusicalService .
+
+
+###  http://purl.org/ontology/musico#London
 :London rdf:type owl:NamedIndividual ;
         <http://xmlns.com/foaf/0.1/name> "London" .
 
 
-###  http://purl.org/ontology/musico/NewYork
+###  http://purl.org/ontology/musico#Metal
+:Metal rdf:type owl:NamedIndividual .
+
+
+###  http://purl.org/ontology/musico#NewYork
 :NewYork rdf:type owl:NamedIndividual ;
          <http://xmlns.com/foaf/0.1/name> "New York" .
 
 
-###  http://purl.org/ontology/musico/Paris
+###  http://purl.org/ontology/musico#Paris
 :Paris rdf:type owl:NamedIndividual ;
        <http://xmlns.com/foaf/0.1/name> "Paris" .
 
 
-###  http://purl.org/ontology/musico/Singapore
+###  http://purl.org/ontology/musico#Pop
+:Pop rdf:type owl:NamedIndividual .
+
+
+###  http://purl.org/ontology/musico#Rock
+:Rock rdf:type owl:NamedIndividual .
+
+
+###  http://purl.org/ontology/musico#Singapore
 :Singapore rdf:type owl:NamedIndividual ;
            <http://xmlns.com/foaf/0.1/name> "Singapore" .
 
 
-###  http://purl.org/ontology/musico/Tokyo
+###  http://purl.org/ontology/musico#SoundCloud
+:SoundCloud rdf:type owl:NamedIndividual ,
+                     :MusicalService .
+
+
+###  http://purl.org/ontology/musico#SoundTrap
+:SoundTrap rdf:type owl:NamedIndividual ,
+                    :MusicalService .
+
+
+###  http://purl.org/ontology/musico#Tokyo
 :Tokyo rdf:type owl:NamedIndividual ;
        <http://xmlns.com/foaf/0.1/name> "Tokyo" .
 
 
-###  http://purl.org/ontology/musico/Verona
+###  http://purl.org/ontology/musico#Verona
 :Verona rdf:type owl:NamedIndividual ;
         <http://xmlns.com/foaf/0.1/name> "Verona" .
 
 
-###  http://purl.org/ontology/musico/pifferSmartSax
+###  http://purl.org/ontology/musico#YouTube
+:YouTube rdf:type owl:NamedIndividual ,
+                  :MusicalService .
+
+
+###  http://purl.org/ontology/musico#pifferSmartSax
 :pifferSmartSax rdf:type owl:NamedIndividual ;
                 <http://xmlns.com/foaf/0.1/based_near> :Verona .
 
 
-###  http://purl.org/ontology/musico/sensusSmartGuitar
+###  http://purl.org/ontology/musico#sensusSmartGuitar
 :sensusSmartGuitar rdf:type owl:NamedIndividual .
 
 
-###  http://purl.org/ontology/musico/steinweissSmartPiano
+###  http://purl.org/ontology/musico#steinweissSmartPiano
 :steinweissSmartPiano rdf:type owl:NamedIndividual .
 
 
-###  http://purl.org/ontology/musico/stradiusSmartViolin
+###  http://purl.org/ontology/musico#stradiusSmartViolin
 :stradiusSmartViolin rdf:type owl:NamedIndividual .
 
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean
+] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean
+ ] .
 
 #################################################################
 #    Annotations
@@ -1203,7 +1314,223 @@
 :displayed_mood rdfs:label "displayed_mood"@en .
 
 
+:expressed_mood rdfs:label "expressed_mood"@en .
+
+
 :felt_mood rdfs:label "felt_mood"@en .
 
+
+#################################################################
+#    Rules
+#################################################################
+
+:u rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ev rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:pl rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:o rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:city rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:gen rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:ggen rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:a rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:b rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdfs:comment "Event Recommendation based on the user's friends interested in the event" ;
+   rdfs:label "eventRecommendation_2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HumanMusician ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MusicalEvent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :ev
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://xmlns.com/foaf/0.1/knows> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :o
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :interested_in ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :o ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :ev
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :gets_recommended_event ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :ev
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "Recommendation of a user based on the similarity of the genre played by the user and the genre played by others in the same city" ;
+   rdfs:label "userRecommendation_1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HumanMusician ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :HumanMusician ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :o
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#notEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> ( :u
+                                                                                                                          :o
+                                                                                                                        )
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://xmlns.com/foaf/0.1/based_near> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :city
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://xmlns.com/foaf/0.1/based_near> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :o ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :city
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :plays_genre ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> :gen
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/ontology/mo/similar_to> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument1> :gen ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#argument2> :ggen
+                                                                                                                       ] ;
+                                                                                                             rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                                        rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#propertyPredicate> :plays_genre ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument1> :o ;
+                                                                                                                                    <http://www.w3.org/2003/11/swrl#argument2> :ggen
+                                                                                                                                  ] ;
+                                                                                                                        rdf:rest rdf:nil
+                                                                                                                      ]
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :gets_recommended_user ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :o
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "Change multi-intrumentalism level whenever the user plays 2 different instruments" ;
+   rdfs:label "multi_instrumentalism_level" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HumanMusician ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :plays_instrument ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :a
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :plays_instrument ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#notEqual> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#arguments> ( :a
+                                                                                                                                     :b
+                                                                                                                                   )
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :multi-instrumentalism_level ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "multi-instrumentalist"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdfs:comment "Event Recommendation based on  the event's location" ;
+   rdfs:label "eventRecommendation_1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :HumanMusician ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :MusicalEvent ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :ev
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://purl.org/vocab/bio/0.1/event> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :ev ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> :pl
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://xmlns.com/foaf/0.1/based_near> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :pl
+                                                                                      ] ;
+                                                                            rdf:rest rdf:nil
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :gets_recommended_event ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :u ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :ev
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
