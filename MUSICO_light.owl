@@ -18,7 +18,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:label="http://purl.org/net/vocab/2004/03/label#"
      xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:schema="http://schema.org/"
+     xmlns:schema="https://schema.org/"
      xmlns:studio="http://purl.org/ontology/studio/">
     <owl:Ontology rdf:about="http://purl.org/ontology/musico#">
         <owl:versionIRI rdf:resource="http://purl.org/ontology/musico#0.1"/>
