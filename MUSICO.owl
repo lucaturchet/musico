@@ -506,7 +506,8 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/musico#Performance"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/mo/Festival"/>
-        <rdfs:comment>A Performance that is part of a Festival. For example, the concert of Jimi Hendrix at Woodstock is part of such festival.</rdfs:comment>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/musico#sub_musical_event"/>
+        <rdfs:comment>A Performance that is part of a Festival. For example, the concert of Jimi Hendrix at Woodstock is part of such festival. Note that a Performance can be part of a Festival and also of a Tour.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -534,6 +535,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/musico#MusicalSession"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/musico#MusicalEvent"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/musico#sub_tour_event"/>
         <rdfs:comment>A MusicalSession that is part of a MusicalEvent. For example, a lesson can be composed of different parts (such as a theoretical part), each of which is a sub-musical event of the lesson.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -549,7 +551,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/musico#Performance"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/musico#Tour"/>
-        <rdfs:comment>A Performance that is part of a Tour. For example, the concert in New York of the Dream Theater is part of the US tour of the band.</rdfs:comment>
+        <rdfs:comment>A Performance that is part of a Tour. For example, the concert in New York of the Dream Theater is part of the US tour of the band. Note that a Performance can be part of a Tour and also of a Festival.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -563,6 +565,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/mo/Festival"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/musico#Performance"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/musico#super_musical_event"/>
         <rdfs:comment>A Festival that includes a Performance. For example, the 1969 edition of the Woodstock festival included a performance of Jimi Hendrix.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -577,6 +580,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://purl.org/ontology/musico#MusicalEvent"/>
         <rdfs:range rdf:resource="http://purl.org/ontology/musico#MusicalSession"/>
+        <owl:propertyDisjointWith rdf:resource="http://purl.org/ontology/musico#super_tour_event"/>
         <rdfs:comment>A MusicalEvent that includes a MusicalSession. For example, a lesson includes a teoretical session and a practical one.</rdfs:comment>
     </owl:ObjectProperty>
     
@@ -1971,22 +1975,6 @@
             <rdf:Description rdf:about="http://purl.org/ontology/musico#RecreationalMusicMaking"/>
             <rdf:Description rdf:about="http://purl.org/ontology/musico#Rehearsal"/>
             <rdf:Description rdf:about="http://purl.org/ontology/musico#SelfLearning"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/ontology/musico#sub_festival_event"/>
-            <rdf:Description rdf:about="http://purl.org/ontology/musico#sub_musical_event"/>
-            <rdf:Description rdf:about="http://purl.org/ontology/musico#sub_tour_event"/>
-        </owl:members>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/ontology/musico#super_festival_event"/>
-            <rdf:Description rdf:about="http://purl.org/ontology/musico#super_musical_event"/>
-            <rdf:Description rdf:about="http://purl.org/ontology/musico#super_tour_event"/>
         </owl:members>
     </rdf:Description>
     

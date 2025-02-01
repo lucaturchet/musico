@@ -5,22 +5,22 @@ The given SPARQL are _examples_ that may be reinterpreted and reused for applica
 Prefixes:
 
 ```
-PREFIX ex: <http://www.example.audio/> 
-PREFIX musico: <http://purl.org/ontology/musico#> 
-PREFIX smi: <http://purl.org/ontology/iomust/smi#> 
-PREFIX iot: <http://purl.org/ontology/iomust/internet_of_things/> 
-PREFIX iomust: <http://purl.org/ontology/iomust/internet_of_things/iomust> 
+PREFIX ex: <http://www.example.audio/>
+PREFIX musico: <http://purl.org/ontology/musico#>
+PREFIX smi: <http://purl.org/ontology/iomust/smi#>
+PREFIX iot: <http://purl.org/ontology/iomust/internet_of_things/>
+PREFIX iomust: <http://purl.org/ontology/iomust/internet_of_things/iomust>
 PREFIX mfoem: <http://purl.obolibrary.org/obo/MFOEM.owl>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
-PREFIX studio: <http://purl.org/ontology/studio/> 
-PREFIX mo: <http://purl.org/ontology/mo/> 
-PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+PREFIX studio: <http://purl.org/ontology/studio/>
+PREFIX mo: <http://purl.org/ontology/mo/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 PREFIX event: <http://purl.org/NET/c4dm/event.owl#>
 PREFIX time: <https://www.w3.org/2006/time>
-PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#> 
+PREFIX tl: <http://purl.org/NET/c4dm/timeline.owl#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/>
 PREFIX gn: <http://www.geonames.org/ontology#>
 PREFIX schema: <https://schema.org/docs/schemaorg.owl>
@@ -68,12 +68,12 @@ LIMIT 1
 ```
 SELECT  (COUNT(?MusicalSession) as ?num_sessions)
 	WHERE {
-		ex:CristinaLadynekt				musico:in_participation					?MusicianParticipation .	
+		ex:CristinaLadynekt				musico:in_participation					?MusicianParticipation .
   		?MusicianParticipation			musico:played_instrument				ex:karaokeSmartMicrophone ;
 										musico:involved_event					?MusicalSession .
-  		?MusicalSession					schema:isPartOf							?Performance .
-		?Performance					schema:isPartOf							?Tour .
-  		?Tour							event:time								[ 
+  		?MusicalSession					musico:sub_musical_event							?Performance .
+		?Performance					musico:sub_tour_event							?Tour .
+  		?Tour							event:time								[
                                                                                 a tl:Instant ;
                                                                                 tl:at "2021"^^xsd:gYear ;
                                                                                 ] .
@@ -91,7 +91,7 @@ SELECT ?emotion
 	    ?LearnerParticipation			musico:involved_event					?LessonSession ;
 										musico:felt_emotion 					?emotion .
 		?LessonSession					rdf:type 								musico:MusicalSession ;
-										schema:isPartOf 						?Lesson .
+										musico:sub_musical_event 			?Lesson .
 		?Lesson							rdf:type 								musico:MusicLesson ;
 										schema:location                         ex:KMHRoyalCollegeOfMusic .
 		?Teacher						rdf:type								musico:HumanMusicTeacher ;
@@ -111,7 +111,7 @@ SELECT ?virtualMusician (COUNT(?virtualMusician) as ?num_virtual_musicians)
 										musico:in_participation					?SelfLearnerParticipation .
 		?SelfLearnerParticipation		musico:involved_event					?SelfLearningSession .
 		?SelfLearningSession			rdf:type 								musico:MusicalSession ;
-										schema:isPartOf 						?SelfLearningActivity .
+										musico:sub_musical_event 				?SelfLearningActivity .
 		?SelfLearningActivity			rdf:type 								musico:SelfLearning ;
 										schema:location							?home .
 		?home							rdf:type								musico:Home .
@@ -136,7 +136,7 @@ SELECT ?DateTime
 	WHERE {
 		ex:SharanGiptas		     		musico:in_participation					?MusicianParticipation .
 		?MusicianParticipation 			musico:involved_event					?MusicalSession .
-  		?MusicalSession					schema:isPartOf							?Rehearsal .
+  		?MusicalSession					musico:sub_musical_event				?Rehearsal .
 		?Rehearsal						rdf:type								musico:Rehearsal ;
 										musico:has_group                        ex:TheUnicornsAndCamels ;
 										event:time								?Time .
@@ -157,7 +157,7 @@ SELECT ?Musician (AVG(?Duration) AS ?avg)
 	    ?Participation					rdf:type                            	musico:MusicianParticipation ;
 										musico:involved_event                   ?Session .
 	    ?Session 						rdf:type                                musico:MusicalSession ;
-										schema:isPartOf							?RecreatinalMusicMaking .
+										musico:sub_musical_event					?RecreatinalMusicMaking .
 		?RecreatinalMusicMaking			rdf:type								musico:RecreationalMusicMaking ;
 										event:time 								?Time .
 		?Time							rdf:type								tl:Interval ;
@@ -176,7 +176,7 @@ SELECT (COUNT(DISTINCT ?Performance) as ?count)
 		?MusicianParticipation 			musico:involved_event					?MusicalSession ;
 										musico:is_situated                      false ;
 										musico:is_synchronous					true .
-		?MusicalSession					schema:isPartOf							?Performance .
+		?MusicalSession					musico:sub_musical_event					?Performance .
 		?Performance					rdf:type 								musico:Performance ;
 										event : time 							[
 																				a tl: Instant ;
@@ -184,5 +184,3 @@ SELECT (COUNT(DISTINCT ?Performance) as ?count)
 																				] .
 }
 ```
-
-
