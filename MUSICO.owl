@@ -1019,6 +1019,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#CompositionSession">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicalEvent"/>
+        <rdfs:comment>A music composition event. The composition activity may be conducted by an individual or a group.</rdfs:comment>
     </owl:Class>
     
 
@@ -1062,6 +1063,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#HumanMusician"/>
+        <rdfs:comment>An actual human being involved in an arragnement of a music piece.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanArranger</rdfs:label>
     </owl:Class>
     
@@ -1079,6 +1081,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#HumanMusician"/>
+        <rdfs:comment>An actual human being involved in a music composition process.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanComposer</rdfs:label>
     </owl:Class>
     
@@ -1096,6 +1099,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#HumanMusician"/>
+        <rdfs:comment>An actual human being involved in the direction of a group of musicians, such as an orchestra director.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanConductor</rdfs:label>
     </owl:Class>
     
@@ -1113,6 +1117,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#HumanMusician"/>
+        <rdfs:comment>An actual human sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances).</rdfs:comment>
         <rdfs:label xml:lang="en">HumanLiveSoundEngineer</rdfs:label>
     </owl:Class>
     
@@ -1130,6 +1135,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#HumanMusician"/>
+        <rdfs:comment>An actual human being involved in an activity of learning music.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanMusicLearner</rdfs:label>
     </owl:Class>
     
@@ -1147,6 +1153,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#HumanMusician"/>
+        <rdfs:comment>An actual human being involved in an activity of teaching music.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanMusicTeacher</rdfs:label>
     </owl:Class>
     
@@ -1183,6 +1190,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#HumanMusician"/>
+        <rdfs:comment>An actual human being involved in a performance activity.</rdfs:comment>
         <rdfs:label xml:lang="en">HumanPerformer</rdfs:label>
     </owl:Class>
     
@@ -1271,7 +1279,7 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
-        <rdfs:comment xml:lang="en">A sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances).</rdfs:comment>
+        <rdfs:comment xml:lang="en">A sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances), either a human or a software agent.</rdfs:comment>
         <rdfs:label xml:lang="en">LiveSoundEngineer</rdfs:label>
     </owl:Class>
     
@@ -1293,6 +1301,7 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
         <owl:disjointWith rdf:resource="http://purl.org/ontology/musico#SoloEvent"/>
+        <rdfs:comment>An event conducted by more than one individual. For instance, a concert performed by an orchestra.</rdfs:comment>
         <rdfs:label xml:lang="en">MultiagentEvent</rdfs:label>
     </owl:Class>
     
@@ -1302,6 +1311,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#MusicLearner">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>An actual human being involved in an activity of learning music or a software agent capable of learning music.</rdfs:comment>
         <rdfs:label xml:lang="en">MusicLearner</rdfs:label>
     </owl:Class>
     
@@ -1330,6 +1340,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#MusicTeacher">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>An actual human being involved in an activity of teaching music or a software agent capable of teaching music.</rdfs:comment>
         <rdfs:label xml:lang="en">MusicTeacher</rdfs:label>
     </owl:Class>
     
@@ -1446,6 +1457,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Performance">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicalEvent"/>
+        <rdfs:comment>A music performance event, such as a live concert.</rdfs:comment>
     </owl:Class>
     
 
@@ -1492,6 +1504,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#SelfLearning">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicalEvent"/>
+        <rdfs:comment>An event in which an individual learns music theory or practice by himself/herself.</rdfs:comment>
     </owl:Class>
     
 
@@ -1500,6 +1513,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#SoftwareAgent">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>A software agent.</rdfs:comment>
         <rdfs:label xml:lang="en">SoftwareAgent</rdfs:label>
     </owl:Class>
     
@@ -1520,6 +1534,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:comment>An event conducted by a unique individual. For example, a guitar recital performed by a unique classical guitar player.</rdfs:comment>
         <rdfs:label xml:lang="en">SoloEvent</rdfs:label>
     </owl:Class>
     
@@ -1529,6 +1544,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#SoundEngineer">
         <owl:equivalentClass rdf:resource="http://purl.org/ontology/musico#StudioProducer"/>
+        <rdfs:comment>A sound engineer.</rdfs:comment>
         <rdfs:label xml:lang="en">SoundEngineer</rdfs:label>
     </owl:Class>
     
@@ -1547,6 +1563,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#StudioProducer">
         <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:comment>A studio producer.</rdfs:comment>
         <rdfs:label xml:lang="en">StudioProducer</rdfs:label>
     </owl:Class>
     
@@ -1566,6 +1583,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Tour">
         <rdfs:subClassOf rdf:resource="http://purl.org/NET/c4dm/event.owl#Event"/>
+        <rdfs:comment>A tour event. A tour comprises various performances.</rdfs:comment>
     </owl:Class>
     
 
@@ -1582,6 +1600,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#VirtualMusician"/>
+        <rdfs:comment>A software agent capable of making an arragnement of a music piece.</rdfs:comment>
         <rdfs:label xml:lang="en">VirtualArranger</rdfs:label>
     </owl:Class>
     
@@ -1599,6 +1618,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#VirtualMusician"/>
+        <rdfs:comment>An software agent capable of composing music.</rdfs:comment>
         <rdfs:label xml:lang="en">VirtualComposer</rdfs:label>
     </owl:Class>
     
@@ -1616,6 +1636,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#VirtualMusician"/>
+        <rdfs:comment>A software agent capable of directing a group of musicians, such as an orchestra director.</rdfs:comment>
         <rdfs:label xml:lang="en">VirtualConductor</rdfs:label>
     </owl:Class>
     
@@ -1633,6 +1654,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#VirtualMusician"/>
+        <rdfs:comment>A software agent capable of performing activities of live sound engineering.</rdfs:comment>
     </owl:Class>
     
 
@@ -1649,6 +1671,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#VirtualMusician"/>
+        <rdfs:comment>A software agent capable of learning music.</rdfs:comment>
         <rdfs:label xml:lang="en">VirtualMusicLearner</rdfs:label>
     </owl:Class>
     
@@ -1666,6 +1689,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#VirtualMusician"/>
+        <rdfs:comment>A software agent capable of teaching music.</rdfs:comment>
         <rdfs:label xml:lang="en">VirtualMusicTeacher</rdfs:label>
     </owl:Class>
     
@@ -1701,6 +1725,7 @@
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#VirtualMusician"/>
+        <rdfs:comment>A software agent capable of performing.</rdfs:comment>
         <rdfs:label xml:lang="en">VirtualPerformer</rdfs:label>
     </owl:Class>
     
