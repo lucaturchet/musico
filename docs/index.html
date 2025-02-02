@@ -19,9 +19,9 @@
 <!-- SCHEMA.ORG METADATA -->
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","url":"http://purl.org/ontology/musico#","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://purl.org/ontology/musico#","name":"Musician's Context Ontology", "headline":"Document describing the ontology http://purl.org/ontology/musico#", "dateReleased":"2025-02-03T10:00:00", "license":"https://www.gnu.org/licenses/gpl.html", "author":[{"@type":"Person","name":"Luca Turchet"}], "contributor":[{"@type":"Person","name":"Andrea Molinari"},{"@type":"Person","name":"Jacopo Tomelleri"},{"@type":"Person","name":"Paolo Bouquet"}]}</script>
 
-<script src="resources/jquery.js"></script> 
-<script src="resources/marked.min.js"></script> 
-    <script> 
+<script src="resources/jquery.js"></script>
+<script src="resources/marked.min.js"></script>
+    <script>
 function loadHash() {
   jQuery(".markdown").each(function(el){jQuery(this).after(marked.parse(jQuery(this).text())).remove()});
 	var hash = location.hash;
@@ -51,15 +51,15 @@ function loadTOC(){
 		}
 	  });
 	  t+='</ul>';
-	  $("#toc").html(t); 
+	  $("#toc").html(t);
 }
 $(function(){
     loadHash();
 }); $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- }; 
-   </script> 
-  </head> 
+ };
+   </script>
+  </head>
 
 <body>
 <div class="container">
@@ -93,14 +93,612 @@ $(function(){
 <span>Ontology Specification Draft</span>
 </div>
 </div>     <div id="abstract">The paradigm of context-aware computing allows one to store situational and environmental information in such a way that its interpretation can be done easily and more meaningfully. In turn, this understanding is used to anticipate users' needs and proactively provide them with situation-aware content and experiences. Whereas context-awareness has been investigated extensively in the computer science and IoT disciplines, it has been largely overlooked by the research community dealing with musical interfaces design. Existing musical instruments are not equipped with the ability of understanding the context around them, namely who is the musician playing them, what musical activity is being conducted, as well as where and when. Enhancing musical instruments with context-awareness has the concrete potential to enable novel kinds of interactions between musicians and musical content in a large variety of situations, from playing alone to playing in group, from music learning to music composition. To accomplish such a vision of intelligence embedded in musical instruments it is necessary to model the context around their users. In this paper, we present an ontology devised to represent the knowledge related to musicians and musical activities, the ``Musician Context Ontology'' (MUSICO) with the aim of facilitating the development of context-aware musical applications. There was no previous comprehensive data model for the domain of musicians' context, nevertheless the new ontology relates to several existing ontologies, including the Internet of Musical Things Ontology to represent Internet of Musical Things ecosystems and the Music Ontology that deals with the description of the music value-chain from production to consumption. This paper documents the design of the ontology and its evaluation with respect to specific requirements gathered from an extensive literature review and interviews with musicians.</div>
-<div id="toc"></div> 
+<div id="toc"></div>
 
 <!--INTRODUCTION SECTION-->
-    <div id="introduction">This ontology has the following namespaces.</div>
-  
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following namespaces.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://purl.org/ontology/musico#&gt;</td></tr>
+<tr><td><b>bio</b></td><td>&lt;http://purl.org/vocab/bio/0.1/&gt;</td></tr>
+<tr><td><b>cc</b></td><td>&lt;http://web.resource.org/cc/&gt;</td></tr>
+<tr><td><b>dc</b></td><td>&lt;http://purl.org/dc/elements/1.1/&gt;</td></tr>
+<tr><td><b>device</b></td><td>&lt;http://purl.org/ontology/studio/device/&gt;</td></tr>
+<tr><td><b>en</b></td><td>&lt;http://sw.opencyc.org/2009/04/07/concept/en/&gt;</td></tr>
+<tr><td><b>event</b></td><td>&lt;http://purl.org/NET/c4dm/event.owl#&gt;</td></tr>
+<tr><td><b>foaf</b></td><td>&lt;http://xmlns.com/foaf/0.1/&gt;</td></tr>
+<tr><td><b>iomust</b></td><td>&lt;http://purl.org/ontology/iomust/internet_of_things/iomust/&gt;</td></tr>
+<tr><td><b>mo</b></td><td>&lt;http://purl.org/ontology/mo/&gt;</td></tr>
+<tr><td><b>musico</b></td><td>&lt;http://purl.org/ontology/musico/&gt;</td></tr>
+<tr><td><b>obo</b></td><td>&lt;http://purl.obolibrary.org/obo/&gt;</td></tr>
+<tr><td><b>ontology</b></td><td>&lt;http://dbpedia.org/ontology/&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl#&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</td></tr>
+<tr><td><b>schema</b></td><td>&lt;https://schema.org/&gt;</td></tr>
+<tr><td><b>smi</b></td><td>&lt;http://purl.org/ontology/iomust/smi#&gt;</td></tr>
+<tr><td><b>swrl</b></td><td>&lt;http://www.w3.org/2003/11/swrl#&gt;</td></tr>
+<tr><td><b>swrla</b></td><td>&lt;http://swrl.stanford.edu/ontologies/3.3/swrla.owl#&gt;</td></tr>
+<tr><td><b>swrlb</b></td><td>&lt;http://www.w3.org/2003/11/swrlb#&gt;</td></tr>
+<tr><td><b>terms</b></td><td>&lt;http://purl.org/dc/terms/&gt;</td></tr>
+<tr><td><b>xml</b></td><td>&lt;http://www.w3.org/XML/1998/namespace&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema#&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">Musician's Context Ontology: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#Band" title="http://purl.org/ontology/musico#Band">Band</a>
+   </li>
+   <li>
+      <a href="#ChamberEnsemble" title="http://purl.org/ontology/musico#ChamberEnsemble">ChamberEnsemble</a>
+   </li>
+   <li>
+      <a href="#ComposersGroup" title="http://purl.org/ontology/musico#ComposersGroup">ComposersGroup</a>
+   </li>
+   <li>
+      <a href="#CompositionSession"
+         title="http://purl.org/ontology/musico#CompositionSession">
+         <span>Composition Session</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ConcertHall" title="http://purl.org/ontology/musico#ConcertHall">ConcertHall</a>
+   </li>
+   <li>
+      <a href="#ConservatoryOfMusic"
+         title="http://purl.org/ontology/musico#ConservatoryOfMusic">ConservatoryOfMusic</a>
+   </li>
+   <li>
+      <a href="#Home" title="http://purl.org/ontology/musico#Home">Home</a>
+   </li>
+   <li>
+      <a href="#HumanArranger" title="http://purl.org/ontology/musico#HumanArranger">HumanArranger</a>
+   </li>
+   <li>
+      <a href="#HumanComposer" title="http://purl.org/ontology/musico#HumanComposer">HumanComposer</a>
+   </li>
+   <li>
+      <a href="#HumanConductor" title="http://purl.org/ontology/musico#HumanConductor">HumanConductor</a>
+   </li>
+   <li>
+      <a href="#HumanLiveSoundEngineer"
+         title="http://purl.org/ontology/musico#HumanLiveSoundEngineer">HumanLiveSoundEngineer</a>
+   </li>
+   <li>
+      <a href="#HumanMusician" title="http://purl.org/ontology/musico#HumanMusician">HumanMusician</a>
+   </li>
+   <li>
+      <a href="#HumanMusicLearner"
+         title="http://purl.org/ontology/musico#HumanMusicLearner">HumanMusicLearner</a>
+   </li>
+   <li>
+      <a href="#HumanMusicTeacher"
+         title="http://purl.org/ontology/musico#HumanMusicTeacher">HumanMusicTeacher</a>
+   </li>
+   <li>
+      <a href="#HumanPerformer" title="http://purl.org/ontology/musico#HumanPerformer">HumanPerformer</a>
+   </li>
+   <li>
+      <a href="#HumanStudioProducer"
+         title="http://purl.org/ontology/musico#HumanStudioProducer">HumanStudioProducer</a>
+   </li>
+   <li>
+      <a href="#HumanStudioProducerBedroom"
+         title="http://purl.org/ontology/musico#HumanStudioProducerBedroom">HumanStudioProducerBedroom</a>
+   </li>
+   <li>
+      <a href="#HumanStudioProducerProfessional"
+         title="http://purl.org/ontology/musico#HumanStudioProducerProfessional">HumanStudioProducerProfessional</a>
+   </li>
+   <li>
+      <a href="#IndoorArena" title="http://purl.org/ontology/musico#IndoorArena">IndoorArena</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/Instrument" title="http://dbpedia.org/ontology/Instrument">
+         <span>Instrument</span>
+      </a>
+   </li>
+   <li>
+      <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">
+         <span>Jam Session</span>
+      </a>
+   </li>
+   <li>
+      <a href="#JazzClub" title="http://purl.org/ontology/musico#JazzClub">JazzClub</a>
+   </li>
+   <li>
+      <a href="#LearnersGroup" title="http://purl.org/ontology/musico#LearnersGroup">LearnersGroup</a>
+   </li>
+   <li>
+      <a href="#LiveSoundEngineer"
+         title="http://purl.org/ontology/musico#LiveSoundEngineer">LiveSoundEngineer</a>
+   </li>
+   <li>
+      <a href="#http://purl.obolibrary.org/obo/MFOEM_000193" title="http://purl.obolibrary.org/obo/MFOEM_000193">
+         <span>M F O E M 000193</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MultiagentEvent" title="http://purl.org/ontology/musico#MultiagentEvent">MultiagentEvent</a>
+   </li>
+   <li>
+      <a href="#http://dbpedia.org/ontology/MusicGenre" title="http://dbpedia.org/ontology/MusicGenre">
+         <span>Music Genre</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">
+         <span>Music Lesson</span>
+      </a>
+   </li>
+   <li>
+      <a href="#MusicalApplication"
+         title="http://purl.org/ontology/musico#MusicalApplication">MusicalApplication</a>
+   </li>
+   <li>
+      <a href="#MusicalEvent" title="http://purl.org/ontology/musico#MusicalEvent">MusicalEvent</a>
+   </li>
+   <li>
+      <a href="#MusicalService" title="http://purl.org/ontology/musico#MusicalService">MusicalService</a>
+   </li>
+   <li>
+      <a href="#MusicalSession" title="http://purl.org/ontology/musico#MusicalSession">MusicalSession</a>
+   </li>
+   <li>
+      <a href="#Musician" title="http://purl.org/ontology/musico#Musician">Musician</a>
+   </li>
+   <li>
+      <a href="#MusicianParticipation"
+         title="http://purl.org/ontology/musico#MusicianParticipation">MusicianParticipation</a>
+   </li>
+   <li>
+      <a href="#MusiciansGroup" title="http://purl.org/ontology/musico#MusiciansGroup">MusiciansGroup</a>
+   </li>
+   <li>
+      <a href="#MusicLearner" title="http://purl.org/ontology/musico#MusicLearner">MusicLearner</a>
+   </li>
+   <li>
+      <a href="#MusicSchool" title="http://purl.org/ontology/musico#MusicSchool">MusicSchool</a>
+   </li>
+   <li>
+      <a href="#MusicTeacher" title="http://purl.org/ontology/musico#MusicTeacher">MusicTeacher</a>
+   </li>
+   <li>
+      <a href="#OpenSpace" title="http://purl.org/ontology/musico#OpenSpace">OpenSpace</a>
+   </li>
+   <li>
+      <a href="#OperaHouse" title="http://purl.org/ontology/musico#OperaHouse">OperaHouse</a>
+   </li>
+   <li>
+      <a href="#Orchestra" title="http://purl.org/ontology/musico#Orchestra">Orchestra</a>
+   </li>
+   <li>
+      <a href="#Park" title="http://purl.org/ontology/musico#Park">Park</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">
+         <span>Performance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Performance" title="http://purl.org/ontology/musico#Performance">
+         <span>Performance</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
+         <span>Person</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RecordingStudio" title="http://purl.org/ontology/musico#RecordingStudio">RecordingStudio</a>
+   </li>
+   <li>
+      <a href="#RecreationalMusicMaking"
+         title="http://purl.org/ontology/musico#RecreationalMusicMaking">
+         <span>Recreational Music Making</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">
+         <span>Rehearsal</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RehearsalRoom" title="http://purl.org/ontology/musico#RehearsalRoom">RehearsalRoom</a>
+   </li>
+   <li>
+      <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">
+         <span>Self Learning</span>
+      </a>
+   </li>
+   <li>
+      <a href="#SoftwareAgent" title="http://purl.org/ontology/musico#SoftwareAgent">SoftwareAgent</a>
+   </li>
+   <li>
+      <a href="#SoloEvent" title="http://purl.org/ontology/musico#SoloEvent">SoloEvent</a>
+   </li>
+   <li>
+      <a href="#http://purl.org/ontology/mo/SoundEngineer" title="http://purl.org/ontology/mo/SoundEngineer">SoundEngineer</a>
+   </li>
+   <li>
+      <a href="#SoundEngineer" title="http://purl.org/ontology/musico#SoundEngineer">SoundEngineer</a>
+   </li>
+   <li>
+      <a href="#Stadium" title="http://purl.org/ontology/musico#Stadium">Stadium</a>
+   </li>
+   <li>
+      <a href="#StudioProducer" title="http://purl.org/ontology/musico#StudioProducer">StudioProducer</a>
+   </li>
+   <li>
+      <a href="#TeachersGroup" title="http://purl.org/ontology/musico#TeachersGroup">TeachersGroup</a>
+   </li>
+   <li>
+      <a href="#Tour" title="http://purl.org/ontology/musico#Tour">
+         <span>Tour</span>
+      </a>
+   </li>
+   <li>
+      <a href="#VirtualLiveSoundEngineeer"
+         title="http://purl.org/ontology/musico#VirtualLiveSoundEngineeer">
+         <span>Virtual Live Sound Engineeer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#VirtualArranger" title="http://purl.org/ontology/musico#VirtualArranger">VirtualArranger</a>
+   </li>
+   <li>
+      <a href="#VirtualComposer" title="http://purl.org/ontology/musico#VirtualComposer">VirtualComposer</a>
+   </li>
+   <li>
+      <a href="#VirtualConductor"
+         title="http://purl.org/ontology/musico#VirtualConductor">VirtualConductor</a>
+   </li>
+   <li>
+      <a href="#VirtualMusician" title="http://purl.org/ontology/musico#VirtualMusician">VirtualMusician</a>
+   </li>
+   <li>
+      <a href="#VirtualMusicLearner"
+         title="http://purl.org/ontology/musico#VirtualMusicLearner">VirtualMusicLearner</a>
+   </li>
+   <li>
+      <a href="#VirtualMusicTeacher"
+         title="http://purl.org/ontology/musico#VirtualMusicTeacher">VirtualMusicTeacher</a>
+   </li>
+   <li>
+      <a href="#VirtualPerformer"
+         title="http://purl.org/ontology/musico#VirtualPerformer">VirtualPerformer</a>
+   </li>
+   <li>
+      <a href="#VirtualStudioProducer"
+         title="http://purl.org/ontology/musico#VirtualStudioProducer">VirtualStudioProducer</a>
+   </li>
+</ul><h4>Object Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#displayed_emotion" title="http://purl.org/ontology/musico#displayed_emotion">displayed_emotion</a>
+   </li>
+   <li>
+      <a href="#displayed_mood" title="http://purl.org/ontology/musico#displayed_mood">
+         <span>displayed_mood</span>
+      </a>
+   </li>
+   <li>
+      <a href="#expressed_emotion"
+         title="http://purl.org/ontology/musico#expressed_emotion">expressed_emotion</a>
+   </li>
+   <li>
+      <a href="#expressed_mood" title="http://purl.org/ontology/musico#expressed_mood">
+         <span>expressed_mood</span>
+      </a>
+   </li>
+   <li>
+      <a href="#felt_emotion" title="http://purl.org/ontology/musico#felt_emotion">felt_emotion</a>
+   </li>
+   <li>
+      <a href="#felt_mood" title="http://purl.org/ontology/musico#felt_mood">
+         <span>felt_mood</span>
+      </a>
+   </li>
+   <li>
+      <a href="#gets_recommendation"
+         title="http://purl.org/ontology/musico#gets_recommendation">
+         <span>gets recommendation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#gets_recommended_event"
+         title="http://purl.org/ontology/musico#gets_recommended_event">
+         <span>gets recommended event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#gets_recommended_genre"
+         title="http://purl.org/ontology/musico#gets_recommended_genre">
+         <span>gets recommended genre</span>
+      </a>
+   </li>
+   <li>
+      <a href="#gets_recommended_instrument"
+         title="http://purl.org/ontology/musico#gets_recommended_instrument">
+         <span>gets recommended instrument</span>
+      </a>
+   </li>
+   <li>
+      <a href="#gets_recommended_music_venue"
+         title="http://purl.org/ontology/musico#gets_recommended_music_venue">
+         <span>gets recommended music venue</span>
+      </a>
+   </li>
+   <li>
+      <a href="#gets_recommended_user"
+         title="http://purl.org/ontology/musico#gets_recommended_user">
+         <span>gets recommended user</span>
+      </a>
+   </li>
+   <li>
+      <a href="#has_group" title="http://purl.org/ontology/musico#has_group">has_group</a>
+   </li>
+   <li>
+      <a href="#has_virtual_musician"
+         title="http://purl.org/ontology/musico#has_virtual_musician">has_virtual_musician</a>
+   </li>
+   <li>
+      <a href="#in_participation" title="http://purl.org/ontology/musico#in_participation">in_participation</a>
+   </li>
+   <li>
+      <a href="#interested_in" title="http://purl.org/ontology/musico#interested_in">
+         <span>interested in</span>
+      </a>
+   </li>
+   <li>
+      <a href="#involved_event" title="http://purl.org/ontology/musico#involved_event">involved_event</a>
+   </li>
+   <li>
+      <a href="#is_mentor_of" title="http://purl.org/ontology/musico#is_mentor_of">is_mentor_of</a>
+   </li>
+   <li>
+      <a href="#is_pupil_of" title="http://purl.org/ontology/musico#is_pupil_of">is_pupil_of</a>
+   </li>
+   <li>
+      <a href="#learns_music_at" title="http://purl.org/ontology/musico#learns_music_at">learns_music_at</a>
+   </li>
+   <li>
+      <a href="#learnt_musical_work"
+         title="http://purl.org/ontology/musico#learnt_musical_work">learnt_musical_work</a>
+   </li>
+   <li>
+      <a href="#live_engineer" title="http://purl.org/ontology/musico#live_engineer">
+         <span>live engineer</span>
+      </a>
+   </li>
+   <li>
+      <a href="#live_engineered" title="http://purl.org/ontology/musico#live_engineered">live_engineered</a>
+   </li>
+   <li>
+      <a href="#participating_musician"
+         title="http://purl.org/ontology/musico#participating_musician">participating_musician</a>
+   </li>
+   <li>
+      <a href="#played_genre" title="http://purl.org/ontology/musico#played_genre">
+         <span>played genre</span>
+      </a>
+   </li>
+   <li>
+      <a href="#played_instrument"
+         title="http://purl.org/ontology/musico#played_instrument">played_instrument</a>
+   </li>
+   <li>
+      <a href="#played_musical_work"
+         title="http://purl.org/ontology/musico#played_musical_work">played_musical_work</a>
+   </li>
+   <li>
+      <a href="#plays_genre" title="http://purl.org/ontology/musico#plays_genre">plays_genre</a>
+   </li>
+   <li>
+      <a href="#plays_instrument" title="http://purl.org/ontology/musico#plays_instrument">plays_instrument</a>
+   </li>
+   <li>
+      <a href="#recognized_emotion"
+         title="http://purl.org/ontology/musico#recognized_emotion">recognized_emotion</a>
+   </li>
+   <li>
+      <a href="#recognized_mood" title="http://purl.org/ontology/musico#recognized_mood">recognized_mood</a>
+   </li>
+   <li>
+      <a href="#sub_festival_event"
+         title="http://purl.org/ontology/musico#sub_festival_event">
+         <span>sub festival event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#sub_musical_event"
+         title="http://purl.org/ontology/musico#sub_musical_event">
+         <span>sub musical event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#sub_tour_event" title="http://purl.org/ontology/musico#sub_tour_event">
+         <span>sub tour event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#sub_genre" title="http://purl.org/ontology/musico#sub_genre">sub_genre</a>
+   </li>
+   <li>
+      <a href="#super_festival_event"
+         title="http://purl.org/ontology/musico#super_festival_event">
+         <span>super festival event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#super_musical_event"
+         title="http://purl.org/ontology/musico#super_musical_event">
+         <span>super musical event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#super_tour_event" title="http://purl.org/ontology/musico#super_tour_event">
+         <span>super tour event</span>
+      </a>
+   </li>
+   <li>
+      <a href="#taught_musical_work"
+         title="http://purl.org/ontology/musico#taught_musical_work">taught_musical_work</a>
+   </li>
+   <li>
+      <a href="#teaches_music_at" title="http://purl.org/ontology/musico#teaches_music_at">teaches_music_at</a>
+   </li>
+   <li>
+      <a href="#uses" title="http://purl.org/ontology/musico#uses">uses</a>
+   </li>
+</ul><h4>Data Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#disability_type" title="http://purl.org/ontology/musico#disability_type">disability_type</a>
+   </li>
+   <li>
+      <a href="#displayed_mood" title="http://purl.org/ontology/musico#displayed_mood">
+         <span>displayed_mood</span>
+      </a>
+   </li>
+   <li>
+      <a href="#expertise_level" title="http://purl.org/ontology/musico#expertise_level">expertise_level</a>
+   </li>
+   <li>
+      <a href="#expressed_mood" title="http://purl.org/ontology/musico#expressed_mood">
+         <span>expressed_mood</span>
+      </a>
+   </li>
+   <li>
+      <a href="#felt_mood" title="http://purl.org/ontology/musico#felt_mood">
+         <span>felt_mood</span>
+      </a>
+   </li>
+   <li>
+      <a href="#has_disability" title="http://purl.org/ontology/musico#has_disability">has_disability</a>
+   </li>
+   <li>
+      <a href="#is_multiagent_event"
+         title="http://purl.org/ontology/musico#is_multiagent_event">is_multiagent_event</a>
+   </li>
+   <li>
+      <a href="#is_situated" title="http://purl.org/ontology/musico#is_situated">is_situated</a>
+   </li>
+   <li>
+      <a href="#is_solo_event" title="http://purl.org/ontology/musico#is_solo_event">is_solo_event</a>
+   </li>
+   <li>
+      <a href="#is_synchronous" title="http://purl.org/ontology/musico#is_synchronous">is_synchronous</a>
+   </li>
+   <li>
+      <a href="#multi-instrumentalism_level"
+         title="http://purl.org/ontology/musico#multi-instrumentalism_level">multi-instrumentalism_level</a>
+   </li>
+   <li>
+      <a href="#professional_level"
+         title="http://purl.org/ontology/musico#professional_level">professional_level</a>
+   </li>
+   <li>
+      <a href="#public_access" title="http://purl.org/ontology/musico#public_access">
+         <span>public access</span>
+      </a>
+   </li>
+</ul><h4>Annotation Properties</h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#http://purl.org/dc/terms/abstract" title="http://purl.org/dc/terms/abstract">
+         <span>abstract</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/based_near" title="http://xmlns.com/foaf/0.1/based_near">
+         <span>based near</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/contributor" title="http://purl.org/dc/elements/1.1/contributor">
+         <span>contributor</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/created" title="http://purl.org/dc/terms/created">
+         <span>created</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/creator" title="http://purl.org/dc/elements/1.1/creator">
+         <span>creator</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+         title="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled">
+         <span>is Rule Enabled</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://web.resource.org/cc/license" title="http://web.resource.org/cc/license">
+         <span>license</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://xmlns.com/foaf/0.1/name" title="http://xmlns.com/foaf/0.1/name">
+         <span>name</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/elements/1.1/rights" title="http://purl.org/dc/elements/1.1/rights">
+         <span>rights</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://purl.org/dc/terms/title" title="http://purl.org/dc/terms/title">
+         <span>title</span>
+      </a>
+   </li>
+</ul><h4> SWRL Rules </h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#d4e2803">eventRecommendation_1</a>
+   </li>
+   <li>
+      <a href="#d4e2924">eventRecommendation_2</a>
+   </li>
+   <li>
+      <a href="#d4e3257">multi_instrumentalism_level</a>
+   </li>
+   <li>
+      <a href="#d4e3045">userRecommendation_1</a>
+   </li>
+</ul><iframe src="webvowl/index.html"></iframe>
+</div>
+
 
 <!--DESCRIPTION SECTION-->
-    <div id="description">The ontology is described in the scientific paper listed in the references. 
+    <div id="description">The ontology is described in the scientific paper listed in the references.
 
 
 
@@ -112,7 +710,7 @@ $(function(){
 
 
 </div>
-   
+
 
 <!--CROSSREF SECTION-->
    <div id="crossref"><h2 id="crossreference" class="list">Cross-reference for Musician's Context Ontology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
@@ -3185,18 +3783,19 @@ This section provides details for each class and property defined by Musician's 
 </div>
 </div>
 </div>
-    
+
 
 <!--REFERENCES SECTION-->
   <div id="references"><ul>
+	<h2 id="ref" class="list">References</h2>
 	<li>Luca Turchet, Andrea Molinari, Jacopo Tomelleri, Paolo Bouquet. The Musician's Context Ontology: modeling the context for smart musical applications. Journal of Web Semantics, 2025.
-	</li>	
+	</li>
 	<li>L. Turchet, C. Fischione, G. Essl, D. Keller, and M. Barthet. Internet of Musical Things: Vision and Challenges. IEEE Access, 6, 61994â62017, 2018.
 	PDF freely available at: <a href="https://ieeexplore.ieee.org/abstract/document/8476543/">https://ieeexplore.ieee.org/abstract/document/8476543/</a>
 	</li>
 	<li>L. Turchet, F. Antoniazzi, F. Viola, F. Giunchiglia, and G. Fazekas. The Internet of Musical Things Ontology. Journal of Web Semantics, 60, 100548, 2020.
 	PDF freely available at: <a href="https://doi.org/10.1016/j.websem.2020.100548">https://doi.org/10.1016/j.websem.2020.100548</a>
-	</li>	
+	</li>
 	<li>L. Turchet. Smart Musical Instruments: vision, design principles, and future directions. IEEE Access, 7, 8944â8963, 2019.
 	PDF freely available at: <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8501898">https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8501898</a>
 	</li>
