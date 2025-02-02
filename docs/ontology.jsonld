@@ -23,7 +23,56 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid101",
+  "@id" : "_:genid104",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Event Recommendation based on  the event's location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "eventRecommendation_1"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid112"
+    }, {
+      "@id" : "_:genid110"
+    }, {
+      "@id" : "_:genid108"
+    }, {
+      "@id" : "_:genid106"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid114"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid106",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://purl.org/ontology/musico#u"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://purl.org/ontology/musico#pl"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://xmlns.com/foaf/0.1/based_near"
+  } ]
+}, {
+  "@id" : "_:genid108",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://purl.org/ontology/musico#ev"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://purl.org/ontology/musico#pl"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.org/vocab/bio/0.1/event"
+  } ]
+}, {
+  "@id" : "_:genid110",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#ev"
@@ -32,7 +81,7 @@
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ]
 }, {
-  "@id" : "_:genid103",
+  "@id" : "_:genid112",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -41,7 +90,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid105",
+  "@id" : "_:genid114",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -53,7 +102,7 @@
     "@id" : "http://purl.org/ontology/musico#gets_recommended_event"
   } ]
 }, {
-  "@id" : "_:genid106",
+  "@id" : "_:genid115",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Event Recommendation based on the user's friends interested in the event"
@@ -63,22 +112,22 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid114"
+      "@id" : "_:genid123"
     }, {
-      "@id" : "_:genid112"
+      "@id" : "_:genid121"
     }, {
-      "@id" : "_:genid110"
+      "@id" : "_:genid119"
     }, {
-      "@id" : "_:genid108"
+      "@id" : "_:genid117"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid116"
+      "@id" : "_:genid125"
     } ]
   } ]
 }, {
-  "@id" : "_:genid108",
+  "@id" : "_:genid117",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#o"
@@ -90,7 +139,7 @@
     "@id" : "http://purl.org/ontology/musico#interested_in"
   } ]
 }, {
-  "@id" : "_:genid110",
+  "@id" : "_:genid119",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -102,7 +151,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/knows"
   } ]
 }, {
-  "@id" : "_:genid112",
+  "@id" : "_:genid121",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#ev"
@@ -111,7 +160,7 @@
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ]
 }, {
-  "@id" : "_:genid114",
+  "@id" : "_:genid123",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -120,7 +169,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid116",
+  "@id" : "_:genid125",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -132,7 +181,7 @@
     "@id" : "http://purl.org/ontology/musico#gets_recommended_event"
   } ]
 }, {
-  "@id" : "_:genid117",
+  "@id" : "_:genid126",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Recommendation of a user based on the similarity of the genre played by the user and the genre played by others in the same city"
@@ -142,30 +191,30 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid135"
+      "@id" : "_:genid144"
     }, {
-      "@id" : "_:genid133"
+      "@id" : "_:genid142"
     }, {
-      "@id" : "_:genid129"
+      "@id" : "_:genid138"
     }, {
-      "@id" : "_:genid127"
+      "@id" : "_:genid136"
     }, {
-      "@id" : "_:genid125"
+      "@id" : "_:genid134"
     }, {
-      "@id" : "_:genid123"
+      "@id" : "_:genid132"
     }, {
-      "@id" : "_:genid121"
+      "@id" : "_:genid130"
     }, {
-      "@id" : "_:genid119"
+      "@id" : "_:genid128"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid137"
+      "@id" : "_:genid146"
     } ]
   } ]
 }, {
-  "@id" : "_:genid119",
+  "@id" : "_:genid128",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#o"
@@ -177,7 +226,7 @@
     "@id" : "http://purl.org/ontology/musico#plays_genre"
   } ]
 }, {
-  "@id" : "_:genid121",
+  "@id" : "_:genid130",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#gen"
@@ -189,7 +238,7 @@
     "@id" : "http://purl.org/ontology/mo/similar_to"
   } ]
 }, {
-  "@id" : "_:genid123",
+  "@id" : "_:genid132",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -201,7 +250,7 @@
     "@id" : "http://purl.org/ontology/musico#plays_genre"
   } ]
 }, {
-  "@id" : "_:genid125",
+  "@id" : "_:genid134",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#o"
@@ -213,7 +262,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/based_near"
   } ]
 }, {
-  "@id" : "_:genid127",
+  "@id" : "_:genid136",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -225,7 +274,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/based_near"
   } ]
 }, {
-  "@id" : "_:genid129",
+  "@id" : "_:genid138",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -238,7 +287,7 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#notEqual"
   } ]
 }, {
-  "@id" : "_:genid133",
+  "@id" : "_:genid142",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#o"
@@ -247,7 +296,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid135",
+  "@id" : "_:genid144",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -256,7 +305,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid137",
+  "@id" : "_:genid146",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -268,7 +317,7 @@
     "@id" : "http://purl.org/ontology/musico#gets_recommended_user"
   } ]
 }, {
-  "@id" : "_:genid138",
+  "@id" : "_:genid147",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Change multi-intrumentalism level whenever the user plays 2 different instruments"
@@ -278,22 +327,22 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid148"
+      "@id" : "_:genid157"
     }, {
-      "@id" : "_:genid146"
+      "@id" : "_:genid155"
     }, {
-      "@id" : "_:genid144"
+      "@id" : "_:genid153"
     }, {
-      "@id" : "_:genid140"
+      "@id" : "_:genid149"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid150"
+      "@id" : "_:genid159"
     } ]
   } ]
 }, {
-  "@id" : "_:genid140",
+  "@id" : "_:genid149",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -304,39 +353,6 @@
   } ],
   "http://www.w3.org/2003/11/swrl#builtin" : [ {
     "@id" : "http://www.w3.org/2003/11/swrlb#notEqual"
-  } ]
-}, {
-  "@id" : "_:genid144",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://purl.org/ontology/musico#u"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://purl.org/ontology/musico#b"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://purl.org/ontology/musico#plays_instrument"
-  } ]
-}, {
-  "@id" : "_:genid146",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://purl.org/ontology/musico#u"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://purl.org/ontology/musico#a"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://purl.org/ontology/musico#plays_instrument"
-  } ]
-}, {
-  "@id" : "_:genid148",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://purl.org/ontology/musico#u"
-  } ],
-  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
-    "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
   "@id" : "_:genid15",
@@ -351,7 +367,40 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid150",
+  "@id" : "_:genid153",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://purl.org/ontology/musico#u"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://purl.org/ontology/musico#b"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.org/ontology/musico#plays_instrument"
+  } ]
+}, {
+  "@id" : "_:genid155",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://purl.org/ontology/musico#u"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://purl.org/ontology/musico#a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://purl.org/ontology/musico#plays_instrument"
+  } ]
+}, {
+  "@id" : "_:genid157",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://purl.org/ontology/musico#u"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://purl.org/ontology/musico#HumanMusician"
+  } ]
+}, {
+  "@id" : "_:genid159",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -667,52 +716,25 @@
   } ]
 }, {
   "@id" : "_:genid95",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
-  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
-    "@value" : "Event Recommendation based on  the event's location"
-  } ],
-  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
-    "@value" : "eventRecommendation_1"
-  } ],
-  "http://www.w3.org/2003/11/swrl#body" : [ {
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
     "@list" : [ {
-      "@id" : "_:genid103"
+      "@id" : "http://purl.org/ontology/mo/Performance"
     }, {
-      "@id" : "_:genid101"
+      "@id" : "http://purl.org/ontology/musico#CompositionSession"
     }, {
-      "@id" : "_:genid99"
+      "@id" : "http://purl.org/ontology/musico#JamSession"
     }, {
-      "@id" : "_:genid97"
+      "@id" : "http://purl.org/ontology/musico#MusicLesson"
+    }, {
+      "@id" : "http://purl.org/ontology/musico#Performance"
+    }, {
+      "@id" : "http://purl.org/ontology/musico#RecreationalMusicMaking"
+    }, {
+      "@id" : "http://purl.org/ontology/musico#Rehearsal"
+    }, {
+      "@id" : "http://purl.org/ontology/musico#SelfLearning"
     } ]
-  } ],
-  "http://www.w3.org/2003/11/swrl#head" : [ {
-    "@list" : [ {
-      "@id" : "_:genid105"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid97",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://purl.org/ontology/musico#u"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://purl.org/ontology/musico#pl"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/based_near"
-  } ]
-}, {
-  "@id" : "_:genid99",
-  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
-  "http://www.w3.org/2003/11/swrl#argument1" : [ {
-    "@id" : "http://purl.org/ontology/musico#ev"
-  } ],
-  "http://www.w3.org/2003/11/swrl#argument2" : [ {
-    "@id" : "http://purl.org/ontology/musico#pl"
-  } ],
-  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
-    "@id" : "http://purl.org/vocab/bio/0.1/event"
   } ]
 }, {
   "@id" : "http://dbpedia.org/ontology/Instrument",
@@ -725,6 +747,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://purl.org/ontology/mo/Genre"
+  } ]
+}, {
+  "@id" : "http://dbpedia.org/ontology/pictureDescription",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
   } ]
 }, {
   "@id" : "http://purl.obolibrary.org/obo/MFOEM_000001",
@@ -790,6 +817,9 @@
   "@id" : "http://purl.org/ontology/mo/Conductor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
+  "@id" : "http://purl.org/ontology/mo/Festival",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
   "@id" : "http://purl.org/ontology/mo/Genre",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
@@ -846,7 +876,7 @@
   } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#dateTime",
-    "@value" : "2024-06-03T10:00:00"
+    "@value" : "2025-02-03T10:00:00"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "Musician's Context Ontology"
@@ -912,6 +942,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#CompositionSession",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A music composition event. The composition activity may be conducted by an individual or a group."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ]
@@ -960,6 +993,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#HumanArranger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human being involved in an arragnement of a music piece."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "HumanArranger"
@@ -973,6 +1009,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#HumanComposer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human being involved in a music composition process."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "HumanComposer"
@@ -986,6 +1025,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#HumanConductor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human being involved in the direction of a group of musicians, such as an orchestra director."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "HumanConductor"
@@ -999,6 +1041,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#HumanLiveSoundEngineer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances)."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "HumanLiveSoundEngineer"
@@ -1012,6 +1057,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#HumanMusicLearner",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human being involved in an activity of learning music."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "HumanMusicLearner"
@@ -1025,6 +1073,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#HumanMusicTeacher",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human being involved in an activity of teaching music."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "HumanMusicTeacher"
@@ -1058,6 +1109,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#HumanPerformer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human being involved in a performance activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "HumanPerformer"
@@ -1153,7 +1207,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances)."
+    "@value" : "A sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances), either a human or a software agent."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -1183,6 +1237,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#MultiagentEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An event conducted by more than one individual. For instance, a concert performed by an orchestra."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "MultiagentEvent"
@@ -1199,6 +1256,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#MusicLearner",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human being involved in an activity of learning music or a software agent capable of learning music."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "MusicLearner"
@@ -1229,6 +1289,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#MusicTeacher",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An actual human being involved in an activity of teaching music or a software agent capable of teaching music."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "MusicTeacher"
@@ -1263,6 +1326,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://purl.org/ontology/musico#MusicalSession"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#MusicalService",
@@ -1386,6 +1452,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#Performance",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A music performance event, such as a live concert."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ]
@@ -1438,6 +1507,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#SelfLearning",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An event in which an individual learns music theory or practice by himself/herself."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ]
@@ -1450,6 +1522,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#SoftwareAgent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A software agent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "SoftwareAgent"
@@ -1460,6 +1535,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#SoloEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An event conducted by a unique individual. For example, a guitar recital performed by a unique classical guitar player."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "SoloEvent"
@@ -1479,6 +1557,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#SoundEngineer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A sound engineer."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "SoundEngineer"
@@ -1505,6 +1586,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#StudioProducer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A studio producer."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "StudioProducer"
@@ -1535,8 +1619,11 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#Tour",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A tour event. A tour comprises various performances."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/musico#MusicalEvent"
+    "@id" : "http://purl.org/NET/c4dm/event.owl#Event"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#Verona",
@@ -1547,6 +1634,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#VirtualArranger",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A software agent capable of making an arragnement of a music piece."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "VirtualArranger"
@@ -1560,6 +1650,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#VirtualComposer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An software agent capable of composing music."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "VirtualComposer"
@@ -1573,6 +1666,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#VirtualConductor",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A software agent capable of directing a group of musicians, such as an orchestra director."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "VirtualConductor"
@@ -1586,6 +1682,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#VirtualLiveSoundEngineeer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A software agent capable of performing activities of live sound engineering."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://purl.org/ontology/musico#VirtualMusician"
   } ],
@@ -1595,6 +1694,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#VirtualMusicLearner",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A software agent capable of learning music."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "VirtualMusicLearner"
@@ -1608,6 +1710,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#VirtualMusicTeacher",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A software agent capable of teaching music."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "VirtualMusicTeacher"
@@ -1638,6 +1743,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#VirtualPerformer",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A software agent capable of performing."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "VirtualPerformer"
@@ -1679,6 +1787,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#disability_type",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The type of disability of a person, in terms of the following categories: auditory-, cognitively-, motor-, and visually-impaired."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
@@ -1692,6 +1803,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#displayed_emotion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a virtual musician to display a given emotion while taking part in a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -1705,6 +1819,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#displayed_mood",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a virtual musician to display a given mood while taking part in a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -1726,7 +1843,7 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "The expertise level of a musician (three contrained values: beginner, expert and intermediate)"
+    "@value" : "The expertise level of a musician (three constrained values: beginner, expert and intermediate)."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#Musician"
@@ -1741,6 +1858,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#expressed_emotion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a human musician to express a given emotion while taking part in a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -1754,6 +1874,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#expressed_mood",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a human musician to express a given mood while taking part in a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -1770,6 +1893,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#felt_emotion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a human musician to feel a given emotion while taking part in a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -1783,6 +1909,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#felt_mood",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a human musician to feel a given mood while taking part in a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -1798,7 +1927,10 @@
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 }, {
   "@id" : "http://purl.org/ontology/musico#gets_recommendation",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates an agent to a thing, such that the thing is recommended to the agent."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
   } ],
@@ -1807,7 +1939,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#gets_recommended_event",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A musical event is recommended to human musician."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ],
@@ -1819,7 +1954,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#gets_recommended_genre",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A musical genre is recommended to human musician."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ],
@@ -1831,7 +1969,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#gets_recommended_instrument",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A musical instrument (including smart instruments) is recommended to human musician."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ],
@@ -1843,7 +1984,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#gets_recommended_music_venue",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A musical venue is recommended to human musician."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ],
@@ -1855,7 +1999,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#gets_recommended_user",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A user is recommended to another user."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Agent"
   } ],
@@ -1871,6 +2018,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#has_disability",
   "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Indicates wether a person has a disability or not."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://xmlns.com/foaf/0.1/Person"
   } ],
@@ -1884,6 +2034,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#has_group",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a musical event to a group of musicians."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ],
@@ -1897,6 +2050,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#has_virtual_musician",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An application runnin on a smart musical instrument has a software agent capable of performing a musical activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/iomust/smi#SMIApplication"
   } ],
@@ -1913,6 +2069,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#in_participation",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a human musician to a MusicianParticipation."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ],
@@ -1929,6 +2088,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#interested_in",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a human musician of being interested in a given musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ],
@@ -1938,6 +2100,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#involved_event",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a MusicianParticipation to a musical event or a part of a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -1950,7 +2115,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#is_mentor_of",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a music teacher to a music learner, such that the teacher is the mentor of the learner."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicTeacher"
   } ],
@@ -1989,7 +2157,10 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#is_pupil_of",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a music learner to a music teacher, such that the learner is the pupil of the teacher."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicLearner"
   } ],
@@ -2055,6 +2226,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#learns_music_at",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a music learner to the venue where he/she conducts the learning activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicLearner"
   } ],
@@ -2068,6 +2242,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#learnt_musical_work",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a MusicianParticipation ot a musical work, such that a musician learnt a given musical work during a musical activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -2083,12 +2260,15 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#live_engineer",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a performance to a human being or virtual agent who were involved in as live sound engineers."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/mo/Performance"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    "@id" : "http://purl.org/ontology/musico#LiveSoundEngineer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
     "@id" : "http://purl.org/NET/c4dm/event.owl#agent"
@@ -2098,9 +2278,12 @@
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#live_engineered",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates human beings or software agents to the performances they were involved in as live sound engineers."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
-    "@id" : "http://xmlns.com/foaf/0.1/Agent"
+    "@id" : "http://purl.org/ontology/musico#LiveSoundEngineer"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
@@ -2137,6 +2320,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#participating_musician",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a MusicianParticipation to a human musician."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -2161,7 +2347,10 @@
   "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 }, {
   "@id" : "http://purl.org/ontology/musico#played_genre",
-  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A music genre is played at a music venue."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "https://schema.org/MusicVenue"
   } ],
@@ -2171,6 +2360,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#played_instrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a MusicianParticipation ot a smart musical instrument, such that a musician played a given smart musical instrument during a musical activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -2184,6 +2376,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#played_musical_work",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a MusicianParticipation ot a musical work, such that a musician played a given musical work during a musical activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -2197,6 +2392,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#plays_genre",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A musician or a group of musicians who play a given musical genre."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "_:genid7"
   } ],
@@ -2210,6 +2408,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#plays_instrument",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A musician who plays a musical instrument."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#Musician"
   } ],
@@ -2256,6 +2457,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#recognized_emotion",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a virtual musician to recongize a given emotion while taking part in a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -2269,6 +2473,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#recognized_mood",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The act of a virtual musician to recongize a given mood while taking part in a musical event."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -2292,11 +2499,32 @@
   "@id" : "http://purl.org/ontology/musico#stradiusSmartViolin",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
+  "@id" : "http://purl.org/ontology/musico#sub_festival_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Performance that is part of a Festival. For example, the concert of Jimi Hendrix at Woodstock is part of such festival. Note that a Performance can be part of a Festival and also of a Tour."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/musico#Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/mo/Festival"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/subEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/musico#super_festival_event"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://purl.org/ontology/musico#sub_musical_event"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/musico#sub_genre",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@language" : "en",
-    "@value" : "A property relating a genre as a subgenre of another. E.g., Bop or Swing are sub-genres of the Jazz genre."
+    "@value" : "A property relating a genre as a subgenre of another. E.g., Bebop or Swing are sub-genres of the Jazz genre."
   } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/mo/Genre"
@@ -2309,8 +2537,103 @@
     "@id" : "http://purl.org/ontology/mo/Genre"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/musico#sub_musical_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A MusicalSession that is part of a MusicalEvent. For example, a lesson can be composed of different parts (such as a theoretical part), each of which is a sub-musical event of the lesson."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/musico#MusicalSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/musico#MusicalEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/subEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/musico#super_musical_event"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://purl.org/ontology/musico#sub_tour_event"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/musico#sub_tour_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Performance that is part of a Tour. For example, the concert in New York of the Dream Theater is part of the US tour of the band. Note that a Performance can be part of a Tour and also of a Festival."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/musico#Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/musico#Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/subEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/ontology/musico#super_tour_event"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/musico#super_festival_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Festival that includes a Performance. For example, the 1969 edition of the Woodstock festival included a performance of Jimi Hendrix."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Festival"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/musico#Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/superEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://purl.org/ontology/musico#super_musical_event"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/musico#super_musical_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A MusicalEvent that includes a MusicalSession. For example, a lesson includes a teoretical session and a practical one."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/musico#MusicalEvent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/musico#MusicalSession"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/superEvent"
+  } ],
+  "http://www.w3.org/2002/07/owl#propertyDisjointWith" : [ {
+    "@id" : "http://purl.org/ontology/musico#super_tour_event"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/musico#super_tour_event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A Tour that includes a Performance. For example, the 2025 US tour of the band Dream Theater includes a concert in New York."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/ontology/mo/Festival"
+  }, {
+    "@id" : "http://purl.org/ontology/musico#Tour"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/ontology/musico#Performance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://schema.org/superEvent"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/musico#taught_musical_work",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a MusicianParticipation ot a musical work, such that a musician taught a given musical work during a musical activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicianParticipation"
   } ],
@@ -2327,6 +2650,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#teaches_music_at",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#AsymmetricProperty", "http://www.w3.org/2002/07/owl#IrreflexiveProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Relates a music teacher to the venue where he/she conducts the teaching activity."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
     "@id" : "http://purl.org/ontology/musico#MusicTeacher"
   } ],
@@ -2416,5 +2742,11 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "https://schema.org/participant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://schema.org/subEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://schema.org/superEvent",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 } ]
