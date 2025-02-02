@@ -738,6 +738,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
+        <rdfs:comment>The type of disability of a person, in terms of the following categories: auditory-, cognitively-, motor-, and visually-impaired.</rdfs:comment>
         <rdfs:label xml:lang="en">disability_type</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -771,7 +772,7 @@
                 </owl:oneOf>
             </rdfs:Datatype>
         </rdfs:range>
-        <rdfs:comment xml:lang="en">The expertise level of a musician (three contrained values: beginner, expert and intermediate)</rdfs:comment>
+        <rdfs:comment xml:lang="en">The expertise level of a musician (three constrained values: beginner, expert and intermediate).</rdfs:comment>
         <rdfs:label xml:lang="en">expertise_level</rdfs:label>
     </owl:DatatypeProperty>
     
@@ -783,6 +784,7 @@
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Indicates wether a person has a disability or not.</rdfs:comment>
         <rdfs:label xml:lang="en">has_disability</rdfs:label>
     </owl:DatatypeProperty>
     
