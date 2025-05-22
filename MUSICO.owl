@@ -1014,6 +1014,14 @@
     
 
 
+    <!-- http://purl.org/ontology/mo/MusicGroup -->
+
+    <rdf:Description rdf:about="http://purl.org/ontology/mo/MusicGroup">
+        <owl:equivalentClass rdf:resource="http://purl.org/ontology/musico#PerformersGroup"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/ontology/mo/Performance -->
 
     <owl:Class rdf:about="http://purl.org/ontology/mo/Performance">
@@ -1041,7 +1049,8 @@
     <!-- http://purl.org/ontology/musico#Band -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Band">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#PerformersGroup"/>
+        <rdfs:comment>A band is a group of musicians who play instruments together. Bands can perform various music styles, such as rock, jazz, or pop. They may perform with or without vocals.</rdfs:comment>
         <rdfs:label xml:lang="en">Band</rdfs:label>
     </owl:Class>
     
@@ -1050,7 +1059,8 @@
     <!-- http://purl.org/ontology/musico#ChamberEnsemble -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#ChamberEnsemble">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#PerformersGroup"/>
+        <rdfs:comment>A chamber ensemble is a small group of musicians performing classical music. It usually features one player per part, without a conductor. Groups can range from duos to octets or more.</rdfs:comment>
         <rdfs:label xml:lang="en">ChamberEnsemble</rdfs:label>
     </owl:Class>
     
@@ -1489,7 +1499,8 @@
     <!-- http://purl.org/ontology/musico#Orchestra -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Orchestra">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#PerformersGroup"/>
+        <rdfs:comment>An orchestra is a large group of instrumentalists who play together to perform complex music, organized into sections and with a precise structure. It typically includes strings, woodwinds, brass, and percussion sections. Orchestras perform classical music and other musical genres. They are usually led by a conductor who directs the performance.</rdfs:comment>
         <rdfs:label xml:lang="en">Orchestra</rdfs:label>
     </owl:Class>
     
@@ -1509,6 +1520,16 @@
     <owl:Class rdf:about="http://purl.org/ontology/musico#Performance">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusicalEvent"/>
         <rdfs:comment>A music performance event, such as a live concert.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ontology/musico#PerformersGroup -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico#PerformersGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusiciansGroup"/>
+        <rdfs:comment>A group of performers (e.g., involved in a collaborative music performance activity)</rdfs:comment>
+        <skos:prefLabel>PerformersGroup</skos:prefLabel>
     </owl:Class>
     
 
