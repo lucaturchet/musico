@@ -24,7 +24,6 @@
      xmlns:schema="https://schema.org/"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:musico#0.1="http://purl.org/ontology/musico#0.1#"
      xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.org/ontology/musico#">
         <owl:versionIRI rdf:resource="http://purl.org/ontology/musico#0.1"/>

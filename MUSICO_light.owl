@@ -3,16 +3,28 @@
      xml:base="http://purl.org/ontology/musico"
      xmlns:cc="http://web.resource.org/cc/"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mo="http://purl.org/ontology/mo/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:ns1="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:wot="http://xmlns.com/wot/0.1/"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:terms="http://purl.org/dc/terms/">
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="https://schema.org/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ace_lexicon="http://attempto.ifi.uzh.ch/ace_lexicon#">
     <owl:Ontology rdf:about="http://purl.org/ontology/musico#">
         <owl:versionIRI rdf:resource="http://purl.org/ontology/musico#0.1"/>
         <dc:contributor>Andrea Molinari</dc:contributor>
@@ -992,6 +1004,14 @@
     
 
 
+    <!-- http://purl.org/ontology/mo/MusicGroup -->
+
+    <rdf:Description rdf:about="http://purl.org/ontology/mo/MusicGroup">
+        <owl:equivalentClass rdf:resource="http://purl.org/ontology/musico#PerformersGroup"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.org/ontology/mo/Performance -->
 
     <owl:Class rdf:about="http://purl.org/ontology/mo/Performance">
@@ -1019,7 +1039,8 @@
     <!-- http://purl.org/ontology/musico#Band -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Band">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#PerformersGroup"/>
+        <rdfs:comment>A band is a group of musicians who play instruments together. Bands can perform various music styles, such as rock, jazz, or pop. They may perform with or without vocals.</rdfs:comment>
         <rdfs:label xml:lang="en">Band</rdfs:label>
     </owl:Class>
     
@@ -1028,7 +1049,8 @@
     <!-- http://purl.org/ontology/musico#ChamberEnsemble -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#ChamberEnsemble">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#PerformersGroup"/>
+        <rdfs:comment>A chamber ensemble is a small group of musicians performing classical music. It usually features one player per part, without a conductor. Groups can range from duos to octets or more.</rdfs:comment>
         <rdfs:label xml:lang="en">ChamberEnsemble</rdfs:label>
     </owl:Class>
     
@@ -1057,6 +1079,8 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#ConcertHall">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A large indoor venue designed for live music performances, especially classical music. It typically features excellent acoustics and tiered seating.
+Typically used by orchestras, choirs, and soloists.</rdfs:comment>
         <rdfs:label xml:lang="en">ConcertHall</rdfs:label>
     </owl:Class>
     
@@ -1075,6 +1099,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Home">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>The home of a musician, where s/he can perform musical activities.</rdfs:comment>
         <rdfs:label xml:lang="en">Home</rdfs:label>
     </owl:Class>
     
@@ -1264,6 +1289,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#IndoorArena">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A spacious, multi-purpose indoor venue for concerts, sports, and large events. It can host thousands of people with stage and lighting setups. Commonly used for pop, rock, and touring performances.</rdfs:comment>
         <rdfs:label xml:lang="en">IndoorArena</rdfs:label>
     </owl:Class>
     
@@ -1283,6 +1309,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#JazzClub">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A small, intimate venue dedicated to live jazz music. It often serves food and drinks, creating a relaxed atmosphere. Ideal for close interaction between performers and audience.</rdfs:comment>
         <rdfs:label xml:lang="en">JazzClub</rdfs:label>
     </owl:Class>
     
@@ -1360,6 +1387,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#MusicSchool">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>An educational institution focused on teaching music. Offers lessons, for instance, in instruments, voice, theory, and composition. It can range from local schools to prestigious conservatories.</rdfs:comment>
         <rdfs:label xml:lang="en">MusicSchool</rdfs:label>
     </owl:Class>
     
@@ -1450,6 +1478,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#OpenSpace">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>An outdoor area used for concerts, festivals, or music gatherings. Examples include parks, fields, or city squares. Often used for large, casual, or seasonal events.</rdfs:comment>
         <rdfs:label xml:lang="en">OpenSpace</rdfs:label>
     </owl:Class>
     
@@ -1459,6 +1488,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#OperaHouse">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A theater specifically built for opera and classical performances. It includes a stage, orchestra pit, and elaborate seating areas. Known for rich acoustics and dramatic productions.</rdfs:comment>
         <rdfs:label xml:lang="en">OperaHouse</rdfs:label>
     </owl:Class>
     
@@ -1467,7 +1497,8 @@
     <!-- http://purl.org/ontology/musico#Orchestra -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Orchestra">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/mo/MusicGroup"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#PerformersGroup"/>
+        <rdfs:comment>An orchestra is a large group of instrumentalists who play together to perform complex music, organized into sections and with a precise structure. It typically includes strings, woodwinds, brass, and percussion sections. Orchestras perform classical music and other musical genres. They are usually led by a conductor who directs the performance.</rdfs:comment>
         <rdfs:label xml:lang="en">Orchestra</rdfs:label>
     </owl:Class>
     
@@ -1477,6 +1508,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Park">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#OpenSpace"/>
+        <rdfs:comment>A public green space often used for outdoor music events and festivals. It provides a relaxed, natural setting for casual or community concerts. Usually accommodates open-air stages and large crowds.</rdfs:comment>
         <rdfs:label xml:lang="en">Park</rdfs:label>
     </owl:Class>
     
@@ -1491,10 +1523,21 @@
     
 
 
+    <!-- http://purl.org/ontology/musico#PerformersGroup -->
+
+    <owl:Class rdf:about="http://purl.org/ontology/musico#PerformersGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusiciansGroup"/>
+        <rdfs:comment>A group of performers (e.g., involved in a collaborative music performance activity)</rdfs:comment>
+        <skos:prefLabel>PerformersGroup</skos:prefLabel>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ontology/musico#RecordingStudio -->
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#RecordingStudio">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A controlled environment for recording, mixing, and producing music. Equipped with microphones, soundboards, and editing software. Used by artists, bands, sound engineers, and producers.</rdfs:comment>
         <rdfs:label xml:lang="en">RecordingStudio</rdfs:label>
     </owl:Class>
     
@@ -1524,6 +1567,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#RehearsalRoom">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A private space where musicians practice individually or in groups. Often soundproof and equipped with basic instruments or gear. Typically used to prepare for performances or recordings.</rdfs:comment>
         <rdfs:label xml:lang="en">RehearsalRoom</rdfs:label>
     </owl:Class>
     
@@ -1583,6 +1627,8 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Stadium">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#OpenSpace"/>
+        <rdfs:comment>A large open-air or domed venue typically used for sports and major events. It can host tens of thousands of people for large-scale concerts.
+Typically used for high-profile tours and festivals with massive production.</rdfs:comment>
         <rdfs:label xml:lang="en">Stadium</rdfs:label>
     </owl:Class>
     
@@ -2039,7 +2085,6 @@
             <rdf:Description rdf:about="http://purl.org/ontology/musico#CompositionSession"/>
             <rdf:Description rdf:about="http://purl.org/ontology/musico#JamSession"/>
             <rdf:Description rdf:about="http://purl.org/ontology/musico#MusicLesson"/>
-            <rdf:Description rdf:about="http://purl.org/ontology/musico#Performance"/>
             <rdf:Description rdf:about="http://purl.org/ontology/musico#RecreationalMusicMaking"/>
             <rdf:Description rdf:about="http://purl.org/ontology/musico#Rehearsal"/>
             <rdf:Description rdf:about="http://purl.org/ontology/musico#SelfLearning"/>
