@@ -1089,6 +1089,8 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#ConcertHall">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A large indoor venue designed for live music performances, especially classical music. It typically features excellent acoustics and tiered seating.
+Typically used by orchestras, choirs, and soloists.</rdfs:comment>
         <rdfs:label xml:lang="en">ConcertHall</rdfs:label>
     </owl:Class>
     
@@ -1107,6 +1109,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Home">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>The home of a musician, where s/he can perform musical activities.</rdfs:comment>
         <rdfs:label xml:lang="en">Home</rdfs:label>
     </owl:Class>
     
@@ -1296,6 +1299,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#IndoorArena">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A spacious, multi-purpose indoor venue for concerts, sports, and large events. It can host thousands of people with stage and lighting setups. Commonly used for pop, rock, and touring performances.</rdfs:comment>
         <rdfs:label xml:lang="en">IndoorArena</rdfs:label>
     </owl:Class>
     
@@ -1315,6 +1319,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#JazzClub">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A small, intimate venue dedicated to live jazz music. It often serves food and drinks, creating a relaxed atmosphere. Ideal for close interaction between performers and audience.</rdfs:comment>
         <rdfs:label xml:lang="en">JazzClub</rdfs:label>
     </owl:Class>
     
@@ -1392,6 +1397,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#MusicSchool">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>An educational institution focused on teaching music. Offers lessons, for instance, in instruments, voice, theory, and composition. It can range from local schools to prestigious conservatories.</rdfs:comment>
         <rdfs:label xml:lang="en">MusicSchool</rdfs:label>
     </owl:Class>
     
@@ -1482,6 +1488,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#OpenSpace">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>An outdoor area used for concerts, festivals, or music gatherings. Examples include parks, fields, or city squares. Often used for large, casual, or seasonal events.</rdfs:comment>
         <rdfs:label xml:lang="en">OpenSpace</rdfs:label>
     </owl:Class>
     
@@ -1491,6 +1498,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#OperaHouse">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A theater specifically built for opera and classical performances. It includes a stage, orchestra pit, and elaborate seating areas. Known for rich acoustics and dramatic productions.</rdfs:comment>
         <rdfs:label xml:lang="en">OperaHouse</rdfs:label>
     </owl:Class>
     
@@ -1510,6 +1518,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Park">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#OpenSpace"/>
+        <rdfs:comment>A public green space often used for outdoor music events and festivals. It provides a relaxed, natural setting for casual or community concerts. Usually accommodates open-air stages and large crowds.</rdfs:comment>
         <rdfs:label xml:lang="en">Park</rdfs:label>
     </owl:Class>
     
@@ -1538,6 +1547,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#RecordingStudio">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A controlled environment for recording, mixing, and producing music. Equipped with microphones, soundboards, and editing software. Used by artists, bands, sound engineers, and producers.</rdfs:comment>
         <rdfs:label xml:lang="en">RecordingStudio</rdfs:label>
     </owl:Class>
     
@@ -1567,6 +1577,7 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#RehearsalRoom">
         <rdfs:subClassOf rdf:resource="https://schema.org/MusicVenue"/>
+        <rdfs:comment>A private space where musicians practice individually or in groups. Often soundproof and equipped with basic instruments or gear. Typically used to prepare for performances or recordings.</rdfs:comment>
         <rdfs:label xml:lang="en">RehearsalRoom</rdfs:label>
     </owl:Class>
     
@@ -1626,6 +1637,8 @@
 
     <owl:Class rdf:about="http://purl.org/ontology/musico#Stadium">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#OpenSpace"/>
+        <rdfs:comment>A large open-air or domed venue typically used for sports and major events. It can host tens of thousands of people for large-scale concerts.
+Typically used for high-profile tours and festivals with massive production.</rdfs:comment>
         <rdfs:label xml:lang="en">Stadium</rdfs:label>
     </owl:Class>
     
