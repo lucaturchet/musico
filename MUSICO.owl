@@ -15,7 +15,6 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:prov="http://www.w3.org/ns/prov#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
      xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
@@ -1537,7 +1536,7 @@ Typically used by orchestras, choirs, and soloists.</rdfs:comment>
     <owl:Class rdf:about="http://purl.org/ontology/musico#PerformersGroup">
         <rdfs:subClassOf rdf:resource="http://purl.org/ontology/musico#MusiciansGroup"/>
         <rdfs:comment>A group of performers (e.g., involved in a collaborative music performance activity)</rdfs:comment>
-        <skos:prefLabel>PerformersGroup</skos:prefLabel>
+        <rdfs:label xml:lang="en">PerformersGroup</rdfs:label>
     </owl:Class>
     
 
