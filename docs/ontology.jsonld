@@ -23,7 +23,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid104",
+  "@id" : "_:genid103",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Event Recommendation based on  the event's location"
@@ -33,22 +33,22 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid112"
+      "@id" : "_:genid111"
     }, {
-      "@id" : "_:genid110"
+      "@id" : "_:genid109"
     }, {
-      "@id" : "_:genid108"
+      "@id" : "_:genid107"
     }, {
-      "@id" : "_:genid106"
+      "@id" : "_:genid105"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid114"
+      "@id" : "_:genid113"
     } ]
   } ]
 }, {
-  "@id" : "_:genid106",
+  "@id" : "_:genid105",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -60,7 +60,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/based_near"
   } ]
 }, {
-  "@id" : "_:genid108",
+  "@id" : "_:genid107",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#ev"
@@ -72,7 +72,7 @@
     "@id" : "http://purl.org/vocab/bio/0.1/event"
   } ]
 }, {
-  "@id" : "_:genid110",
+  "@id" : "_:genid109",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#ev"
@@ -81,7 +81,7 @@
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ]
 }, {
-  "@id" : "_:genid112",
+  "@id" : "_:genid111",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -90,7 +90,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid114",
+  "@id" : "_:genid113",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -102,7 +102,7 @@
     "@id" : "http://purl.org/ontology/musico#gets_recommended_event"
   } ]
 }, {
-  "@id" : "_:genid115",
+  "@id" : "_:genid114",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Event Recommendation based on the user's friends interested in the event"
@@ -112,22 +112,22 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid123"
+      "@id" : "_:genid122"
     }, {
-      "@id" : "_:genid121"
+      "@id" : "_:genid120"
     }, {
-      "@id" : "_:genid119"
+      "@id" : "_:genid118"
     }, {
-      "@id" : "_:genid117"
+      "@id" : "_:genid116"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid125"
+      "@id" : "_:genid124"
     } ]
   } ]
 }, {
-  "@id" : "_:genid117",
+  "@id" : "_:genid116",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#o"
@@ -139,7 +139,7 @@
     "@id" : "http://purl.org/ontology/musico#interested_in"
   } ]
 }, {
-  "@id" : "_:genid119",
+  "@id" : "_:genid118",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -151,7 +151,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/knows"
   } ]
 }, {
-  "@id" : "_:genid121",
+  "@id" : "_:genid120",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#ev"
@@ -160,7 +160,7 @@
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ]
 }, {
-  "@id" : "_:genid123",
+  "@id" : "_:genid122",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -169,7 +169,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid125",
+  "@id" : "_:genid124",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -181,7 +181,7 @@
     "@id" : "http://purl.org/ontology/musico#gets_recommended_event"
   } ]
 }, {
-  "@id" : "_:genid126",
+  "@id" : "_:genid125",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Recommendation of a user based on the similarity of the genre played by the user and the genre played by others in the same city"
@@ -191,30 +191,30 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid144"
+      "@id" : "_:genid143"
     }, {
-      "@id" : "_:genid142"
+      "@id" : "_:genid141"
     }, {
-      "@id" : "_:genid138"
+      "@id" : "_:genid137"
     }, {
-      "@id" : "_:genid136"
+      "@id" : "_:genid135"
     }, {
-      "@id" : "_:genid134"
+      "@id" : "_:genid133"
     }, {
-      "@id" : "_:genid132"
+      "@id" : "_:genid131"
     }, {
-      "@id" : "_:genid130"
+      "@id" : "_:genid129"
     }, {
-      "@id" : "_:genid128"
+      "@id" : "_:genid127"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid146"
+      "@id" : "_:genid145"
     } ]
   } ]
 }, {
-  "@id" : "_:genid128",
+  "@id" : "_:genid127",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#o"
@@ -226,7 +226,7 @@
     "@id" : "http://purl.org/ontology/musico#plays_genre"
   } ]
 }, {
-  "@id" : "_:genid130",
+  "@id" : "_:genid129",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#gen"
@@ -238,7 +238,7 @@
     "@id" : "http://purl.org/ontology/mo/similar_to"
   } ]
 }, {
-  "@id" : "_:genid132",
+  "@id" : "_:genid131",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -250,7 +250,7 @@
     "@id" : "http://purl.org/ontology/musico#plays_genre"
   } ]
 }, {
-  "@id" : "_:genid134",
+  "@id" : "_:genid133",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#o"
@@ -262,7 +262,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/based_near"
   } ]
 }, {
-  "@id" : "_:genid136",
+  "@id" : "_:genid135",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -274,7 +274,7 @@
     "@id" : "http://xmlns.com/foaf/0.1/based_near"
   } ]
 }, {
-  "@id" : "_:genid138",
+  "@id" : "_:genid137",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -287,7 +287,7 @@
     "@id" : "http://www.w3.org/2003/11/swrlb#notEqual"
   } ]
 }, {
-  "@id" : "_:genid142",
+  "@id" : "_:genid141",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#o"
@@ -296,7 +296,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid144",
+  "@id" : "_:genid143",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -305,7 +305,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid146",
+  "@id" : "_:genid145",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -317,7 +317,7 @@
     "@id" : "http://purl.org/ontology/musico#gets_recommended_user"
   } ]
 }, {
-  "@id" : "_:genid147",
+  "@id" : "_:genid146",
   "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
     "@value" : "Change multi-intrumentalism level whenever the user plays 2 different instruments"
@@ -327,22 +327,22 @@
   } ],
   "http://www.w3.org/2003/11/swrl#body" : [ {
     "@list" : [ {
-      "@id" : "_:genid157"
+      "@id" : "_:genid156"
     }, {
-      "@id" : "_:genid155"
+      "@id" : "_:genid154"
     }, {
-      "@id" : "_:genid153"
+      "@id" : "_:genid152"
     }, {
-      "@id" : "_:genid149"
+      "@id" : "_:genid148"
     } ]
   } ],
   "http://www.w3.org/2003/11/swrl#head" : [ {
     "@list" : [ {
-      "@id" : "_:genid159"
+      "@id" : "_:genid158"
     } ]
   } ]
 }, {
-  "@id" : "_:genid149",
+  "@id" : "_:genid148",
   "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
   "http://www.w3.org/2003/11/swrl#arguments" : [ {
     "@list" : [ {
@@ -367,7 +367,7 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid153",
+  "@id" : "_:genid152",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -379,7 +379,7 @@
     "@id" : "http://purl.org/ontology/musico#plays_instrument"
   } ]
 }, {
-  "@id" : "_:genid155",
+  "@id" : "_:genid154",
   "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -391,7 +391,7 @@
     "@id" : "http://purl.org/ontology/musico#plays_instrument"
   } ]
 }, {
-  "@id" : "_:genid157",
+  "@id" : "_:genid156",
   "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -400,7 +400,7 @@
     "@id" : "http://purl.org/ontology/musico#HumanMusician"
   } ]
 }, {
-  "@id" : "_:genid159",
+  "@id" : "_:genid158",
   "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
   "http://www.w3.org/2003/11/swrl#argument1" : [ {
     "@id" : "http://purl.org/ontology/musico#u"
@@ -727,8 +727,6 @@
     }, {
       "@id" : "http://purl.org/ontology/musico#MusicLesson"
     }, {
-      "@id" : "http://purl.org/ontology/musico#Performance"
-    }, {
       "@id" : "http://purl.org/ontology/musico#RecreationalMusicMaking"
     }, {
       "@id" : "http://purl.org/ontology/musico#Rehearsal"
@@ -827,7 +825,10 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
 }, {
   "@id" : "http://purl.org/ontology/mo/MusicGroup",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "http://purl.org/ontology/musico#PerformersGroup"
+  } ]
 }, {
   "@id" : "http://purl.org/ontology/mo/MusicalWork",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
@@ -905,22 +906,28 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#Band",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A band is a group of musicians who play instruments together. Bands can perform various music styles, such as rock, jazz, or pop. They may perform with or without vocals."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Band"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/mo/MusicGroup"
+    "@id" : "http://purl.org/ontology/musico#PerformersGroup"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#ChamberEnsemble",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A chamber ensemble is a small group of musicians performing classical music. It usually features one player per part, without a conductor. Groups can range from duos to octets or more."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "ChamberEnsemble"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/mo/MusicGroup"
+    "@id" : "http://purl.org/ontology/musico#PerformersGroup"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#ClassicalMusic",
@@ -951,6 +958,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#ConcertHall",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A large indoor venue designed for live music performances, especially classical music. It typically features excellent acoustics and tiered seating.\nTypically used by orchestras, choirs, and soloists."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "ConcertHall"
@@ -983,6 +993,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#Home",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The home of a musician, where s/he can perform musical activities."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Home"
@@ -1158,6 +1171,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#IndoorArena",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A spacious, multi-purpose indoor venue for concerts, sports, and large events. It can host thousands of people with stage and lighting setups. Commonly used for pop, rock, and touring performances."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "IndoorArena"
@@ -1181,6 +1197,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#JazzClub",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A small, intimate venue dedicated to live jazz music. It often serves food and drinks, creating a relaxed atmosphere. Ideal for close interaction between performers and audience."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "JazzClub"
@@ -1279,6 +1298,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#MusicSchool",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An educational institution focused on teaching music. Offers lessons, for instance, in instruments, voice, theory, and composition. It can range from local schools to prestigious conservatories."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "MusicSchool"
@@ -1406,6 +1428,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#OpenSpace",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An outdoor area used for concerts, festivals, or music gatherings. Examples include parks, fields, or city squares. Often used for large, casual, or seasonal events."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "OpenSpace"
@@ -1416,6 +1441,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#OperaHouse",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A theater specifically built for opera and classical performances. It includes a stage, orchestra pit, and elaborate seating areas. Known for rich acoustics and dramatic productions."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "OperaHouse"
@@ -1426,12 +1454,15 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#Orchestra",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An orchestra is a large group of instrumentalists who play together to perform complex music, organized into sections and with a precise structure. It typically includes strings, woodwinds, brass, and percussion sections. Orchestras perform classical music and other musical genres. They are usually led by a conductor who directs the performance."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Orchestra"
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
-    "@id" : "http://purl.org/ontology/mo/MusicGroup"
+    "@id" : "http://purl.org/ontology/musico#PerformersGroup"
   } ]
 }, {
   "@id" : "http://purl.org/ontology/musico#Paris",
@@ -1442,6 +1473,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#Park",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A public green space often used for outdoor music events and festivals. It provides a relaxed, natural setting for casual or community concerts. Usually accommodates open-air stages and large crowds."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Park"
@@ -1459,11 +1493,27 @@
     "@id" : "http://purl.org/ontology/musico#MusicalEvent"
   } ]
 }, {
+  "@id" : "http://purl.org/ontology/musico#PerformersGroup",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A group of performers (e.g., involved in a collaborative music performance activity)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PerformersGroup"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/musico#MusiciansGroup"
+  } ]
+}, {
   "@id" : "http://purl.org/ontology/musico#Pop",
   "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
 }, {
   "@id" : "http://purl.org/ontology/musico#RecordingStudio",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A controlled environment for recording, mixing, and producing music. Equipped with microphones, soundboards, and editing software. Used by artists, bands, sound engineers, and producers."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "RecordingStudio"
@@ -1494,6 +1544,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#RehearsalRoom",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A private space where musicians practice individually or in groups. Often soundproof and equipped with basic instruments or gear. Typically used to prepare for performances or recordings."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "RehearsalRoom"
@@ -1576,6 +1629,9 @@
 }, {
   "@id" : "http://purl.org/ontology/musico#Stadium",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A large open-air or domed venue typically used for sports and major events. It can host tens of thousands of people for large-scale concerts.\nTypically used for high-profile tours and festivals with massive production."
+  } ],
   "http://www.w3.org/2000/01/rdf-schema#label" : [ {
     "@language" : "en",
     "@value" : "Stadium"

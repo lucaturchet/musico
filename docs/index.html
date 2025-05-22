@@ -245,6 +245,11 @@ This ontology has the following classes and properties.</span>
       </a>
    </li>
    <li>
+      <a href="#http://purl.org/ontology/mo/MusicGroup" title="http://purl.org/ontology/mo/MusicGroup">
+         <span>Music Group</span>
+      </a>
+   </li>
+   <li>
       <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">
          <span>Music Lesson</span>
       </a>
@@ -302,6 +307,9 @@ This ontology has the following classes and properties.</span>
       <a href="#Performance" title="http://purl.org/ontology/musico#Performance">
          <span>Performance</span>
       </a>
+   </li>
+   <li>
+      <a href="#PerformersGroup" title="http://purl.org/ontology/musico#PerformersGroup">PerformersGroup</a>
    </li>
    <li>
       <a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person">
@@ -682,16 +690,16 @@ This ontology has the following classes and properties.</span>
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     class="hlist">
    <li>
-      <a href="#d4e2803">eventRecommendation_1</a>
+      <a href="#d4e2859">eventRecommendation_1</a>
    </li>
    <li>
-      <a href="#d4e2924">eventRecommendation_2</a>
+      <a href="#d4e2980">eventRecommendation_2</a>
    </li>
    <li>
-      <a href="#d4e3257">multi_instrumentalism_level</a>
+      <a href="#d4e3314">multi_instrumentalism_level</a>
    </li>
    <li>
-      <a href="#d4e3045">userRecommendation_1</a>
+      <a href="#d4e3101">userRecommendation_1</a>
    </li>
 </ul><iframe src="webvowl/index.html"></iframe>
 </div>
@@ -745,6 +753,7 @@ This section provides details for each class and property defined by Musician's 
   <li><a href="#http://purl.obolibrary.org/obo/MFOEM_000193" title="http://purl.obolibrary.org/obo/MFOEM_000193"> <span>M F O E M 000193</span> </a></li>
   <li><a href="#MultiagentEvent" title="http://purl.org/ontology/musico#MultiagentEvent">MultiagentEvent</a></li>
   <li><a href="#http://dbpedia.org/ontology/MusicGenre" title="http://dbpedia.org/ontology/MusicGenre"> <span>Music Genre</span> </a></li>
+  <li><a href="#http://purl.org/ontology/mo/MusicGroup" title="http://purl.org/ontology/mo/MusicGroup"> <span>Music Group</span> </a></li>
   <li><a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson"> <span>Music Lesson</span> </a></li>
   <li><a href="#MusicalApplication" title="http://purl.org/ontology/musico#MusicalApplication">MusicalApplication</a></li>
   <li><a href="#MusicalEvent" title="http://purl.org/ontology/musico#MusicalEvent">MusicalEvent</a></li>
@@ -762,6 +771,7 @@ This section provides details for each class and property defined by Musician's 
   <li><a href="#Park" title="http://purl.org/ontology/musico#Park">Park</a></li>
   <li><a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance"> <span>Performance</span> </a></li>
   <li><a href="#Performance" title="http://purl.org/ontology/musico#Performance"> <span>Performance</span> </a></li>
+  <li><a href="#PerformersGroup" title="http://purl.org/ontology/musico#PerformersGroup">PerformersGroup</a></li>
   <li><a href="#http://xmlns.com/foaf/0.1/Person" title="http://xmlns.com/foaf/0.1/Person"> <span>Person</span> </a></li>
   <li><a href="#RecordingStudio" title="http://purl.org/ontology/musico#RecordingStudio">RecordingStudio</a></li>
   <li><a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking"> <span>Recreational Music Making</span> </a></li>
@@ -789,24 +799,30 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="Band">
   <h3>Band<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#Band</p>
+  <div class="comment">
+   <span class="markdown">A band is a group of musicians who play instruments together. Bands can perform various music styles, such as rock, jazz, or pop. They may perform with or without vocals.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="http://purl.org/ontology/mo/MusicGroup" target="_blank" title="http://purl.org/ontology/mo/MusicGroup">Music Group</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PerformersGroup" title="http://purl.org/ontology/musico#PerformersGroup">PerformersGroup</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ChamberEnsemble">
   <h3>ChamberEnsemble<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#ChamberEnsemble</p>
+  <div class="comment">
+   <span class="markdown">A chamber ensemble is a small group of musicians performing classical music. It usually features one player per part, without a conductor. Groups can range from duos to octets or more.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="http://purl.org/ontology/mo/MusicGroup" target="_blank" title="http://purl.org/ontology/mo/MusicGroup">Music Group</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PerformersGroup" title="http://purl.org/ontology/musico#PerformersGroup">PerformersGroup</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -842,13 +858,16 @@ This section provides details for each class and property defined by Musician's 
     is disjoint with
    </dt>
    <dd>
-    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#Performance" title="http://purl.org/ontology/musico#Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="ConcertHall">
   <h3>ConcertHall<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#ConcertHall</p>
+  <div class="comment">
+   <span class="markdown">A large indoor venue designed for live music performances, especially classical music. It typically features excellent acoustics and tiered seating. Typically used by orchestras, choirs, and soloists.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -873,6 +892,9 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="Home">
   <h3>Home<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#Home</p>
+  <div class="comment">
+   <span class="markdown">The home of a musician, where s/he can perform musical activities.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1125,6 +1147,9 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="IndoorArena">
   <h3>IndoorArena<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#IndoorArena</p>
+  <div class="comment">
+   <span class="markdown">A spacious, multi-purpose indoor venue for concerts, sports, and large events. It can host thousands of people with stage and lighting setups. Commonly used for pop, rock, and touring performances.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1163,13 +1188,16 @@ This section provides details for each class and property defined by Musician's 
     is disjoint with
    </dt>
    <dd>
-    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#Performance" title="http://purl.org/ontology/musico#Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="JazzClub">
   <h3>JazzClub<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#JazzClub</p>
+  <div class="comment">
+   <span class="markdown">A small, intimate venue dedicated to live jazz music. It often serves food and drinks, creating a relaxed atmosphere. Ideal for close interaction between performers and audience.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1284,6 +1312,18 @@ This section provides details for each class and property defined by Musician's 
    </dd>
   </dl>
  </div>
+ <div class="entity" id="http://purl.org/ontology/mo/MusicGroup">
+  <h3>Music Group<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/ontology/mo/MusicGroup</p>
+  <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    <a href="#PerformersGroup" title="http://purl.org/ontology/musico#PerformersGroup">PerformersGroup</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
  <div class="entity" id="MusicLesson">
   <h3>Music Lesson<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#MusicLesson</p>
@@ -1301,7 +1341,7 @@ This section provides details for each class and property defined by Musician's 
     is disjoint with
    </dt>
    <dd>
-    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#Performance" title="http://purl.org/ontology/musico#Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1490,7 +1530,7 @@ This section provides details for each class and property defined by Musician's 
     has sub-classes
    </dt>
    <dd>
-    <a href="#ComposersGroup" title="http://purl.org/ontology/musico#ComposersGroup">ComposersGroup</a> <sup class="type-c" title="class">c</sup>, <a href="#LearnersGroup" title="http://purl.org/ontology/musico#LearnersGroup">LearnersGroup</a> <sup class="type-c" title="class">c</sup>, <a href="#TeachersGroup" title="http://purl.org/ontology/musico#TeachersGroup">TeachersGroup</a> <sup class="type-c" title="class">c</sup>
+    <a href="#ComposersGroup" title="http://purl.org/ontology/musico#ComposersGroup">ComposersGroup</a> <sup class="type-c" title="class">c</sup>, <a href="#LearnersGroup" title="http://purl.org/ontology/musico#LearnersGroup">LearnersGroup</a> <sup class="type-c" title="class">c</sup>, <a href="#PerformersGroup" title="http://purl.org/ontology/musico#PerformersGroup">PerformersGroup</a> <sup class="type-c" title="class">c</sup>, <a href="#TeachersGroup" title="http://purl.org/ontology/musico#TeachersGroup">TeachersGroup</a> <sup class="type-c" title="class">c</sup>
    </dd>
    <dt>
     is in domain of
@@ -1536,6 +1576,9 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="MusicSchool">
   <h3>MusicSchool<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#MusicSchool</p>
+  <div class="comment">
+   <span class="markdown">An educational institution focused on teaching music. Offers lessons, for instance, in instruments, voice, theory, and composition. It can range from local schools to prestigious conservatories.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1581,6 +1624,9 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="OpenSpace">
   <h3>OpenSpace<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#OpenSpace</p>
+  <div class="comment">
+   <span class="markdown">An outdoor area used for concerts, festivals, or music gatherings. Examples include parks, fields, or city squares. Often used for large, casual, or seasonal events.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1599,6 +1645,9 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="OperaHouse">
   <h3>OperaHouse<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#OperaHouse</p>
+  <div class="comment">
+   <span class="markdown">A theater specifically built for opera and classical performances. It includes a stage, orchestra pit, and elaborate seating areas. Known for rich acoustics and dramatic productions.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1611,18 +1660,24 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="Orchestra">
   <h3>Orchestra<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#Orchestra</p>
+  <div class="comment">
+   <span class="markdown">An orchestra is a large group of instrumentalists who play together to perform complex music, organized into sections and with a precise structure. It typically includes strings, woodwinds, brass, and percussion sections. Orchestras perform classical music and other musical genres. They are usually led by a conductor who directs the performance.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
    </dt>
    <dd>
-    <a href="http://purl.org/ontology/mo/MusicGroup" target="_blank" title="http://purl.org/ontology/mo/MusicGroup">Music Group</a> <sup class="type-c" title="class">c</sup>
+    <a href="#PerformersGroup" title="http://purl.org/ontology/musico#PerformersGroup">PerformersGroup</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="Park">
   <h3>Park<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#Park</p>
+  <div class="comment">
+   <span class="markdown">A public green space often used for outdoor music events and festivals. It provides a relaxed, natural setting for casual or community concerts. Usually accommodates open-air stages and large crowds.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1658,7 +1713,7 @@ This section provides details for each class and property defined by Musician's 
     is disjoint with
    </dt>
    <dd>
-    <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#Performance" title="http://purl.org/ontology/musico#Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
+    <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1687,11 +1742,26 @@ This section provides details for each class and property defined by Musician's 
    <dd>
     <a href="#super_festival_event" title="http://purl.org/ontology/musico#super_festival_event">super festival event</a> <sup class="type-op" title="object property">op</sup>, <a href="#super_tour_event" title="http://purl.org/ontology/musico#super_tour_event">super tour event</a> <sup class="type-op" title="object property">op</sup>
    </dd>
+  </dl>
+ </div>
+ <div class="entity" id="PerformersGroup">
+  <h3>PerformersGroup<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> http://purl.org/ontology/musico#PerformersGroup</p>
+  <div class="comment">
+   <span class="markdown">A group of performers (e.g., involved in a collaborative music performance activity)</span>
+  </div>
+  <dl class="description">
    <dt>
-    is disjoint with
+    has super-classes
    </dt>
    <dd>
-    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
+    <a href="#MusiciansGroup" title="http://purl.org/ontology/musico#MusiciansGroup">MusiciansGroup</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#Band" title="http://purl.org/ontology/musico#Band">Band</a> <sup class="type-c" title="class">c</sup>, <a href="#ChamberEnsemble" title="http://purl.org/ontology/musico#ChamberEnsemble">ChamberEnsemble</a> <sup class="type-c" title="class">c</sup>, <a href="#Orchestra" title="http://purl.org/ontology/musico#Orchestra">Orchestra</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1716,6 +1786,9 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="RecordingStudio">
   <h3>RecordingStudio<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#RecordingStudio</p>
+  <div class="comment">
+   <span class="markdown">A controlled environment for recording, mixing, and producing music. Equipped with microphones, soundboards, and editing software. Used by artists, bands, sound engineers, and producers.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1742,7 +1815,7 @@ This section provides details for each class and property defined by Musician's 
     is disjoint with
    </dt>
    <dd>
-    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#Performance" title="http://purl.org/ontology/musico#Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1763,13 +1836,16 @@ This section provides details for each class and property defined by Musician's 
     is disjoint with
    </dt>
    <dd>
-    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#Performance" title="http://purl.org/ontology/musico#Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#SelfLearning" title="http://purl.org/ontology/musico#SelfLearning">Self Learning</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
  <div class="entity" id="RehearsalRoom">
   <h3>RehearsalRoom<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#RehearsalRoom</p>
+  <div class="comment">
+   <span class="markdown">A private space where musicians practice individually or in groups. Often soundproof and equipped with basic instruments or gear. Typically used to prepare for performances or recordings.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -1796,7 +1872,7 @@ This section provides details for each class and property defined by Musician's 
     is disjoint with
    </dt>
    <dd>
-    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#Performance" title="http://purl.org/ontology/musico#Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>
+    <a href="#http://purl.org/ontology/mo/Performance" title="http://purl.org/ontology/mo/Performance">Performance</a> <sup class="type-c" title="class">c</sup>, <a href="#CompositionSession" title="http://purl.org/ontology/musico#CompositionSession">Composition Session</a> <sup class="type-c" title="class">c</sup>, <a href="#JamSession" title="http://purl.org/ontology/musico#JamSession">Jam Session</a> <sup class="type-c" title="class">c</sup>, <a href="#MusicLesson" title="http://purl.org/ontology/musico#MusicLesson">Music Lesson</a> <sup class="type-c" title="class">c</sup>, <a href="#RecreationalMusicMaking" title="http://purl.org/ontology/musico#RecreationalMusicMaking">Recreational Music Making</a> <sup class="type-c" title="class">c</sup>, <a href="#Rehearsal" title="http://purl.org/ontology/musico#Rehearsal">Rehearsal</a> <sup class="type-c" title="class">c</sup>
    </dd>
   </dl>
  </div>
@@ -1875,6 +1951,9 @@ This section provides details for each class and property defined by Musician's 
  <div class="entity" id="Stadium">
   <h3>Stadium<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
   <p><strong>IRI:</strong> http://purl.org/ontology/musico#Stadium</p>
+  <div class="comment">
+   <span class="markdown">A large open-air or domed venue typically used for sports and major events. It can host tens of thousands of people for large-scale concerts. Typically used for high-profile tours and festivals with massive production.</span>
+  </div>
   <dl class="description">
    <dt>
     has super-classes
@@ -3753,24 +3832,24 @@ This section provides details for each class and property defined by Musician's 
 </div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
  <h3 id="swrlrules" class="list">SWRL rules</h3>
  <ul class="hlist">
-  <li><a href="#d4e2803">eventRecommendation_1</a></li>
-  <li><a href="#d4e2924">eventRecommendation_2</a></li>
-  <li><a href="#d4e3257">multi_instrumentalism_level</a></li>
-  <li><a href="#d4e3045">userRecommendation_1</a></li>
+  <li><a href="#d4e2859">eventRecommendation_1</a></li>
+  <li><a href="#d4e2980">eventRecommendation_2</a></li>
+  <li><a href="#d4e3314">multi_instrumentalism_level</a></li>
+  <li><a href="#d4e3101">userRecommendation_1</a></li>
  </ul>
- <div class="entity" id="d4e2803">
+ <div class="entity" id="d4e2859">
   <h3>eventRecommendation_1<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p>Event Recommendation based on the event's location<br><br><a href="#HumanMusician" title="http://purl.org/ontology/musico#HumanMusician">HumanMusician</a> <sup class="type-c" title="class">c</sup>(?u) , <a href="#MusicalEvent" title="http://purl.org/ontology/musico#MusicalEvent">MusicalEvent</a> <sup class="type-c" title="class">c</sup>(?ev) , <a href="http://purl.org/vocab/bio/0.1/event" target="_blank" title="http://purl.org/vocab/bio/0.1/event">event</a> <sup class="type-op" title="object property">op</sup>(?ev,?pl) , <a href="http://xmlns.com/foaf/0.1/based_near" target="_blank" title="http://xmlns.com/foaf/0.1/based_near">based near</a> <sup class="type-op" title="object property">op</sup>(?u,?pl) -&gt; <a href="#gets_recommended_event" title="http://purl.org/ontology/musico#gets_recommended_event">gets recommended event</a> <sup class="type-op" title="object property">op</sup>(?u,?ev)</p>
  </div>
- <div class="entity" id="d4e2924">
+ <div class="entity" id="d4e2980">
   <h3>eventRecommendation_2<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p>Event Recommendation based on the user's friends interested in the event<br><br><a href="#HumanMusician" title="http://purl.org/ontology/musico#HumanMusician">HumanMusician</a> <sup class="type-c" title="class">c</sup>(?u) , <a href="#MusicalEvent" title="http://purl.org/ontology/musico#MusicalEvent">MusicalEvent</a> <sup class="type-c" title="class">c</sup>(?ev) , <a href="http://xmlns.com/foaf/0.1/knows" target="_blank" title="http://xmlns.com/foaf/0.1/knows">knows</a> <sup class="type-op" title="object property">op</sup>(?u,?o) , <a href="#interested_in" title="http://purl.org/ontology/musico#interested_in">interested in</a> <sup class="type-op" title="object property">op</sup>(?o,?ev) -&gt; <a href="#gets_recommended_event" title="http://purl.org/ontology/musico#gets_recommended_event">gets recommended event</a> <sup class="type-op" title="object property">op</sup>(?u,?ev)</p>
  </div>
- <div class="entity" id="d4e3257">
+ <div class="entity" id="d4e3314">
   <h3>multi_instrumentalism_level<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p>Change multi-intrumentalism level whenever the user plays 2 different instruments<br><br><a href="#HumanMusician" title="http://purl.org/ontology/musico#HumanMusician">HumanMusician</a> <sup class="type-c" title="class">c</sup>(?u) , <a href="#plays_instrument" title="http://purl.org/ontology/musico#plays_instrument">plays_instrument</a> <sup class="type-op" title="object property">op</sup>(?u,?a) , <a href="#plays_instrument" title="http://purl.org/ontology/musico#plays_instrument">plays_instrument</a> <sup class="type-op" title="object property">op</sup>(?u,?b) , <a href="http://www.w3.org/2003/11/swrlb#notEqual" title="notEqual">notEqual</a>(?a,?b) -&gt; <a href="#multi-instrumentalism_level" title="http://purl.org/ontology/musico#multi-instrumentalism_level">multi-instrumentalism_level</a> <sup class="type-dp" title="data property">dp</sup>(?u,"multi-instrumentalist")</p>
  </div>
- <div class="entity" id="d4e3045">
+ <div class="entity" id="d4e3101">
   <h3>userRecommendation_1<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
   <p>Recommendation of a user based on the similarity of the genre played by the user and the genre played by others in the same city<br><br><a href="#HumanMusician" title="http://purl.org/ontology/musico#HumanMusician">HumanMusician</a> <sup class="type-c" title="class">c</sup>(?u) , <a href="#HumanMusician" title="http://purl.org/ontology/musico#HumanMusician">HumanMusician</a> <sup class="type-c" title="class">c</sup>(?o) , <a href="http://www.w3.org/2003/11/swrlb#notEqual" title="notEqual">notEqual</a>(?u,?o) , <a href="http://xmlns.com/foaf/0.1/based_near" target="_blank" title="http://xmlns.com/foaf/0.1/based_near">based near</a> <sup class="type-op" title="object property">op</sup>(?u,?city) , <a href="http://xmlns.com/foaf/0.1/based_near" target="_blank" title="http://xmlns.com/foaf/0.1/based_near">based near</a> <sup class="type-op" title="object property">op</sup>(?o,?city) , <a href="#plays_genre" title="http://purl.org/ontology/musico#plays_genre">plays_genre</a> <sup class="type-op" title="object property">op</sup>(?u,?gen) , <a href="http://purl.org/ontology/mo/similar_to" target="_blank" title="http://purl.org/ontology/mo/similar_to">similar to</a> <sup class="type-op" title="object property">op</sup>(?gen,?ggen) , <a href="#plays_genre" title="http://purl.org/ontology/musico#plays_genre">plays_genre</a> <sup class="type-op" title="object property">op</sup>(?o,?ggen) -&gt; <a href="#gets_recommended_user" title="http://purl.org/ontology/musico#gets_recommended_user">gets recommended user</a> <sup class="type-op" title="object property">op</sup>(?u,?o)</p>
  </div>
@@ -3801,6 +3880,7 @@ This section provides details for each class and property defined by Musician's 
 	</li>
 </ul>
 </div>
+
 
 
 

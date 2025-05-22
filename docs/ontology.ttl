@@ -760,7 +760,8 @@
 
 
 ###  http://purl.org/ontology/mo/MusicGroup
-<http://purl.org/ontology/mo/MusicGroup> rdf:type owl:Class .
+<http://purl.org/ontology/mo/MusicGroup> rdf:type owl:Class ;
+                                         owl:equivalentClass :PerformersGroup .
 
 
 ###  http://purl.org/ontology/mo/MusicalWork
@@ -785,13 +786,15 @@
 
 ###  http://purl.org/ontology/musico#Band
 :Band rdf:type owl:Class ;
-      rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> ;
+      rdfs:subClassOf :PerformersGroup ;
+      rdfs:comment "A band is a group of musicians who play instruments together. Bands can perform various music styles, such as rock, jazz, or pop. They may perform with or without vocals." ;
       rdfs:label "Band"@en .
 
 
 ###  http://purl.org/ontology/musico#ChamberEnsemble
 :ChamberEnsemble rdf:type owl:Class ;
-                 rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> ;
+                 rdfs:subClassOf :PerformersGroup ;
+                 rdfs:comment "A chamber ensemble is a small group of musicians performing classical music. It usually features one player per part, without a conductor. Groups can range from duos to octets or more." ;
                  rdfs:label "ChamberEnsemble"@en .
 
 
@@ -811,6 +814,8 @@
 ###  http://purl.org/ontology/musico#ConcertHall
 :ConcertHall rdf:type owl:Class ;
              rdfs:subClassOf <https://schema.org/MusicVenue> ;
+             rdfs:comment """A large indoor venue designed for live music performances, especially classical music. It typically features excellent acoustics and tiered seating.
+Typically used by orchestras, choirs, and soloists.""" ;
              rdfs:label "ConcertHall"@en .
 
 
@@ -823,6 +828,7 @@
 ###  http://purl.org/ontology/musico#Home
 :Home rdf:type owl:Class ;
       rdfs:subClassOf <https://schema.org/MusicVenue> ;
+      rdfs:comment "The home of a musician, where s/he can perform musical activities." ;
       rdfs:label "Home"@en .
 
 
@@ -949,6 +955,7 @@
 ###  http://purl.org/ontology/musico#IndoorArena
 :IndoorArena rdf:type owl:Class ;
              rdfs:subClassOf <https://schema.org/MusicVenue> ;
+             rdfs:comment "A spacious, multi-purpose indoor venue for concerts, sports, and large events. It can host thousands of people with stage and lighting setups. Commonly used for pop, rock, and touring performances." ;
              rdfs:label "IndoorArena"@en .
 
 
@@ -962,6 +969,7 @@
 ###  http://purl.org/ontology/musico#JazzClub
 :JazzClub rdf:type owl:Class ;
           rdfs:subClassOf <https://schema.org/MusicVenue> ;
+          rdfs:comment "A small, intimate venue dedicated to live jazz music. It often serves food and drinks, creating a relaxed atmosphere. Ideal for close interaction between performers and audience." ;
           rdfs:label "JazzClub"@en .
 
 
@@ -1016,6 +1024,7 @@
 ###  http://purl.org/ontology/musico#MusicSchool
 :MusicSchool rdf:type owl:Class ;
              rdfs:subClassOf <https://schema.org/MusicVenue> ;
+             rdfs:comment "An educational institution focused on teaching music. Offers lessons, for instance, in instruments, voice, theory, and composition. It can range from local schools to prestigious conservatories." ;
              rdfs:label "MusicSchool"@en .
 
 
@@ -1079,24 +1088,28 @@
 ###  http://purl.org/ontology/musico#OpenSpace
 :OpenSpace rdf:type owl:Class ;
            rdfs:subClassOf <https://schema.org/MusicVenue> ;
+           rdfs:comment "An outdoor area used for concerts, festivals, or music gatherings. Examples include parks, fields, or city squares. Often used for large, casual, or seasonal events." ;
            rdfs:label "OpenSpace"@en .
 
 
 ###  http://purl.org/ontology/musico#OperaHouse
 :OperaHouse rdf:type owl:Class ;
             rdfs:subClassOf <https://schema.org/MusicVenue> ;
+            rdfs:comment "A theater specifically built for opera and classical performances. It includes a stage, orchestra pit, and elaborate seating areas. Known for rich acoustics and dramatic productions." ;
             rdfs:label "OperaHouse"@en .
 
 
 ###  http://purl.org/ontology/musico#Orchestra
 :Orchestra rdf:type owl:Class ;
-           rdfs:subClassOf <http://purl.org/ontology/mo/MusicGroup> ;
+           rdfs:subClassOf :PerformersGroup ;
+           rdfs:comment "An orchestra is a large group of instrumentalists who play together to perform complex music, organized into sections and with a precise structure. It typically includes strings, woodwinds, brass, and percussion sections. Orchestras perform classical music and other musical genres. They are usually led by a conductor who directs the performance." ;
            rdfs:label "Orchestra"@en .
 
 
 ###  http://purl.org/ontology/musico#Park
 :Park rdf:type owl:Class ;
       rdfs:subClassOf :OpenSpace ;
+      rdfs:comment "A public green space often used for outdoor music events and festivals. It provides a relaxed, natural setting for casual or community concerts. Usually accommodates open-air stages and large crowds." ;
       rdfs:label "Park"@en .
 
 
@@ -1106,9 +1119,17 @@
              rdfs:comment "A music performance event, such as a live concert." .
 
 
+###  http://purl.org/ontology/musico#PerformersGroup
+:PerformersGroup rdf:type owl:Class ;
+                 rdfs:subClassOf :MusiciansGroup ;
+                 rdfs:comment "A group of performers (e.g., involved in a collaborative music performance activity)" ;
+                 rdfs:label "PerformersGroup"@en .
+
+
 ###  http://purl.org/ontology/musico#RecordingStudio
 :RecordingStudio rdf:type owl:Class ;
                  rdfs:subClassOf <https://schema.org/MusicVenue> ;
+                 rdfs:comment "A controlled environment for recording, mixing, and producing music. Equipped with microphones, soundboards, and editing software. Used by artists, bands, sound engineers, and producers." ;
                  rdfs:label "RecordingStudio"@en .
 
 
@@ -1129,6 +1150,7 @@
 ###  http://purl.org/ontology/musico#RehearsalRoom
 :RehearsalRoom rdf:type owl:Class ;
                rdfs:subClassOf <https://schema.org/MusicVenue> ;
+               rdfs:comment "A private space where musicians practice individually or in groups. Often soundproof and equipped with basic instruments or gear. Typically used to prepare for performances or recordings." ;
                rdfs:label "RehearsalRoom"@en .
 
 
@@ -1170,6 +1192,8 @@
 ###  http://purl.org/ontology/musico#Stadium
 :Stadium rdf:type owl:Class ;
          rdfs:subClassOf :OpenSpace ;
+         rdfs:comment """A large open-air or domed venue typically used for sports and major events. It can host tens of thousands of people for large-scale concerts.
+Typically used for high-profile tours and festivals with massive production.""" ;
          rdfs:label "Stadium"@en .
 
 
@@ -1498,7 +1522,6 @@
                 :CompositionSession
                 :JamSession
                 :MusicLesson
-                :Performance
                 :RecreationalMusicMaking
                 :Rehearsal
                 :SelfLearning

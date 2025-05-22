@@ -25,12 +25,12 @@
       "contributor" : [ {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Jacopo Tomelleri",
+        "value" : "Andrea Molinari",
         "type" : "label"
       }, {
         "identifier" : "contributor",
         "language" : "undefined",
-        "value" : "Andrea Molinari",
+        "value" : "Jacopo Tomelleri",
         "type" : "label"
       }, {
         "identifier" : "contributor",
@@ -75,346 +75,352 @@
     "id" : "3",
     "type" : "owl:Class"
   }, {
-    "id" : "9",
+    "id" : "5",
     "type" : "owl:Class"
   }, {
-    "id" : "11",
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
     "type" : "owl:Class"
   }, {
     "id" : "12",
     "type" : "owl:Class"
   }, {
-    "id" : "16",
+    "id" : "14",
     "type" : "owl:Class"
   }, {
-    "id" : "18",
+    "id" : "20",
     "type" : "owl:Class"
   }, {
-    "id" : "24",
+    "id" : "32",
     "type" : "owl:Class"
   }, {
-    "id" : "42",
-    "type" : "owl:Class"
-  }, {
-    "id" : "48",
+    "id" : "38",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "67",
+    "id" : "54",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "47",
+    "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "76",
     "type" : "owl:Class"
   }, {
-    "id" : "51",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "21",
-    "type" : "owl:Class"
-  }, {
-    "id" : "55",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "96",
-    "type" : "owl:Class"
-  }, {
-    "id" : "98",
-    "type" : "owl:Class"
-  }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "107",
-    "type" : "owl:Class"
-  }, {
-    "id" : "104",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "40",
-    "type" : "owl:Class"
-  }, {
-    "id" : "114",
-    "type" : "owl:Class"
-  }, {
-    "id" : "70",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "115",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "118",
-    "type" : "owl:Class"
-  }, {
-    "id" : "22",
-    "type" : "owl:Class"
-  }, {
-    "id" : "119",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "108",
-    "type" : "owl:Class"
-  }, {
-    "id" : "1",
-    "type" : "owl:Class"
-  }, {
-    "id" : "56",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "69",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "131",
-    "type" : "owl:Class"
-  }, {
-    "id" : "133",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "2",
-    "type" : "owl:Class"
-  }, {
-    "id" : "49",
-    "type" : "owl:Class"
-  }, {
-    "id" : "142",
-    "type" : "owl:Class"
-  }, {
-    "id" : "146",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "74",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "66",
-    "type" : "owl:Class"
-  }, {
-    "id" : "92",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "75",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "151",
-    "type" : "owl:Class"
-  }, {
-    "id" : "152",
-    "type" : "owl:Class"
-  }, {
-    "id" : "68",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "147",
-    "type" : "owl:Class"
-  }, {
-    "id" : "155",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
-    "type" : "owl:Class"
-  }, {
-    "id" : "157",
-    "type" : "owl:Class"
-  }, {
-    "id" : "158",
-    "type" : "owl:Class"
-  }, {
-    "id" : "53",
+    "id" : "41",
     "type" : "owl:intersectionOf"
   }, {
     "id" : "17",
     "type" : "owl:Class"
   }, {
-    "id" : "84",
-    "type" : "owl:Class"
-  }, {
-    "id" : "127",
-    "type" : "owl:Class"
-  }, {
-    "id" : "82",
-    "type" : "owl:Class"
-  }, {
-    "id" : "148",
-    "type" : "owl:Class"
-  }, {
-    "id" : "154",
+    "id" : "45",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "57",
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "98",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "143",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "150",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "137",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "86",
+    "id" : "67",
     "type" : "owl:Class"
   }, {
-    "id" : "90",
+    "id" : "105",
     "type" : "owl:Class"
   }, {
-    "id" : "93",
-    "type" : "owl:Class"
-  }, {
-    "id" : "156",
-    "type" : "owl:Class"
-  }, {
-    "id" : "183",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "200",
-    "type" : "owl:Class"
-  }, {
-    "id" : "14",
-    "type" : "owl:Thing"
-  }, {
-    "id" : "111",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "201",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "182",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "106",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "161",
-    "type" : "rdfs:Literal"
-  }, {
-    "id" : "202",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "145",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "113",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "203",
-    "type" : "owl:Class"
-  }, {
-    "id" : "206",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "207",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "208",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "129",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "209",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "101",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "132",
-    "type" : "owl:Class"
-  }, {
-    "id" : "173",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "211",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "59",
-    "type" : "owl:Class"
-  }, {
-    "id" : "71",
+    "id" : "57",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "76",
+    "id" : "106",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "109",
     "type" : "owl:Class"
   }, {
-    "id" : "198",
+    "id" : "18",
     "type" : "owl:Class"
   }, {
-    "id" : "121",
+    "id" : "110",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "99",
     "type" : "owl:Class"
   }, {
     "id" : "117",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "10",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "72",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "41",
+    "id" : "1",
     "type" : "owl:Class"
   }, {
-    "id" : "38",
-    "type" : "owl:Class"
-  }, {
-    "id" : "54",
+    "id" : "46",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "179",
+    "id" : "56",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "123",
+    "type" : "owl:Class"
+  }, {
+    "id" : "125",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "61",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "62",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "143",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "55",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "145",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "139",
+    "type" : "owl:Class"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "148",
+    "type" : "owl:Class"
+  }, {
+    "id" : "149",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "155",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "156",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "92",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "158",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "160",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "119",
+    "type" : "owl:Class"
+  }, {
+    "id" : "169",
+    "type" : "owl:Class"
+  }, {
+    "id" : "140",
+    "type" : "owl:Class"
+  }, {
+    "id" : "154",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "21",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "84",
+    "type" : "owl:Class"
+  }, {
+    "id" : "147",
+    "type" : "owl:Class"
+  }, {
+    "id" : "159",
+    "type" : "owl:Class"
+  }, {
+    "id" : "170",
     "type" : "owl:Class"
   }, {
     "id" : "199",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "129",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "135",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "200",
     "type" : "owl:Class"
   }, {
-    "id" : "116",
-    "type" : "owl:equivalentClass"
+    "id" : "10",
+    "type" : "owl:Thing"
   }, {
-    "id" : "73",
-    "type" : "owl:intersectionOf"
-  }, {
-    "id" : "192",
-    "type" : "owl:equivalentClass"
-  }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "owl:intersectionOf"
+    "id" : "173",
+    "type" : "owl:unionOf"
   }, {
     "id" : "97",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "152",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
     "type" : "owl:Class"
   }, {
-    "id" : "50",
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "137",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
     "type" : "owl:intersectionOf"
   }, {
-    "id" : "25",
+    "id" : "63",
     "type" : "owl:Class"
   }, {
-    "id" : "36",
+    "id" : "194",
+    "type" : "owl:Class"
+  }, {
+    "id" : "112",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "79",
+    "id" : "6",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "68",
     "type" : "owl:Class"
   }, {
-    "id" : "197",
+    "id" : "49",
     "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "195",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:equivalentClass"
   }, {
     "id" : "60",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "183",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "23",
     "type" : "owl:Class"
   }, {
-    "id" : "45",
+    "id" : "42",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "88",
     "type" : "owl:Class"
   }, {
-    "id" : "62",
+    "id" : "40",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "188",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "37",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "210",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "193",
+    "type" : "owl:Class"
+  }, {
+    "id" : "187",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
     "type" : "owl:Class"
   }, {
     "id" : "4",
     "type" : "owl:Class"
   }, {
-    "id" : "109",
+    "id" : "100",
     "type" : "owl:equivalentClass"
   }, {
-    "id" : "8",
+    "id" : "53",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -437,8 +443,8 @@
       "IRI-based" : "HumanStudioProducerProfessional",
       "en" : "HumanStudioProducerProfessional"
     },
-    "id" : "9",
-    "superClasses" : [ "10" ]
+    "id" : "5",
+    "superClasses" : [ "6" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/Festival",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -447,7 +453,7 @@
       "IRI-based" : "Festival"
     },
     "attributes" : [ "external" ],
-    "id" : "11"
+    "id" : "7"
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SmartElectricPiano",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -456,7 +462,7 @@
       "IRI-based" : "SmartElectricPiano"
     },
     "attributes" : [ "external" ],
-    "id" : "12"
+    "id" : "8"
   }, {
     "iri" : "http://purl.org/ontology/musico#Tour",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -467,8 +473,8 @@
     "comment" : {
       "undefined" : "A tour event. A tour comprises various performances."
     },
-    "id" : "16",
-    "superClasses" : [ "17" ]
+    "id" : "12",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#LiveSoundEngineer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -480,8 +486,8 @@
     "comment" : {
       "en" : "A sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances), either a human or a software agent."
     },
-    "id" : "18",
-    "superClasses" : [ "19" ]
+    "id" : "14",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#ChamberEnsemble",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -490,8 +496,11 @@
       "IRI-based" : "ChamberEnsemble",
       "en" : "ChamberEnsemble"
     },
-    "id" : "24",
-    "superClasses" : [ "25" ]
+    "comment" : {
+      "undefined" : "A chamber ensemble is a small group of musicians performing classical music. It usually features one player per part, without a conductor. Groups can range from duos to octets or more."
+    },
+    "id" : "20",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#JamSession",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -502,7 +511,7 @@
     "comment" : {
       "en" : "A jam session event.\n        Takes as agent a musicians group."
     },
-    "id" : "42",
+    "id" : "32",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanMusician",
@@ -512,14 +521,14 @@
       "IRI-based" : "HumanMusician",
       "en" : "HumanMusician"
     },
-    "subClasses" : [ "50", "10", "51", "52", "53", "54", "55", "56" ],
-    "intersection" : [ "49", "57" ],
+    "subClasses" : [ "40", "6", "41", "42", "43", "44", "45", "46" ],
+    "intersection" : [ "39", "47" ],
     "comment" : {
       "en" : "An actual human being involved in a musical activity (e.g., composition, performance)"
     },
     "attributes" : [ "intersection" ],
-    "id" : "48",
-    "superClasses" : [ "49" ]
+    "id" : "38",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualMusician",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -528,14 +537,14 @@
       "IRI-based" : "VirtualMusician",
       "en" : "VirtualMusician"
     },
-    "subClasses" : [ "68", "69", "70", "71", "72", "73", "74", "75" ],
-    "intersection" : [ "76", "49" ],
+    "subClasses" : [ "55", "56", "57", "58", "59", "60", "61", "62" ],
+    "intersection" : [ "63", "39" ],
     "comment" : {
       "en" : "A software agent capable of performing a musical activity (e.g., composition via computational creativity techniques)"
     },
     "attributes" : [ "intersection" ],
-    "id" : "67",
-    "superClasses" : [ "49" ]
+    "id" : "54",
+    "superClasses" : [ "39" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#Band",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -544,8 +553,11 @@
       "IRI-based" : "Band",
       "en" : "Band"
     },
-    "id" : "47",
-    "superClasses" : [ "25" ]
+    "comment" : {
+      "undefined" : "A band is a group of musicians who play instruments together. Bands can perform various music styles, such as rock, jazz, or pop. They may perform with or without vocals."
+    },
+    "id" : "65",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#IndoorArena",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -554,8 +566,11 @@
       "IRI-based" : "IndoorArena",
       "en" : "IndoorArena"
     },
-    "id" : "85",
-    "superClasses" : [ "86" ]
+    "comment" : {
+      "undefined" : "A spacious, multi-purpose indoor venue for concerts, sports, and large events. It can host thousands of people with stage and lighting setups. Commonly used for pop, rock, and touring performances."
+    },
+    "id" : "76",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanPerformer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -564,13 +579,13 @@
       "IRI-based" : "HumanPerformer",
       "en" : "HumanPerformer"
     },
-    "intersection" : [ "48", "90" ],
+    "intersection" : [ "38", "81" ],
     "comment" : {
       "undefined" : "An actual human being involved in a performance activity."
     },
     "attributes" : [ "intersection" ],
-    "id" : "51",
-    "superClasses" : [ "48" ]
+    "id" : "41",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicTeacher",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -582,8 +597,8 @@
     "comment" : {
       "undefined" : "An actual human being involved in an activity of teaching music or a software agent capable of teaching music."
     },
-    "id" : "21",
-    "superClasses" : [ "19" ]
+    "id" : "17",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanArranger",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -592,13 +607,13 @@
       "IRI-based" : "HumanArranger",
       "en" : "HumanArranger"
     },
-    "intersection" : [ "48", "93" ],
+    "intersection" : [ "38", "84" ],
     "comment" : {
       "undefined" : "An actual human being involved in an arragnement of a music piece."
     },
     "attributes" : [ "intersection" ],
-    "id" : "55",
-    "superClasses" : [ "48" ]
+    "id" : "45",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#OperaHouse",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -607,8 +622,11 @@
       "IRI-based" : "OperaHouse",
       "en" : "OperaHouse"
     },
-    "id" : "96",
-    "superClasses" : [ "86" ]
+    "comment" : {
+      "undefined" : "A theater specifically built for opera and classical performances. It includes a stage, orchestra pit, and elaborate seating areas. Known for rich acoustics and dramatic productions."
+    },
+    "id" : "87",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicalSession",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -620,8 +638,8 @@
     "comment" : {
       "undefined" : "A part of a musical event (e.g., the period in which a given musical piece has been played)"
     },
-    "id" : "98",
-    "superClasses" : [ "17" ]
+    "id" : "89",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicLesson",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -632,7 +650,7 @@
     "comment" : {
       "en" : "A music lesson event.\n        Takes as agents the music teacher and music learner, as well as  teachers group and learners groups."
     },
-    "id" : "6",
+    "id" : "51",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicalService",
@@ -673,33 +691,33 @@
         "IRI-based" : "Logic"
       }
     }, {
-      "iri" : "http://purl.org/ontology/musico#SoundCloud",
-      "baseIri" : "http://purl.org/ontology/musico",
-      "labels" : {
-        "IRI-based" : "SoundCloud"
-      }
-    }, {
       "iri" : "http://purl.org/ontology/musico#YouTube",
       "baseIri" : "http://purl.org/ontology/musico",
       "labels" : {
         "IRI-based" : "YouTube"
       }
+    }, {
+      "iri" : "http://purl.org/ontology/musico#SoundCloud",
+      "baseIri" : "http://purl.org/ontology/musico",
+      "labels" : {
+        "IRI-based" : "SoundCloud"
+      }
     } ],
     "comment" : {
       "en" : "A service used by a musician (e.g., social networks, music editing software, digital audio workstations, music streaming services, or collaborative music making online platforms)"
     },
-    "id" : "107",
-    "superClasses" : [ "108" ]
+    "id" : "98",
+    "superClasses" : [ "99" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/Instrument",
-    "equivalent" : [ "109" ],
+    "equivalent" : [ "100" ],
     "baseIri" : "http://purl.org/ontology/mo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Instrument"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "104"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "95"
   }, {
     "iri" : "http://purl.org/ontology/musico#TeachersGroup",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -711,8 +729,8 @@
     "comment" : {
       "en" : "A group of teachers (e.g., involved in a music lesson)."
     },
-    "id" : "40",
-    "superClasses" : [ "41" ]
+    "id" : "67",
+    "superClasses" : [ "68" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SmartElectricViolin",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -721,7 +739,7 @@
       "IRI-based" : "SmartElectricViolin"
     },
     "attributes" : [ "external" ],
-    "id" : "114"
+    "id" : "105"
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualLiveSoundEngineeer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -729,16 +747,16 @@
     "label" : {
       "IRI-based" : "VirtualLiveSoundEngineeer"
     },
-    "intersection" : [ "18", "67" ],
+    "intersection" : [ "14", "54" ],
     "comment" : {
       "undefined" : "A software agent capable of performing activities of live sound engineering."
     },
     "attributes" : [ "intersection" ],
-    "id" : "70",
-    "superClasses" : [ "67" ]
+    "id" : "57",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#SoundEngineer",
-    "equivalent" : [ "116", "117" ],
+    "equivalent" : [ "107", "108" ],
     "baseIri" : "http://purl.org/ontology/musico",
     "instances" : 0,
     "label" : {
@@ -749,7 +767,7 @@
       "undefined" : "A sound engineer."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "115"
+    "id" : "106"
   }, {
     "iri" : "http://purl.org/ontology/musico#RehearsalRoom",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -758,8 +776,11 @@
       "IRI-based" : "RehearsalRoom",
       "en" : "RehearsalRoom"
     },
-    "id" : "118",
-    "superClasses" : [ "86" ]
+    "comment" : {
+      "undefined" : "A private space where musicians practice individually or in groups. Often soundproof and equipped with basic instruments or gear. Typically used to prepare for performances or recordings."
+    },
+    "id" : "109",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicLearner",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -771,18 +792,18 @@
     "comment" : {
       "undefined" : "An actual human being involved in an activity of learning music or a software agent capable of learning music."
     },
-    "id" : "22",
-    "superClasses" : [ "19" ]
+    "id" : "18",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://dbpedia.org/ontology/MusicGenre",
-    "equivalent" : [ "92" ],
+    "equivalent" : [ "83" ],
     "baseIri" : "http://dbpedia.org/ontology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "MusicGenre"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "119"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "110"
   }, {
     "iri" : "http://purl.org/ontology/studio/device/Service",
     "baseIri" : "http://purl.org/ontology/studio/device",
@@ -790,9 +811,18 @@
     "label" : {
       "IRI-based" : "Service"
     },
-    "subClasses" : [ "107" ],
+    "subClasses" : [ "98" ],
     "attributes" : [ "external" ],
-    "id" : "108"
+    "id" : "99"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000193",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MFOEM_000193"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "117"
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicianParticipation",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -805,7 +835,7 @@
       "undefined" : "The act of a given musician of participating in a musical event"
     },
     "id" : "1",
-    "superClasses" : [ "127" ]
+    "superClasses" : [ "119" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanMusicTeacher",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -814,13 +844,13 @@
       "IRI-based" : "HumanMusicTeacher",
       "en" : "HumanMusicTeacher"
     },
-    "intersection" : [ "48", "21" ],
+    "intersection" : [ "38", "17" ],
     "comment" : {
       "undefined" : "An actual human being involved in an activity of teaching music."
     },
     "attributes" : [ "intersection" ],
-    "id" : "56",
-    "superClasses" : [ "48" ]
+    "id" : "46",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualMusicTeacher",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -829,13 +859,13 @@
       "IRI-based" : "VirtualMusicTeacher",
       "en" : "VirtualMusicTeacher"
     },
-    "intersection" : [ "21", "67" ],
+    "intersection" : [ "17", "54" ],
     "comment" : {
       "undefined" : "A software agent capable of teaching music."
     },
     "attributes" : [ "intersection" ],
-    "id" : "69",
-    "superClasses" : [ "67" ]
+    "id" : "56",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#Stadium",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -844,8 +874,11 @@
       "IRI-based" : "Stadium",
       "en" : "Stadium"
     },
-    "id" : "131",
-    "superClasses" : [ "132" ]
+    "comment" : {
+      "undefined" : "A large open-air or domed venue typically used for sports and major events. It can host tens of thousands of people for large-scale concerts.\nTypically used for high-profile tours and festivals with massive production."
+    },
+    "id" : "123",
+    "superClasses" : [ "124" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/Performance",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -853,8 +886,8 @@
     "label" : {
       "IRI-based" : "Performance"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "133"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "125"
   }, {
     "iri" : "http://purl.org/ontology/mo/MusicalWork",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -872,12 +905,12 @@
       "IRI-based" : "Musician",
       "en" : "Musician"
     },
-    "subClasses" : [ "48", "67" ],
+    "subClasses" : [ "38", "54" ],
     "comment" : {
       "en" : "An actual human being involved in a musical activity (e.g., composition, performance) or a software agent capable of performing a musical activity"
     },
-    "id" : "49",
-    "superClasses" : [ "19" ]
+    "id" : "39",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/Composer",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -886,7 +919,7 @@
       "IRI-based" : "Composer"
     },
     "attributes" : [ "external" ],
-    "id" : "142"
+    "id" : "134"
   }, {
     "iri" : "http://purl.org/ontology/musico#SoloEvent",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -895,13 +928,13 @@
       "IRI-based" : "SoloEvent",
       "en" : "SoloEvent"
     },
-    "intersection" : [ "147" ],
+    "intersection" : [ "139" ],
     "comment" : {
       "undefined" : "An event conducted by a unique individual. For example, a guitar recital performed by a unique classical guitar player."
     },
     "attributes" : [ "intersection" ],
-    "id" : "146",
-    "superClasses" : [ "17" ]
+    "id" : "138",
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualStudioProducer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -910,10 +943,10 @@
       "IRI-based" : "VirtualStudioProducer",
       "en" : "VirtualStudioProducer"
     },
-    "intersection" : [ "116", "67" ],
+    "intersection" : [ "107", "54" ],
     "attributes" : [ "intersection" ],
-    "id" : "74",
-    "superClasses" : [ "67" ]
+    "id" : "61",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#CompositionSession",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -924,18 +957,18 @@
     "comment" : {
       "undefined" : "A music composition event. The composition activity may be conducted by an individual or a group."
     },
-    "id" : "66",
+    "id" : "35",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/Genre",
-    "equivalent" : [ "119" ],
+    "equivalent" : [ "110" ],
     "baseIri" : "http://purl.org/ontology/mo",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Genre"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "92"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "83"
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualConductor",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -944,13 +977,13 @@
       "IRI-based" : "VirtualConductor",
       "en" : "VirtualConductor"
     },
-    "intersection" : [ "148", "67" ],
+    "intersection" : [ "140", "54" ],
     "comment" : {
       "undefined" : "A software agent capable of directing a group of musicians, such as an orchestra director."
     },
     "attributes" : [ "intersection" ],
-    "id" : "75",
-    "superClasses" : [ "67" ]
+    "id" : "62",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticSaxophone",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -959,7 +992,7 @@
       "IRI-based" : "SmartElectroacousticSaxophone"
     },
     "attributes" : [ "external" ],
-    "id" : "151"
+    "id" : "143"
   }, {
     "iri" : "http://purl.org/ontology/musico#Park",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -968,8 +1001,11 @@
       "IRI-based" : "Park",
       "en" : "Park"
     },
-    "id" : "152",
-    "superClasses" : [ "132" ]
+    "comment" : {
+      "undefined" : "A public green space often used for outdoor music events and festivals. It provides a relaxed, natural setting for casual or community concerts. Usually accommodates open-air stages and large crowds."
+    },
+    "id" : "144",
+    "superClasses" : [ "124" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualComposer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -978,13 +1014,17 @@
       "IRI-based" : "VirtualComposer",
       "en" : "VirtualComposer"
     },
-    "intersection" : [ "142", "67" ],
+    "intersection" : [ "134", "54" ],
     "comment" : {
       "undefined" : "An software agent capable of composing music."
     },
     "attributes" : [ "intersection" ],
-    "id" : "68",
-    "superClasses" : [ "67" ]
+    "id" : "55",
+    "superClasses" : [ "54" ]
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000193",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "id" : "145"
   }, {
     "iri" : "http://purl.org/vocab/bio/0.1/Event",
     "baseIri" : "http://purl.org/vocab/bio/0.1",
@@ -993,7 +1033,7 @@
       "IRI-based" : "Event"
     },
     "attributes" : [ "external" ],
-    "id" : "147"
+    "id" : "139"
   }, {
     "iri" : "http://purl.org/ontology/musico#ConservatoryOfMusic",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1002,8 +1042,8 @@
       "IRI-based" : "ConservatoryOfMusic",
       "en" : "ConservatoryOfMusic"
     },
-    "id" : "155",
-    "superClasses" : [ "156" ]
+    "id" : "146",
+    "superClasses" : [ "147" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Agent",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -1011,18 +1051,9 @@
     "label" : {
       "IRI-based" : "Agent"
     },
-    "subClasses" : [ "18", "76", "116", "49", "22", "21" ],
+    "subClasses" : [ "14", "63", "107", "39", "18", "17" ],
     "attributes" : [ "external" ],
-    "id" : "19"
-  }, {
-    "iri" : "http://sw.opencyc.org/2009/04/07/concept/en/Event",
-    "baseIri" : "http://sw.opencyc.org/2009/04/07/concept/en",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Event"
-    },
-    "attributes" : [ "external" ],
-    "id" : "157"
+    "id" : "15"
   }, {
     "iri" : "http://purl.org/ontology/musico#RecordingStudio",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1031,8 +1062,20 @@
       "IRI-based" : "RecordingStudio",
       "en" : "RecordingStudio"
     },
-    "id" : "158",
-    "superClasses" : [ "86" ]
+    "comment" : {
+      "undefined" : "A controlled environment for recording, mixing, and producing music. Equipped with microphones, soundboards, and editing software. Used by artists, bands, sound engineers, and producers."
+    },
+    "id" : "148",
+    "superClasses" : [ "77" ]
+  }, {
+    "iri" : "http://sw.opencyc.org/2009/04/07/concept/en/Event",
+    "baseIri" : "http://sw.opencyc.org/2009/04/07/concept/en",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event"
+    },
+    "attributes" : [ "external" ],
+    "id" : "149"
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanLiveSoundEngineer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1041,13 +1084,13 @@
       "IRI-based" : "HumanLiveSoundEngineer",
       "en" : "HumanLiveSoundEngineer"
     },
-    "intersection" : [ "18", "48" ],
+    "intersection" : [ "14", "38" ],
     "comment" : {
       "undefined" : "An actual human sound engineer involved in sound engineering activities (e.g., mixing) during live music events (e.g., performances)."
     },
     "attributes" : [ "intersection" ],
-    "id" : "53",
-    "superClasses" : [ "48" ]
+    "id" : "43",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#Event",
     "baseIri" : "http://purl.org/NET/c4dm/event.owl",
@@ -1055,9 +1098,17 @@
     "label" : {
       "IRI-based" : "Event"
     },
-    "subClasses" : [ "146", "4", "98", "154", "16" ],
+    "subClasses" : [ "138", "4", "89", "154", "12" ],
     "attributes" : [ "external" ],
-    "id" : "17"
+    "id" : "13"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000193",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "id" : "155"
+  }, {
+    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000193",
+    "baseIri" : "http://purl.obolibrary.org/obo",
+    "id" : "156"
   }, {
     "iri" : "http://purl.org/ontology/musico#LearnersGroup",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1069,8 +1120,23 @@
     "comment" : {
       "en" : "A group of music learners (e.g., involved in a music lesson)."
     },
-    "id" : "84",
-    "superClasses" : [ "41" ]
+    "id" : "70",
+    "superClasses" : [ "68" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "95", "112" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "92"
+  }, {
+    "instances" : 0,
+    "union" : [ "39", "159" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "158"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "89" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "160"
   }, {
     "iri" : "https://schema.org/Action",
     "baseIri" : "https://schema.org",
@@ -1080,7 +1146,7 @@
     },
     "subClasses" : [ "1" ],
     "attributes" : [ "external" ],
-    "id" : "127"
+    "id" : "119"
   }, {
     "iri" : "http://purl.org/ontology/musico#ComposersGroup",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1092,8 +1158,8 @@
     "comment" : {
       "en" : "A group of composers (e.g., involved in a collaborative music composition activity)"
     },
-    "id" : "82",
-    "superClasses" : [ "41" ]
+    "id" : "169",
+    "superClasses" : [ "68" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/Conductor",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -1102,7 +1168,7 @@
       "IRI-based" : "Conductor"
     },
     "attributes" : [ "external" ],
-    "id" : "148"
+    "id" : "140"
   }, {
     "iri" : "http://purl.org/ontology/musico#MultiagentEvent",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1111,44 +1177,39 @@
       "IRI-based" : "MultiagentEvent",
       "en" : "MultiagentEvent"
     },
-    "intersection" : [ "157" ],
+    "intersection" : [ "149" ],
     "comment" : {
       "undefined" : "An event conducted by more than one individual. For instance, a concert performed by an orchestra."
     },
     "attributes" : [ "intersection" ],
     "id" : "154",
-    "superClasses" : [ "17" ]
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Person",
-    "equivalent" : [ "162", "192" ],
+    "equivalent" : [ "117", "183" ],
     "baseIri" : "http://xmlns.com/foaf/0.1",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Person"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "57"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "47"
   }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "143",
+    "iri" : "http://purl.org/ontology/musico#PerformersGroup",
+    "equivalent" : [ "188" ],
+    "baseIri" : "http://purl.org/ontology/musico",
+    "instances" : 0,
     "label" : {
-      "undefined" : "Thing"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "150",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2002/07/owl#Thing",
-    "baseIri" : "http://owl2vowl.de",
-    "id" : "137",
-    "label" : {
-      "undefined" : "Thing"
-    }
+      "IRI-based" : "PerformersGroup",
+      "en" : "PerformersGroup"
+    },
+    "subClasses" : [ "20", "187", "65" ],
+    "comment" : {
+      "undefined" : "A group of performers (e.g., involved in a collaborative music performance activity)"
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "21",
+    "superClasses" : [ "68" ]
   }, {
     "iri" : "https://schema.org/MusicVenue",
     "baseIri" : "https://schema.org",
@@ -1156,9 +1217,9 @@
     "label" : {
       "IRI-based" : "MusicVenue"
     },
-    "subClasses" : [ "197", "85", "198", "118", "96", "158", "156", "132", "199" ],
+    "subClasses" : [ "193", "76", "194", "109", "87", "148", "147", "124", "195" ],
     "attributes" : [ "external" ],
-    "id" : "86"
+    "id" : "77"
   }, {
     "iri" : "http://purl.org/ontology/mo/Performer",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -1167,7 +1228,7 @@
       "IRI-based" : "Performer"
     },
     "attributes" : [ "external" ],
-    "id" : "90"
+    "id" : "81"
   }, {
     "iri" : "http://purl.org/ontology/mo/Arranger",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -1176,7 +1237,7 @@
       "IRI-based" : "Arranger"
     },
     "attributes" : [ "external" ],
-    "id" : "93"
+    "id" : "84"
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicSchool",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1185,16 +1246,12 @@
       "IRI-based" : "MusicSchool",
       "en" : "MusicSchool"
     },
-    "subClasses" : [ "155" ],
-    "id" : "156",
-    "superClasses" : [ "86" ]
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "183",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
+    "subClasses" : [ "146" ],
+    "comment" : {
+      "undefined" : "An educational institution focused on teaching music. Offers lessons, for instance, in instruments, voice, theory, and composition. It can range from local schools to prestigious conservatories."
+    },
+    "id" : "147",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://purl.org/ontology/musico/MusiciansGroup",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1203,43 +1260,85 @@
       "IRI-based" : "MusiciansGroup"
     },
     "attributes" : [ "external" ],
-    "id" : "200"
+    "id" : "159"
+  }, {
+    "instances" : 0,
+    "union" : [ "7", "12" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "199",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "14",
+    "id" : "129",
     "label" : {
       "undefined" : "Thing"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "111",
+    "id" : "142",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "201",
+    "id" : "102",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
     }
   }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "135",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "174",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar",
+    "baseIri" : "http://purl.org/ontology/iomust/smi",
     "instances" : 0,
-    "union" : [ "49", "41" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "182"
+    "label" : {
+      "IRI-based" : "SmartElectroacousticGuitar"
+    },
+    "attributes" : [ "external" ],
+    "id" : "200"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "10",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "39", "68" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "173"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "106",
+    "id" : "97",
     "label" : {
       "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "161",
+    "id" : "152",
     "label" : {
       "IRI-based" : "Literal",
       "undefined" : "Literal"
@@ -1254,66 +1353,10 @@
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "145",
+    "id" : "204",
     "label" : {
       "IRI-based" : "boolean"
     }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "113",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://purl.org/ontology/iomust/smi#SmartElectroacousticGuitar",
-    "baseIri" : "http://purl.org/ontology/iomust/smi",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "SmartElectroacousticGuitar"
-    },
-    "attributes" : [ "external" ],
-    "id" : "203"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "206",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000193",
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "id" : "207",
-    "label" : {
-      "IRI-based" : "MFOEM_000193"
-    }
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000193",
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "id" : "208",
-    "label" : {
-      "IRI-based" : "MFOEM_000193"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "129",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://purl.obolibrary.org/obo/MFOEM_000193",
-    "baseIri" : "http://purl.obolibrary.org/obo",
-    "id" : "209",
-    "label" : {
-      "IRI-based" : "MFOEM_000193"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "104", "121" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "101"
   }, {
     "iri" : "http://purl.org/ontology/musico#OpenSpace",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1322,19 +1365,33 @@
       "IRI-based" : "OpenSpace",
       "en" : "OpenSpace"
     },
-    "subClasses" : [ "131", "152" ],
-    "id" : "132",
-    "superClasses" : [ "86" ]
+    "subClasses" : [ "123", "144" ],
+    "comment" : {
+      "undefined" : "An outdoor area used for concerts, festivals, or music gatherings. Examples include parks, fields, or city squares. Often used for large, casual, or seasonal events."
+    },
+    "id" : "124",
+    "superClasses" : [ "77" ]
   }, {
-    "instances" : 0,
-    "union" : [ "49", "200" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "173"
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
   }, {
-    "instances" : 0,
-    "union" : [ "4", "98" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "211"
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "137",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicalApplication",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1346,8 +1403,8 @@
     "comment" : {
       "en" : "A software application specific to the musical domain."
     },
-    "id" : "59",
-    "superClasses" : [ "60" ]
+    "id" : "72",
+    "superClasses" : [ "73" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualArranger",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1356,13 +1413,13 @@
       "IRI-based" : "VirtualArranger",
       "en" : "VirtualArranger"
     },
-    "intersection" : [ "93", "67" ],
+    "intersection" : [ "84", "54" ],
     "comment" : {
       "undefined" : "A software agent capable of making an arragnement of a music piece."
     },
     "attributes" : [ "intersection" ],
-    "id" : "71",
-    "superClasses" : [ "67" ]
+    "id" : "58",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#SoftwareAgent",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1374,8 +1431,8 @@
     "comment" : {
       "undefined" : "A software agent."
     },
-    "id" : "76",
-    "superClasses" : [ "19" ]
+    "id" : "63",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#JazzClub",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1384,8 +1441,11 @@
       "IRI-based" : "JazzClub",
       "en" : "JazzClub"
     },
-    "id" : "198",
-    "superClasses" : [ "86" ]
+    "comment" : {
+      "undefined" : "A small, intimate venue dedicated to live jazz music. It often serves food and drinks, creating a relaxed atmosphere. Ideal for close interaction between performers and audience."
+    },
+    "id" : "194",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/internet_of_things/iomust/SmartInstrument",
     "baseIri" : "http://purl.org/ontology/iomust/internet_of_things/iomust",
@@ -1394,7 +1454,7 @@
       "IRI-based" : "SmartInstrument"
     },
     "attributes" : [ "external" ],
-    "id" : "121"
+    "id" : "112"
   }, {
     "iri" : "http://purl.org/ontology/mo/SoundEngineer",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -1403,8 +1463,8 @@
       "IRI-based" : "SoundEngineer",
       "en" : "SoundEngineer"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "117"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "108"
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanStudioProducer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1413,11 +1473,11 @@
       "IRI-based" : "HumanStudioProducer",
       "en" : "HumanStudioProducer"
     },
-    "subClasses" : [ "9", "79" ],
-    "intersection" : [ "48", "116" ],
+    "subClasses" : [ "5", "210" ],
+    "intersection" : [ "38", "107" ],
     "attributes" : [ "intersection" ],
-    "id" : "10",
-    "superClasses" : [ "48" ]
+    "id" : "6",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualMusicLearner",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1426,13 +1486,13 @@
       "IRI-based" : "VirtualMusicLearner",
       "en" : "VirtualMusicLearner"
     },
-    "intersection" : [ "22", "67" ],
+    "intersection" : [ "18", "54" ],
     "comment" : {
       "undefined" : "A software agent capable of learning music."
     },
     "attributes" : [ "intersection" ],
-    "id" : "72",
-    "superClasses" : [ "67" ]
+    "id" : "59",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#MusiciansGroup",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1441,12 +1501,12 @@
       "IRI-based" : "MusiciansGroup",
       "en" : "MusiciansGroup"
     },
-    "subClasses" : [ "82", "84", "40" ],
+    "subClasses" : [ "21", "169", "70", "67" ],
     "comment" : {
       "undefined" : "A group of musicians who perform a musical activity together."
     },
-    "id" : "41",
-    "superClasses" : [ "62" ]
+    "id" : "68",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#SelfLearning",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1457,7 +1517,7 @@
     "comment" : {
       "undefined" : "An event in which an individual learns music theory or practice by himself/herself."
     },
-    "id" : "38",
+    "id" : "49",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanConductor",
@@ -1467,18 +1527,13 @@
       "IRI-based" : "HumanConductor",
       "en" : "HumanConductor"
     },
-    "intersection" : [ "148", "48" ],
+    "intersection" : [ "140", "38" ],
     "comment" : {
       "undefined" : "An actual human being involved in the direction of a group of musicians, such as an orchestra director."
     },
     "attributes" : [ "intersection" ],
-    "id" : "54",
-    "superClasses" : [ "48" ]
-  }, {
-    "instances" : 0,
-    "union" : [ "11", "16" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "179"
+    "id" : "44",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#ConcertHall",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1487,11 +1542,14 @@
       "IRI-based" : "ConcertHall",
       "en" : "ConcertHall"
     },
-    "id" : "199",
-    "superClasses" : [ "86" ]
+    "comment" : {
+      "undefined" : "A large indoor venue designed for live music performances, especially classical music. It typically features excellent acoustics and tiered seating.\nTypically used by orchestras, choirs, and soloists."
+    },
+    "id" : "195",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#StudioProducer",
-    "equivalent" : [ "115", "117" ],
+    "equivalent" : [ "106", "108" ],
     "baseIri" : "http://purl.org/ontology/musico",
     "instances" : 0,
     "label" : {
@@ -1502,8 +1560,8 @@
       "undefined" : "A studio producer."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "116",
-    "superClasses" : [ "19" ]
+    "id" : "107",
+    "superClasses" : [ "15" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#VirtualPerformer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1512,13 +1570,13 @@
       "IRI-based" : "VirtualPerformer",
       "en" : "VirtualPerformer"
     },
-    "intersection" : [ "90", "67" ],
+    "intersection" : [ "81", "54" ],
     "comment" : {
       "undefined" : "A software agent capable of performing."
     },
     "attributes" : [ "intersection" ],
-    "id" : "73",
-    "superClasses" : [ "67" ]
+    "id" : "60",
+    "superClasses" : [ "54" ]
   }, {
     "iri" : "https://schema.org/Person",
     "baseIri" : "https://schema.org",
@@ -1526,8 +1584,8 @@
     "label" : {
       "IRI-based" : "Person"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "192"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "183"
   }, {
     "iri" : "http://purl.obolibrary.org/obo/MFOEM_000001",
     "baseIri" : "http://purl.obolibrary.org/obo",
@@ -1536,7 +1594,7 @@
       "IRI-based" : "MFOEM_000001"
     },
     "attributes" : [ "external" ],
-    "id" : "27"
+    "id" : "23"
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanComposer",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1545,13 +1603,13 @@
       "IRI-based" : "HumanComposer",
       "en" : "HumanComposer"
     },
-    "intersection" : [ "48", "142" ],
+    "intersection" : [ "38", "134" ],
     "comment" : {
       "undefined" : "An actual human being involved in a music composition process."
     },
     "attributes" : [ "intersection" ],
-    "id" : "52",
-    "superClasses" : [ "48" ]
+    "id" : "42",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.org/ontology/iomust/smi#SMIApplication",
     "baseIri" : "http://purl.org/ontology/iomust/smi",
@@ -1560,7 +1618,7 @@
       "IRI-based" : "SMIApplication"
     },
     "attributes" : [ "external" ],
-    "id" : "97"
+    "id" : "88"
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanMusicLearner",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1569,13 +1627,13 @@
       "IRI-based" : "HumanMusicLearner",
       "en" : "HumanMusicLearner"
     },
-    "intersection" : [ "48", "22" ],
+    "intersection" : [ "38", "18" ],
     "comment" : {
       "undefined" : "An actual human being involved in an activity of learning music."
     },
     "attributes" : [ "intersection" ],
-    "id" : "50",
-    "superClasses" : [ "48" ]
+    "id" : "40",
+    "superClasses" : [ "38" ]
   }, {
     "iri" : "http://purl.org/ontology/mo/MusicGroup",
     "baseIri" : "http://purl.org/ontology/mo",
@@ -1583,12 +1641,11 @@
     "label" : {
       "IRI-based" : "MusicGroup"
     },
-    "subClasses" : [ "24", "45", "47" ],
-    "attributes" : [ "external" ],
-    "id" : "25"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "188"
   }, {
     "iri" : "http://purl.org/ontology/musico#Performance",
-    "equivalent" : [ "133" ],
+    "equivalent" : [ "125" ],
     "baseIri" : "http://purl.org/ontology/musico",
     "instances" : 0,
     "label" : {
@@ -1598,7 +1655,7 @@
       "undefined" : "A music performance event, such as a live concert."
     },
     "attributes" : [ "equivalent" ],
-    "id" : "36",
+    "id" : "37",
     "superClasses" : [ "4" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#HumanStudioProducerBedroom",
@@ -1608,8 +1665,18 @@
       "IRI-based" : "HumanStudioProducerBedroom",
       "en" : "HumanStudioProducerBedroom"
     },
-    "id" : "79",
-    "superClasses" : [ "10" ]
+    "id" : "210",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "http://purl.org/ontology/studio/device/Application",
+    "baseIri" : "http://purl.org/ontology/studio/device",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Application"
+    },
+    "subClasses" : [ "72" ],
+    "attributes" : [ "external" ],
+    "id" : "73"
   }, {
     "iri" : "http://purl.org/ontology/musico#Home",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1618,18 +1685,11 @@
       "IRI-based" : "Home",
       "en" : "Home"
     },
-    "id" : "197",
-    "superClasses" : [ "86" ]
-  }, {
-    "iri" : "http://purl.org/ontology/studio/device/Application",
-    "baseIri" : "http://purl.org/ontology/studio/device",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "Application"
+    "comment" : {
+      "undefined" : "The home of a musician, where s/he can perform musical activities."
     },
-    "subClasses" : [ "59" ],
-    "attributes" : [ "external" ],
-    "id" : "60"
+    "id" : "193",
+    "superClasses" : [ "77" ]
   }, {
     "iri" : "http://purl.org/ontology/musico#Orchestra",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1638,8 +1698,11 @@
       "IRI-based" : "Orchestra",
       "en" : "Orchestra"
     },
-    "id" : "45",
-    "superClasses" : [ "25" ]
+    "comment" : {
+      "undefined" : "An orchestra is a large group of instrumentalists who play together to perform complex music, organized into sections and with a precise structure. It typically includes strings, woodwinds, brass, and percussion sections. Orchestras perform classical music and other musical genres. They are usually led by a conductor who directs the performance."
+    },
+    "id" : "187",
+    "superClasses" : [ "21" ]
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/Group",
     "baseIri" : "http://xmlns.com/foaf/0.1",
@@ -1647,9 +1710,9 @@
     "label" : {
       "IRI-based" : "Group"
     },
-    "subClasses" : [ "41" ],
+    "subClasses" : [ "68" ],
     "attributes" : [ "external" ],
-    "id" : "62"
+    "id" : "75"
   }, {
     "iri" : "http://purl.org/ontology/musico#MusicalEvent",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1658,22 +1721,22 @@
       "IRI-based" : "MusicalEvent",
       "en" : "MusicalEvent"
     },
-    "subClasses" : [ "3", "42", "66", "36", "38", "6", "8" ],
+    "subClasses" : [ "3", "32", "35", "37", "49", "51", "53" ],
     "comment" : {
       "en" : "A musical event related to a musical activity, such as a performance, lesson, rehearsal. A musical event is composed by different musical sessions."
     },
     "id" : "4",
-    "superClasses" : [ "17" ]
+    "superClasses" : [ "13" ]
   }, {
     "iri" : "http://dbpedia.org/ontology/Instrument",
-    "equivalent" : [ "104" ],
+    "equivalent" : [ "95" ],
     "baseIri" : "http://dbpedia.org/ontology",
     "instances" : 0,
     "label" : {
       "IRI-based" : "Instrument"
     },
-    "attributes" : [ "external", "equivalent" ],
-    "id" : "109"
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "100"
   }, {
     "iri" : "http://purl.org/ontology/musico#RecreationalMusicMaking",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -1684,83 +1747,80 @@
     "comment" : {
       "en" : "An event where a musician plays for fun an instrument, alone or in group.\n        Takes as agent the performer."
     },
-    "id" : "8",
+    "id" : "53",
     "superClasses" : [ "4" ]
   } ],
   "property" : [ {
     "id" : "0",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "5",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "7",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "13",
+    "id" : "9",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "20",
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "24",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "52",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "64",
     "type" : "owl:objectProperty"
   }, {
     "id" : "26",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "66",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "28",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "35",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "37",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "39",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "43",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "44",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "46",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "58",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "61",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "63",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "64",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "65",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "77",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "30",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "78",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "80",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "81",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "83",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "87",
+    "id" : "90",
     "type" : "owl:objectProperty"
   }, {
     "id" : "91",
@@ -1769,119 +1829,107 @@
     "id" : "94",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "88",
+    "id" : "96",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "32",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "99",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "100",
-    "type" : "owl:objectProperty"
+    "id" : "101",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "103",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "111",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "105",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "23",
+    "id" : "113",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "110",
-    "type" : "owl:datatypeProperty"
+    "id" : "114",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "112",
-    "type" : "owl:datatypeProperty"
+    "id" : "115",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "118",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "120",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "122",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "123",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "124",
     "type" : "owl:objectProperty"
   }, {
     "id" : "126",
     "type" : "owl:objectProperty"
   }, {
+    "id" : "127",
+    "type" : "owl:objectProperty"
+  }, {
     "id" : "128",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "130",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "134",
+    "id" : "93",
     "type" : "owl:objectProperty"
-  }, {
-    "id" : "135",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "136",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "102",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "33",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "144",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "149",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "153",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "159",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "160",
-    "type" : "owl:datatypeProperty"
   }, {
     "id" : "29",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "163",
+    "id" : "136",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "150",
     "type" : "owl:objectProperty"
+  }, {
+    "id" : "151",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "153",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "157",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "161",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "162",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "163",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "164",
-    "type" : "owl:someValuesFrom"
-  }, {
-    "id" : "167",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "168",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "169",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "170",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "171",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "172",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "174",
+    "id" : "165",
     "type" : "owl:disjointWith"
+  }, {
+    "id" : "166",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "171",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "175",
     "type" : "owl:disjointWith"
   }, {
     "id" : "176",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "177",
     "type" : "owl:disjointWith"
@@ -1889,14 +1937,17 @@
     "id" : "178",
     "type" : "owl:disjointWith"
   }, {
-    "id" : "125",
-    "type" : "owl:objectProperty"
+    "id" : "179",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "180",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "181",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "182",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "184",
     "type" : "owl:disjointWith"
@@ -1905,55 +1956,73 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "186",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "187",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "188",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "189",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "190",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "191",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "193",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "194",
-    "type" : "owl:disjointWith"
-  }, {
-    "id" : "165",
+    "id" : "167",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "89",
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
     "type" : "owl:objectProperty"
   }, {
     "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "15",
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "11",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "139",
+    "id" : "131",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "204",
+    "id" : "201",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "203",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "205",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "95",
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "133",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "210",
-    "type" : "owl:disjointWith"
+    "id" : "189",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "130",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "212",
     "type" : "rdfs:SubClassOf"
@@ -1970,15 +2039,6 @@
     "id" : "216",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "141",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "195",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "138",
-    "type" : "owl:objectProperty"
-  }, {
     "id" : "217",
     "type" : "rdfs:SubClassOf"
   }, {
@@ -1986,13 +2046,22 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "219",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "220",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "221",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "222",
     "type" : "rdfs:SubClassOf"
@@ -2004,22 +2073,13 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "225",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "226",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "227",
     "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "166",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "34",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "31",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "228",
     "type" : "rdfs:SubClassOf"
@@ -2046,25 +2106,25 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "236",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "237",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "238",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "239",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "240",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "241",
     "type" : "owl:disjointWith"
-  }, {
-    "id" : "140",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "242",
     "type" : "owl:disjointWith"
@@ -2079,22 +2139,22 @@
     "type" : "owl:disjointWith"
   }, {
     "id" : "246",
-    "type" : "owl:disjointWith"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "247",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "248",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "249",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "250",
-    "type" : "owl:disjointWith"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "251",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "252",
     "type" : "rdfs:SubClassOf"
@@ -2109,16 +2169,16 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "256",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "257",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "258",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "259",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "260",
     "type" : "rdfs:SubClassOf"
@@ -2130,24 +2190,9 @@
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "263",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "264",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "265",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "266",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "267",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "268",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "269",
     "type" : "rdfs:SubClassOf"
   } ],
   "propertyAttribute" : [ {
@@ -2162,48 +2207,38 @@
     "comment" : {
       "undefined" : "Relates a MusicianParticipation ot a musical work, such that a musician played a given musical work during a musical activity."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
     "id" : "0"
-  }, {
-    "range" : "4",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "5"
-  }, {
-    "range" : "4",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "7"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#agent",
     "baseIri" : "http://purl.org/NET/c4dm/event.owl",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "agent"
     },
-    "domain" : "14",
-    "subproperty" : [ "15" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "13"
+    "domain" : "10",
+    "subproperty" : [ "11" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "9"
   }, {
     "iri" : "http://purl.org/ontology/musico#is_mentor_of",
-    "inverse" : "23",
+    "inverse" : "19",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "22",
+    "range" : "18",
     "label" : {
       "IRI-based" : "is_mentor_of",
       "en" : "is_mentor_of"
     },
-    "domain" : "21",
+    "domain" : "17",
     "comment" : {
       "undefined" : "Relates a music teacher to a music learner, such that the teacher is the mentor of the learner."
     },
-    "attributes" : [ "object", "irreflexive" ],
-    "id" : "20"
+    "attributes" : [ "irreflexive", "object" ],
+    "id" : "16"
   }, {
     "iri" : "http://purl.org/ontology/musico#recognized_emotion",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "27",
+    "range" : "23",
     "label" : {
       "IRI-based" : "recognized_emotion",
       "en" : "recognized_emotion"
@@ -2212,84 +2247,64 @@
     "comment" : {
       "undefined" : "The act of a virtual musician to recongize a given emotion while taking part in a musical event."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "26"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "22"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "topObjectProperty"
     },
-    "domain" : "14",
-    "subproperty" : [ "29", "30", "31", "32", "33", "34" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "28"
-  }, {
-    "range" : "4",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "35"
-  }, {
-    "range" : "4",
-    "domain" : "38",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "37"
-  }, {
-    "range" : "41",
-    "domain" : "40",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "39"
-  }, {
-    "range" : "25",
-    "domain" : "24",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "43"
-  }, {
-    "range" : "25",
-    "domain" : "45",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "44"
-  }, {
-    "range" : "25",
-    "domain" : "47",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "46"
-  }, {
-    "range" : "60",
-    "domain" : "59",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "58"
-  }, {
-    "range" : "62",
-    "domain" : "41",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "61"
+    "domain" : "10",
+    "subproperty" : [ "25", "26", "27", "28", "29", "30" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "24"
   }, {
     "range" : "4",
     "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "63"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
   }, {
     "range" : "4",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "64"
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "33"
   }, {
     "range" : "4",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "65"
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "4",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "4",
+    "domain" : "49",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "48"
+  }, {
+    "range" : "4",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "4",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "52"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/based_near",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "based_near"
     },
-    "domain" : "14",
-    "attributes" : [ "object", "external" ],
-    "id" : "77"
+    "domain" : "10",
+    "attributes" : [ "external", "object" ],
+    "id" : "64"
   }, {
     "iri" : "http://purl.org/ontology/musico#taught_musical_work",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -2298,66 +2313,80 @@
       "IRI-based" : "taught_musical_work",
       "en" : "taught_musical_work"
     },
-    "superproperty" : [ "28" ],
+    "superproperty" : [ "24" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "Relates a MusicianParticipation ot a musical work, such that a musician taught a given musical work during a musical activity."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "30"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "26"
   }, {
-    "range" : "10",
-    "domain" : "79",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "78"
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "66"
   }, {
-    "range" : "10",
-    "domain" : "9",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "80"
+    "range" : "68",
+    "domain" : "70",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "69"
   }, {
-    "range" : "41",
-    "domain" : "82",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "81"
+    "range" : "73",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "71"
   }, {
-    "range" : "41",
-    "domain" : "84",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "83"
+    "range" : "75",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "74"
   }, {
     "iri" : "http://purl.org/ontology/musico#sub_festival_event",
-    "inverse" : "88",
+    "inverse" : "79",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "11",
+    "range" : "7",
     "label" : {
       "IRI-based" : "sub_festival_event"
     },
-    "superproperty" : [ "89" ],
-    "domain" : "36",
+    "superproperty" : [ "80" ],
+    "domain" : "37",
     "comment" : {
       "undefined" : "A Performance that is part of a Festival. For example, the concert of Jimi Hendrix at Woodstock is part of such festival. Note that a Performance can be part of a Festival and also of a Tour."
     },
-    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
-    "id" : "87"
+    "attributes" : [ "irreflexive", "functional", "asymmetric", "object" ],
+    "id" : "78"
   }, {
     "iri" : "http://purl.org/ontology/musico#sub_genre",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "92",
+    "range" : "83",
     "label" : {
       "IRI-based" : "sub_genre",
       "en" : "sub_genre"
     },
-    "domain" : "92",
+    "domain" : "83",
     "comment" : {
       "en" : "A property relating a genre as a subgenre of another. E.g., Bebop or Swing are sub-genres of the Jazz genre."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "91"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://purl.org/ontology/musico#super_festival_event",
+    "baseIri" : "http://purl.org/ontology/musico",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "super_festival_event"
+    },
+    "superproperty" : [ "85" ],
+    "domain" : "7",
+    "comment" : {
+      "undefined" : "A Festival that includes a Performance. For example, the 1969 edition of the Woodstock festival included a performance of Jimi Hendrix."
+    },
+    "attributes" : [ "irreflexive", "functional", "asymmetric", "object" ],
+    "id" : "79"
   }, {
     "iri" : "http://purl.org/ontology/musico#displayed_emotion",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "27",
+    "range" : "23",
     "label" : {
       "IRI-based" : "displayed_emotion",
       "en" : "displayed_emotion"
@@ -2366,83 +2395,69 @@
     "comment" : {
       "undefined" : "The act of a virtual musician to display a given emotion while taking part in a musical event."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "94"
-  }, {
-    "iri" : "http://purl.org/ontology/musico#super_festival_event",
-    "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "36",
-    "label" : {
-      "IRI-based" : "super_festival_event"
-    },
-    "superproperty" : [ "95" ],
-    "domain" : "11",
-    "comment" : {
-      "undefined" : "A Festival that includes a Performance. For example, the 1969 edition of the Woodstock festival included a performance of Jimi Hendrix."
-    },
-    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
-    "id" : "88"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "86"
   }, {
     "iri" : "http://purl.org/ontology/musico#has_virtual_musician",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "67",
+    "range" : "54",
     "label" : {
       "IRI-based" : "has_virtual_musician",
       "en" : "has_virtual_musician"
     },
-    "superproperty" : [ "28" ],
-    "domain" : "97",
+    "superproperty" : [ "24" ],
+    "domain" : "88",
     "comment" : {
       "undefined" : "An application runnin on a smart musical instrument has a software agent capable of performing a musical activity."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "32"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "28"
   }, {
     "iri" : "http://purl.org/ontology/musico#super_musical_event",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "98",
+    "range" : "89",
     "label" : {
       "IRI-based" : "super_musical_event"
     },
-    "superproperty" : [ "95" ],
+    "superproperty" : [ "85" ],
     "domain" : "4",
     "comment" : {
       "undefined" : "A MusicalEvent that includes a MusicalSession. For example, a lesson includes a teoretical session and a practical one."
     },
-    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
-    "id" : "99"
+    "attributes" : [ "irreflexive", "functional", "asymmetric", "object" ],
+    "id" : "90"
   }, {
     "iri" : "http://purl.org/ontology/musico#gets_recommended_instrument",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "101",
+    "range" : "92",
     "label" : {
       "IRI-based" : "gets_recommended_instrument"
     },
-    "superproperty" : [ "102" ],
-    "domain" : "48",
+    "superproperty" : [ "93" ],
+    "domain" : "38",
     "comment" : {
       "undefined" : "A musical instrument (including smart instruments) is recommended to human musician."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "100"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "91"
   }, {
     "iri" : "http://purl.org/ontology/musico#plays_instrument",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "104",
+    "range" : "95",
     "label" : {
       "IRI-based" : "plays_instrument",
       "en" : "plays_instrument"
     },
-    "domain" : "49",
+    "domain" : "39",
     "comment" : {
       "undefined" : "A musician who plays a musical instrument."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "103"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "94"
   }, {
     "iri" : "http://purl.org/ontology/musico#is_synchronous",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "106",
+    "range" : "97",
     "label" : {
       "IRI-based" : "is_synchronous",
       "en" : "is_synchronous"
@@ -2452,35 +2467,35 @@
       "undefined" : "This property models whether ther act of a musician of participating to an event is synchronous or asynchronous."
     },
     "attributes" : [ "datatype" ],
-    "id" : "105"
+    "id" : "96"
   }, {
     "iri" : "http://purl.org/ontology/musico#is_pupil_of",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "21",
+    "range" : "17",
     "label" : {
       "IRI-based" : "is_pupil_of",
       "en" : "is_pupil_of"
     },
-    "domain" : "22",
+    "domain" : "18",
     "comment" : {
       "undefined" : "Relates a music learner to a music teacher, such that the learner is the pupil of the teacher."
     },
-    "attributes" : [ "object", "irreflexive" ],
-    "id" : "23"
+    "attributes" : [ "irreflexive", "object" ],
+    "id" : "19"
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
     "baseIri" : "http://www.w3.org/2002/07/owl",
-    "range" : "111",
+    "range" : "102",
     "label" : {
       "IRI-based" : "topDataProperty"
     },
-    "domain" : "14",
+    "domain" : "10",
     "attributes" : [ "external", "datatype" ],
-    "id" : "110"
+    "id" : "101"
   }, {
     "iri" : "http://purl.org/ontology/musico#is_situated",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "113",
+    "range" : "104",
     "label" : {
       "IRI-based" : "is_situated",
       "en" : "is_situated"
@@ -2490,11 +2505,11 @@
       "undefined" : "This property models whether ther act of a musician of participating to an event is situated (i.e., in presence) or dispalced (i.e., remote)."
     },
     "attributes" : [ "datatype" ],
-    "id" : "112"
+    "id" : "103"
   }, {
     "iri" : "http://purl.org/ontology/musico#played_instrument",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "121",
+    "range" : "112",
     "label" : {
       "IRI-based" : "played_instrument",
       "en" : "played_instrument"
@@ -2503,77 +2518,77 @@
     "comment" : {
       "undefined" : "Relates a MusicianParticipation ot a smart musical instrument, such that a musician played a given smart musical instrument during a musical activity."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "120"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "111"
   }, {
     "iri" : "http://purl.org/ontology/musico#participating_musician",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "48",
+    "range" : "38",
     "label" : {
       "IRI-based" : "participating_musician",
       "en" : "participating_musician"
     },
-    "superproperty" : [ "123" ],
+    "superproperty" : [ "114" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "Relates a MusicianParticipation to a human musician."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "122"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "113"
   }, {
     "iri" : "https://schema.org/participant",
     "baseIri" : "https://schema.org",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "participant"
     },
-    "domain" : "14",
-    "subproperty" : [ "122" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "123"
+    "domain" : "10",
+    "subproperty" : [ "113" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "114"
   }, {
     "iri" : "http://purl.org/ontology/musico#sub_tour_event",
-    "inverse" : "125",
+    "inverse" : "116",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "16",
+    "range" : "12",
     "label" : {
       "IRI-based" : "sub_tour_event"
     },
-    "superproperty" : [ "89" ],
-    "domain" : "36",
+    "superproperty" : [ "80" ],
+    "domain" : "37",
     "comment" : {
       "undefined" : "A Performance that is part of a Tour. For example, the concert in New York of the Dream Theater is part of the US tour of the band. Note that a Performance can be part of a Tour and also of a Festival."
     },
-    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
-    "id" : "124"
+    "attributes" : [ "irreflexive", "functional", "asymmetric", "object" ],
+    "id" : "115"
   }, {
     "iri" : "http://purl.org/ontology/musico#teaches_music_at",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "86",
+    "range" : "77",
     "label" : {
       "IRI-based" : "teaches_music_at",
       "en" : "teaches_music_at"
     },
-    "domain" : "21",
+    "domain" : "17",
     "comment" : {
       "undefined" : "Relates a music teacher to the venue where he/she conducts the teaching activity."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "126"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "118"
   }, {
     "iri" : "http://purl.org/ontology/musico#has_disability",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "129",
+    "range" : "121",
     "label" : {
       "IRI-based" : "has_disability",
       "en" : "has_disability"
     },
-    "domain" : "57",
+    "domain" : "47",
     "comment" : {
       "undefined" : "Indicates wether a person has a disability or not."
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "128"
+    "id" : "120"
   }, {
     "iri" : "http://purl.org/ontology/musico#interested_in",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -2581,40 +2596,40 @@
     "label" : {
       "IRI-based" : "interested_in"
     },
-    "domain" : "48",
+    "domain" : "38",
     "comment" : {
       "undefined" : "The act of a human musician of being interested in a given musical event."
     },
     "attributes" : [ "object" ],
-    "id" : "130"
+    "id" : "122"
   }, {
     "iri" : "http://purl.org/ontology/mo/similar_to",
     "baseIri" : "http://purl.org/ontology/mo",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "similar_to"
     },
-    "domain" : "14",
-    "attributes" : [ "object", "external" ],
-    "id" : "134"
+    "domain" : "10",
+    "attributes" : [ "external", "object" ],
+    "id" : "126"
   }, {
     "iri" : "http://purl.org/ontology/musico#uses",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "107",
+    "range" : "98",
     "label" : {
       "IRI-based" : "uses",
       "en" : "uses"
     },
-    "domain" : "48",
+    "domain" : "38",
     "comment" : {
       "en" : "Property that models the fact that a human musician utilizes some kind of musical services."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "135"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "127"
   }, {
     "iri" : "http://purl.org/ontology/musico#has_group",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "41",
+    "range" : "68",
     "label" : {
       "IRI-based" : "has_group",
       "en" : "has_group"
@@ -2623,230 +2638,200 @@
     "comment" : {
       "undefined" : "Relates a musical event to a group of musicians."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "136"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "128"
   }, {
     "iri" : "http://purl.org/ontology/musico#gets_recommendation",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "137",
+    "range" : "129",
     "label" : {
       "IRI-based" : "gets_recommendation"
     },
-    "domain" : "19",
-    "subproperty" : [ "138", "139", "100", "140", "141" ],
+    "domain" : "15",
+    "subproperty" : [ "130", "131", "91", "132", "133" ],
     "comment" : {
       "undefined" : "Relates an agent to a thing, such that the thing is recommended to the agent."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "102"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "93"
   }, {
     "iri" : "http://purl.org/ontology/musico#displayed_mood",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "143",
+    "range" : "135",
     "label" : {
       "IRI-based" : "displayed_mood",
       "en" : "displayed_mood"
     },
-    "superproperty" : [ "28" ],
+    "superproperty" : [ "24" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "The act of a virtual musician to display a given mood while taking part in a musical event."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "33"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "29"
   }, {
     "iri" : "http://purl.org/ontology/musico#is_solo_event",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "145",
+    "range" : "137",
     "label" : {
       "IRI-based" : "is_solo_event",
       "en" : "is_solo_event"
     },
-    "domain" : "17",
+    "domain" : "13",
     "comment" : {
       "en" : "This property is used to describe events that involve only one agent."
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "144"
+    "id" : "136"
   }, {
     "iri" : "http://purl.org/ontology/musico#expertise_level",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "150",
+    "range" : "142",
     "label" : {
       "IRI-based" : "expertise_level",
       "en" : "expertise_level"
     },
-    "domain" : "49",
+    "domain" : "39",
     "comment" : {
       "en" : "The expertise level of a musician (three constrained values: beginner, expert and intermediate)."
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "149"
-  }, {
-    "range" : "146",
-    "domain" : "154",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "153"
+    "id" : "141"
   }, {
     "iri" : "http://purl.org/ontology/musico#learns_music_at",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "86",
+    "range" : "77",
     "label" : {
       "IRI-based" : "learns_music_at",
       "en" : "learns_music_at"
     },
-    "domain" : "22",
+    "domain" : "18",
     "comment" : {
       "undefined" : "Relates a music learner to the venue where he/she conducts the learning activity."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "159"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "150"
   }, {
     "iri" : "http://purl.org/ontology/musico#multi-instrumentalism_level",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "161",
+    "range" : "152",
     "label" : {
       "IRI-based" : "multi-instrumentalism_level",
       "en" : "multi-instrumentalism_level"
     },
-    "domain" : "49",
+    "domain" : "39",
     "comment" : {
       "en" : "This property is used to describe agents able to play either one musical instrument  (single-instrumentalist) or more than one musical instrument (multi-instrumentalist)"
     },
     "attributes" : [ "functional", "datatype" ],
-    "id" : "160"
+    "id" : "151"
   }, {
     "iri" : "http://purl.org/ontology/musico#recognized_mood",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "162",
+    "range" : "117",
     "label" : {
       "IRI-based" : "recognized_mood",
       "en" : "recognized_mood"
     },
-    "superproperty" : [ "28" ],
+    "superproperty" : [ "24" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "The act of a virtual musician to recongize a given mood while taking part in a musical event."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "29"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "25"
   }, {
     "iri" : "http://purl.org/ontology/musico#in_participation",
-    "inverse" : "122",
+    "inverse" : "113",
     "baseIri" : "http://purl.org/ontology/musico",
     "range" : "1",
     "label" : {
       "IRI-based" : "in_participation",
       "en" : "in_participation"
     },
-    "domain" : "48",
+    "domain" : "38",
     "comment" : {
       "undefined" : "Relates a human musician to a MusicianParticipation."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "163"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "153"
   }, {
-    "iri" : "http://purl.org/ontology/musico#live_engineered",
-    "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "133",
-    "label" : {
-      "IRI-based" : "live_engineered",
-      "en" : "live_engineered"
-    },
-    "superproperty" : [ "165", "166" ],
-    "domain" : "18",
-    "comment" : {
-      "undefined" : "Relates human beings or software agents to the performances they were involved in as live sound engineers."
-    },
-    "attributes" : [ "someValues", "object", "irreflexive", "asymmetric" ],
-    "id" : "164"
-  }, {
-    "range" : "67",
-    "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "167"
-  }, {
-    "range" : "3",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "168"
-  }, {
-    "range" : "38",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "169"
-  }, {
-    "range" : "38",
-    "domain" : "3",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "170"
-  }, {
-    "range" : "38",
-    "domain" : "8",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "171"
+    "range" : "89",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
   }, {
     "iri" : "http://purl.org/ontology/musico#plays_genre",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "92",
+    "range" : "83",
     "label" : {
       "IRI-based" : "plays_genre",
       "en" : "plays_genre"
     },
-    "domain" : "173",
+    "domain" : "158",
     "comment" : {
       "undefined" : "A musician or a group of musicians who play a given musical genre."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "172"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "161"
   }, {
-    "range" : "38",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "174"
+    "range" : "54",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
   }, {
-    "range" : "3",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "175"
+    "range" : "49",
+    "domain" : "3",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
   }, {
     "iri" : "http://xmlns.com/foaf/0.1/knows",
     "baseIri" : "http://xmlns.com/foaf/0.1",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "knows"
     },
+    "domain" : "10",
+    "attributes" : [ "external", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "138",
+    "domain" : "154",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "iri" : "http://purl.org/ontology/musico#live_engineered",
+    "baseIri" : "http://purl.org/ontology/musico",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "live_engineered",
+      "en" : "live_engineered"
+    },
+    "superproperty" : [ "167", "168" ],
     "domain" : "14",
-    "attributes" : [ "object", "external" ],
-    "id" : "176"
-  }, {
-    "range" : "3",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "177"
-  }, {
-    "range" : "8",
-    "domain" : "36",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "178"
+    "comment" : {
+      "undefined" : "Relates human beings or software agents to the performances they were involved in as live sound engineers."
+    },
+    "attributes" : [ "someValues", "irreflexive", "asymmetric", "object" ],
+    "id" : "166"
   }, {
     "iri" : "http://purl.org/ontology/musico#super_tour_event",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "36",
+    "range" : "37",
     "label" : {
       "IRI-based" : "super_tour_event"
     },
-    "superproperty" : [ "95" ],
-    "domain" : "179",
+    "superproperty" : [ "85" ],
+    "domain" : "170",
     "comment" : {
       "undefined" : "A Tour that includes a Performance. For example, the 2025 US tour of the band Dream Theater includes a concert in New York."
     },
-    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
-    "id" : "125"
+    "attributes" : [ "irreflexive", "functional", "asymmetric", "object" ],
+    "id" : "116"
   }, {
     "iri" : "http://purl.org/ontology/musico#expressed_emotion",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "27",
+    "range" : "23",
     "label" : {
       "IRI-based" : "expressed_emotion",
       "en" : "expressed_emotion"
@@ -2855,138 +2840,168 @@
     "comment" : {
       "undefined" : "The act of a human musician to express a given emotion while taking part in a musical event."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "180"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "171"
   }, {
     "iri" : "http://purl.org/ontology/musico#professional_level",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "183",
+    "range" : "174",
     "label" : {
       "IRI-based" : "professional_level",
       "en" : "professional_level"
     },
-    "domain" : "182",
+    "domain" : "173",
     "comment" : {
       "en" : "The level of professionality of a musician (either amateur or professional)"
     },
     "attributes" : [ "functional", "datatype" ],
+    "id" : "172"
+  }, {
+    "range" : "3",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "49",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "49",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "49",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "3",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "3",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "53",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "181"
   }, {
-    "range" : "36",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "49",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "53",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "184"
   }, {
-    "range" : "38",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "51",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "185"
   }, {
-    "range" : "8",
-    "domain" : "6",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "186"
-  }, {
-    "range" : "36",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "187"
-  }, {
-    "range" : "6",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "188"
-  }, {
-    "range" : "3",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "189"
-  }, {
-    "range" : "8",
-    "domain" : "42",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "190"
-  }, {
-    "range" : "8",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "191"
-  }, {
     "range" : "38",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "193"
-  }, {
-    "range" : "3",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "194"
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
   }, {
     "iri" : "http://purl.org/NET/c4dm/event.owl#isAgentIn",
     "baseIri" : "http://purl.org/NET/c4dm/event.owl",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "isAgentIn"
     },
-    "domain" : "14",
-    "subproperty" : [ "195" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "165"
+    "domain" : "10",
+    "subproperty" : [ "189" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "38",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "38",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
   }, {
     "iri" : "https://schema.org/subEvent",
     "baseIri" : "https://schema.org",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "subEvent"
     },
-    "domain" : "14",
-    "subproperty" : [ "124", "87", "196" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "89"
+    "domain" : "10",
+    "subproperty" : [ "115", "78", "192" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "80"
+  }, {
+    "range" : "38",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "38",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
   }, {
     "iri" : "http://purl.org/ontology/musico#sub_musical_event",
-    "inverse" : "99",
+    "inverse" : "90",
     "baseIri" : "http://purl.org/ontology/musico",
     "range" : "4",
     "label" : {
       "IRI-based" : "sub_musical_event"
     },
-    "superproperty" : [ "89" ],
-    "domain" : "98",
+    "superproperty" : [ "80" ],
+    "domain" : "89",
     "comment" : {
       "undefined" : "A MusicalSession that is part of a MusicalEvent. For example, a lesson can be composed of different parts (such as a theoretical part), each of which is a sub-musical event of the lesson."
     },
-    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
-    "id" : "196"
+    "attributes" : [ "irreflexive", "functional", "asymmetric", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "38",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
   }, {
     "iri" : "http://purl.org/ontology/musico#live_engineer",
-    "inverse" : "195",
+    "inverse" : "189",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "18",
+    "range" : "14",
     "label" : {
       "IRI-based" : "live_engineer"
     },
-    "superproperty" : [ "13" ],
-    "domain" : "133",
+    "superproperty" : [ "9" ],
+    "domain" : "125",
     "comment" : {
       "undefined" : "Relates a performance to a human being or virtual agent who were involved in as live sound engineers."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "15"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "11"
   }, {
     "iri" : "http://purl.org/ontology/musico#gets_recommended_genre",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "92",
+    "range" : "83",
     "label" : {
       "IRI-based" : "gets_recommended_genre"
     },
-    "superproperty" : [ "102" ],
-    "domain" : "48",
+    "superproperty" : [ "93" ],
+    "domain" : "38",
     "comment" : {
       "undefined" : "A musical genre is recommended to human musician."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "139"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "131"
   }, {
     "iri" : "http://purl.org/ontology/musico#public_access",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -2999,91 +3014,86 @@
       "undefined" : "A MusicalEvent may be either public or private"
     },
     "attributes" : [ "datatype" ],
-    "id" : "204"
+    "id" : "201"
   }, {
     "iri" : "http://purl.org/ontology/musico#disability_type",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "201",
+    "range" : "199",
     "label" : {
       "IRI-based" : "disability_type",
       "en" : "disability_type"
     },
-    "domain" : "57",
+    "domain" : "47",
     "comment" : {
       "undefined" : "The type of disability of a person, in terms of the following categories: auditory-, cognitively-, motor-, and visually-impaired."
     },
     "attributes" : [ "datatype" ],
-    "id" : "205"
+    "id" : "203"
   }, {
     "iri" : "https://schema.org/superEvent",
     "baseIri" : "https://schema.org",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "superEvent"
     },
-    "domain" : "14",
-    "subproperty" : [ "99", "125", "88" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "95"
+    "domain" : "10",
+    "subproperty" : [ "90", "116", "79" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "85"
   }, {
-    "range" : "98",
+    "range" : "13",
+    "domain" : "138",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "15",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "13",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "13",
     "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "210"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
   }, {
-    "range" : "49",
-    "domain" : "67",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "212"
-  }, {
-    "range" : "49",
-    "domain" : "48",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "213"
-  }, {
-    "range" : "19",
-    "domain" : "76",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "214"
-  }, {
-    "range" : "19",
+    "range" : "15",
     "domain" : "18",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "215"
-  }, {
-    "range" : "108",
-    "domain" : "107",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "216"
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
   }, {
     "iri" : "http://purl.org/ontology/musico#gets_recommended_user",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "19",
+    "range" : "15",
     "label" : {
       "IRI-based" : "gets_recommended_user"
     },
-    "superproperty" : [ "102" ],
-    "domain" : "19",
+    "superproperty" : [ "93" ],
+    "domain" : "15",
     "comment" : {
       "undefined" : "A user is recommended to another user."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "141"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "133"
   }, {
     "iri" : "http://purl.org/ontology/musico#live_engineered",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "133",
+    "range" : "125",
     "label" : {
       "IRI-based" : "live_engineered",
       "en" : "live_engineered"
     },
-    "superproperty" : [ "165", "166" ],
-    "domain" : "18",
+    "superproperty" : [ "167", "168" ],
+    "domain" : "14",
     "comment" : {
       "undefined" : "Relates human beings or software agents to the performances they were involved in as live sound engineers."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "195"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "189"
   }, {
     "iri" : "http://purl.org/ontology/musico#gets_recommended_event",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -3091,57 +3101,57 @@
     "label" : {
       "IRI-based" : "gets_recommended_event"
     },
-    "superproperty" : [ "102" ],
-    "domain" : "48",
+    "superproperty" : [ "93" ],
+    "domain" : "38",
     "comment" : {
       "undefined" : "A musical event is recommended to human musician."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "138"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "130"
   }, {
-    "range" : "67",
-    "domain" : "75",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "15",
+    "domain" : "39",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "15",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "39",
+    "domain" : "54",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "39",
+    "domain" : "38",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "15",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "range" : "15",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "216"
+  }, {
+    "range" : "54",
+    "domain" : "61",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "217"
   }, {
-    "range" : "67",
-    "domain" : "74",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "54",
+    "domain" : "60",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "218"
-  }, {
-    "range" : "67",
-    "domain" : "71",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "219"
-  }, {
-    "range" : "67",
-    "domain" : "70",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "220"
-  }, {
-    "range" : "67",
-    "domain" : "73",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "221"
-  }, {
-    "range" : "67",
-    "domain" : "72",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "222"
-  }, {
-    "range" : "48",
-    "domain" : "56",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "223"
-  }, {
-    "range" : "48",
-    "domain" : "55",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "224"
   }, {
     "iri" : "http://purl.org/ontology/musico#felt_emotion",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "27",
+    "range" : "23",
     "label" : {
       "IRI-based" : "felt_emotion",
       "en" : "felt_emotion"
@@ -3150,29 +3160,29 @@
     "comment" : {
       "undefined" : "The act of a human musician to feel a given emotion while taking part in a musical event."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "225"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "219"
   }, {
-    "range" : "67",
-    "domain" : "69",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "226"
+    "range" : "99",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "220"
   }, {
-    "range" : "67",
-    "domain" : "68",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "227"
+    "range" : "54",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
   }, {
     "iri" : "http://purl.org/vocab/bio/0.1/event",
     "baseIri" : "http://purl.org/vocab/bio/0.1",
-    "range" : "14",
+    "range" : "10",
     "label" : {
       "IRI-based" : "event"
     },
-    "domain" : "14",
-    "subproperty" : [ "195" ],
-    "attributes" : [ "object", "external" ],
-    "id" : "166"
+    "domain" : "10",
+    "subproperty" : [ "189" ],
+    "attributes" : [ "external", "object" ],
+    "id" : "168"
   }, {
     "iri" : "http://purl.org/ontology/musico#learnt_musical_work",
     "baseIri" : "http://purl.org/ontology/musico",
@@ -3181,161 +3191,166 @@
       "IRI-based" : "learnt_musical_work",
       "en" : "learnt_musical_work"
     },
-    "superproperty" : [ "28" ],
+    "superproperty" : [ "24" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "Relates a MusicianParticipation ot a musical work, such that a musician learnt a given musical work during a musical activity."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "34"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "30"
   }, {
     "iri" : "http://purl.org/ontology/musico#expressed_mood",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "143",
+    "range" : "135",
     "label" : {
       "IRI-based" : "expressed_mood",
       "en" : "expressed_mood"
     },
-    "superproperty" : [ "28" ],
+    "superproperty" : [ "24" ],
     "domain" : "1",
     "comment" : {
       "undefined" : "The act of a human musician to express a given mood while taking part in a musical event."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "31"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "27"
   }, {
-    "range" : "48",
-    "domain" : "53",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "54",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "54",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "54",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "38",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "range" : "38",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "54",
+    "domain" : "56",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "54",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "228"
   }, {
-    "range" : "48",
-    "domain" : "52",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "6",
+    "domain" : "210",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "229"
   }, {
-    "range" : "48",
-    "domain" : "54",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "6",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "230"
   }, {
-    "range" : "48",
-    "domain" : "50",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "68",
+    "domain" : "169",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "231"
   }, {
-    "range" : "48",
-    "domain" : "51",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "68",
+    "domain" : "21",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "232"
   }, {
-    "range" : "48",
-    "domain" : "10",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "147",
+    "domain" : "146",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "233"
   }, {
-    "range" : "156",
-    "domain" : "155",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "124",
+    "domain" : "144",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "234"
   }, {
-    "range" : "86",
-    "domain" : "199",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "124",
+    "domain" : "123",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "235"
   }, {
-    "range" : "132",
-    "domain" : "152",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "51",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "236"
-  }, {
-    "range" : "132",
-    "domain" : "131",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "237"
-  }, {
-    "range" : "86",
-    "domain" : "158",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "238"
-  }, {
-    "range" : "86",
-    "domain" : "132",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "239"
-  }, {
-    "range" : "86",
-    "domain" : "156",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "240"
-  }, {
-    "range" : "6",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "241"
   }, {
     "iri" : "http://purl.org/ontology/musico#gets_recommended_music_venue",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "86",
+    "range" : "77",
     "label" : {
       "IRI-based" : "gets_recommended_music_venue"
     },
-    "superproperty" : [ "102" ],
-    "domain" : "48",
+    "superproperty" : [ "93" ],
+    "domain" : "38",
     "comment" : {
       "undefined" : "A musical venue is recommended to human musician."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "140"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "132"
   }, {
-    "range" : "36",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "242"
-  }, {
-    "range" : "8",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "243"
+    "range" : "53",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
   }, {
     "range" : "3",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "238"
+  }, {
+    "range" : "49",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "239"
+  }, {
+    "range" : "32",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "240"
+  }, {
+    "range" : "51",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "241"
+  }, {
+    "range" : "53",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "242"
+  }, {
+    "range" : "3",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "243"
+  }, {
+    "range" : "35",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "244"
   }, {
-    "range" : "38",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "32",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "245"
-  }, {
-    "range" : "42",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "246"
-  }, {
-    "range" : "6",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "247"
-  }, {
-    "range" : "36",
-    "domain" : "66",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "248"
-  }, {
-    "range" : "66",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "249"
-  }, {
-    "range" : "42",
-    "domain" : "133",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "250"
   }, {
     "iri" : "http://purl.org/ontology/musico#felt_mood",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "143",
+    "range" : "135",
     "label" : {
       "IRI-based" : "felt_mood",
       "en" : "felt_mood"
@@ -3344,76 +3359,76 @@
     "comment" : {
       "undefined" : "The act of a human musician to feel a given mood while taking part in a musical event."
     },
-    "attributes" : [ "object", "irreflexive", "asymmetric" ],
-    "id" : "251"
+    "attributes" : [ "irreflexive", "asymmetric", "object" ],
+    "id" : "246"
   }, {
-    "range" : "86",
-    "domain" : "198",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "252"
+    "range" : "77",
+    "domain" : "147",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "247"
   }, {
-    "range" : "86",
-    "domain" : "85",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "253"
+    "range" : "77",
+    "domain" : "148",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "248"
   }, {
-    "range" : "86",
-    "domain" : "96",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "254"
+    "range" : "77",
+    "domain" : "195",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "249"
   }, {
-    "range" : "86",
-    "domain" : "118",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "255"
+    "range" : "77",
+    "domain" : "124",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "250"
   }, {
     "iri" : "http://purl.org/ontology/musico#is_multiagent_event",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "206",
+    "range" : "204",
     "label" : {
       "IRI-based" : "is_multiagent_event",
       "en" : "is_multiagent_event"
     },
-    "domain" : "17",
+    "domain" : "13",
     "comment" : {
       "en" : "This property is used to describe events that involve more than one agent."
     },
     "attributes" : [ "functional", "datatype" ],
+    "id" : "251"
+  }, {
+    "range" : "77",
+    "domain" : "194",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "252"
+  }, {
+    "range" : "77",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "253"
+  }, {
+    "range" : "77",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "254"
+  }, {
+    "range" : "77",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "255"
+  }, {
+    "range" : "77",
+    "domain" : "193",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "256"
   }, {
-    "range" : "17",
-    "domain" : "16",
-    "attributes" : [ "object", "anonymous" ],
+    "range" : "21",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "257"
-  }, {
-    "range" : "17",
-    "domain" : "154",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "258"
-  }, {
-    "range" : "86",
-    "domain" : "197",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "259"
-  }, {
-    "range" : "127",
-    "domain" : "1",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "260"
-  }, {
-    "range" : "17",
-    "domain" : "98",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "261"
-  }, {
-    "range" : "17",
-    "domain" : "4",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "262"
   }, {
     "iri" : "http://purl.org/ontology/musico#involved_event",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "211",
+    "range" : "160",
     "label" : {
       "IRI-based" : "involved_event",
       "en" : "involved_event"
@@ -3422,45 +3437,45 @@
     "comment" : {
       "undefined" : "Relates a MusicianParticipation to a musical event or a part of a musical event."
     },
-    "attributes" : [ "object", "functional", "irreflexive", "asymmetric" ],
-    "id" : "263"
+    "attributes" : [ "irreflexive", "functional", "asymmetric", "object" ],
+    "id" : "258"
   }, {
     "iri" : "http://purl.org/ontology/musico#played_genre",
     "baseIri" : "http://purl.org/ontology/musico",
-    "range" : "92",
+    "range" : "83",
     "label" : {
       "IRI-based" : "played_genre"
     },
-    "domain" : "86",
+    "domain" : "77",
     "comment" : {
       "undefined" : "A music genre is played at a music venue."
     },
-    "attributes" : [ "object", "irreflexive" ],
+    "attributes" : [ "irreflexive", "object" ],
+    "id" : "259"
+  }, {
+    "range" : "21",
+    "domain" : "187",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "260"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "261"
+  }, {
+    "range" : "13",
+    "domain" : "154",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "262"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "263"
+  }, {
+    "range" : "119",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
     "id" : "264"
-  }, {
-    "range" : "17",
-    "domain" : "146",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "265"
-  }, {
-    "range" : "19",
-    "domain" : "49",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "266"
-  }, {
-    "range" : "19",
-    "domain" : "116",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "267"
-  }, {
-    "range" : "19",
-    "domain" : "21",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "268"
-  }, {
-    "range" : "19",
-    "domain" : "22",
-    "attributes" : [ "object", "anonymous" ],
-    "id" : "269"
   } ]
 }
